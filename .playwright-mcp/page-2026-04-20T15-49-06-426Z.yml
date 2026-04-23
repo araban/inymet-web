@@ -1,0 +1,206 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "INyMET Metrología & Calibración" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e6]: INyMET
+        - generic [ref=e7]: Metrología & Calibración
+      - navigation [ref=e8]:
+        - link "Calibración" [ref=e9] [cursor=pointer]:
+          - /url: /calibracion
+        - link "Metrología" [ref=e10] [cursor=pointer]:
+          - /url: /metrologia
+        - link "Industrias" [ref=e11] [cursor=pointer]:
+          - /url: /industrias
+        - link "Blog" [ref=e12] [cursor=pointer]:
+          - /url: /blog
+        - link "Casos de Éxito" [ref=e13] [cursor=pointer]:
+          - /url: /casos-de-exito
+        - link "Recursos" [ref=e14] [cursor=pointer]:
+          - /url: /recursos
+      - generic [ref=e15]:
+        - link "+52 (XX) XXXX-XXXX" [ref=e16] [cursor=pointer]:
+          - /url: tel:+52XXXXXXXXXX
+          - img [ref=e17]
+          - generic [ref=e19]: +52 (XX) XXXX-XXXX
+        - link "Cotizar en 24h" [ref=e20] [cursor=pointer]:
+          - /url: /contacto
+  - main [ref=e21]:
+    - generic [ref=e22]:
+      - generic [ref=e24]:
+        - heading "Resultados Reales para Empresas Reales" [level=1] [ref=e25]
+        - paragraph [ref=e26]: Casos de éxito de empresas que confiaron en INyMET para proteger sus certificaciones y superar auditorías ISO críticas.
+      - generic [ref=e28]:
+        - generic [ref=e30]:
+          - generic [ref=e31]:
+            - generic [ref=e32]: Automotriz
+            - heading "Planta Tier 1 con auditoría IATF 16949 en 30 días" [level=2] [ref=e33]
+          - generic [ref=e34]:
+            - generic [ref=e35]:
+              - heading "La situación" [level=3] [ref=e36]
+              - paragraph [ref=e37]: Una planta de manufactura automotriz Tier 1 detectó que el 40% de sus instrumentos de medición dimensional tenían certificados de calibración vencidos, a 30 días de una auditoría IATF 16949 de renovación.
+            - generic [ref=e38]:
+              - heading "Lo que hicimos" [level=3] [ref=e39]
+              - paragraph [ref=e40]: Diseñamos un plan de calibración de emergencia. En 15 días hábiles calibramos 127 instrumentos críticos (calibradores, micrómetros, manómetros y sensores de temperatura), emitimos certificados con trazabilidad CENAM y entregamos el expediente completo listo para auditoría.
+          - generic [ref=e41]:
+            - heading "Resultados" [level=3] [ref=e42]
+            - generic [ref=e43]:
+              - generic [ref=e44]:
+                - img [ref=e46]
+                - generic [ref=e48]:
+                  - paragraph [ref=e49]: 0 no conformidades
+                  - paragraph [ref=e50]: relacionadas con calibración en auditoría IATF
+              - generic [ref=e51]:
+                - img [ref=e53]
+                - generic [ref=e56]:
+                  - paragraph [ref=e57]: 15 días
+                  - paragraph [ref=e58]: para calibrar 127 instrumentos en sitio
+              - generic [ref=e59]:
+                - img [ref=e61]
+                - generic [ref=e64]:
+                  - paragraph [ref=e65]: Certificación renovada
+                  - paragraph [ref=e66]: sin observaciones en metrología
+          - blockquote [ref=e67]:
+            - text: "\"Llegaron cuando más los necesitábamos. Sin INyMET, hubiéramos tenido una no conformidad mayor.\""
+            - generic [ref=e68]: — Gerente de Calidad
+        - generic [ref=e70]:
+          - generic [ref=e71]:
+            - generic [ref=e72]: Farmacéutica
+            - heading "Laboratorio farmacéutico con inspección FDA programada" [level=2] [ref=e73]
+          - generic [ref=e74]:
+            - generic [ref=e75]:
+              - heading "La situación" [level=3] [ref=e76]
+              - paragraph [ref=e77]: Un laboratorio de manufactura farmacéutica recibió notificación de inspección FDA con 45 días de anticipación. Su programa de calibración no cumplía con los requisitos GMP para incertidumbre de medición ni para trazabilidad metrológica documentada.
+            - generic [ref=e78]:
+              - heading "Lo que hicimos" [level=3] [ref=e79]
+              - paragraph [ref=e80]: Realizamos una auditoría completa de su sistema de calibración, identificamos 23 equipos críticos sin documentación adecuada y calibramos todo con certificados que incluían cálculo de incertidumbre según GUM, formato aceptado por FDA.
+          - generic [ref=e81]:
+            - heading "Resultados" [level=3] [ref=e82]
+            - generic [ref=e83]:
+              - generic [ref=e84]:
+                - img [ref=e86]
+                - generic [ref=e88]:
+                  - paragraph [ref=e89]: Inspección FDA
+                  - paragraph [ref=e90]: superada sin observaciones en calibración
+              - generic [ref=e91]:
+                - img [ref=e93]
+                - generic [ref=e96]:
+                  - paragraph [ref=e97]: 23 equipos
+                  - paragraph [ref=e98]: críticos calibrados con documentación GMP
+              - generic [ref=e99]:
+                - img [ref=e101]
+                - generic [ref=e104]:
+                  - paragraph [ref=e105]: 100% trazabilidad
+                  - paragraph [ref=e106]: documentada para todos los equipos
+          - blockquote [ref=e107]:
+            - text: "\"La documentación que entregó INyMET fue exactamente lo que el auditor de FDA necesitaba ver.\""
+            - generic [ref=e108]: — Director de Aseguramiento de Calidad
+        - generic [ref=e110]:
+          - generic [ref=e111]:
+            - generic [ref=e112]: Alimentos
+            - heading "Planta de alimentos en proceso de certificación BRC" [level=2] [ref=e113]
+          - generic [ref=e114]:
+            - generic [ref=e115]:
+              - heading "La situación" [level=3] [ref=e116]
+              - paragraph [ref=e117]: Una empresa procesadora de alimentos buscaba obtener la certificación BRC Global Standards por primera vez para poder exportar a Europa. No contaban con un programa formal de calibración ni con registros históricos.
+            - generic [ref=e118]:
+              - heading "Lo que hicimos" [level=3] [ref=e119]
+              - paragraph [ref=e120]: "Desarrollamos desde cero su programa de calibración: inventario de equipos críticos (85 instrumentos), definición de intervalos de calibración, calibración de todos los equipos y creación de un sistema de registros que cumplía con los requerimientos BRC."
+          - generic [ref=e121]:
+            - heading "Resultados" [level=3] [ref=e122]
+            - generic [ref=e123]:
+              - generic [ref=e124]:
+                - img [ref=e126]
+                - generic [ref=e128]:
+                  - paragraph [ref=e129]: Certificación BRC
+                  - paragraph [ref=e130]: obtenida en primer intento
+              - generic [ref=e131]:
+                - img [ref=e133]
+                - generic [ref=e136]:
+                  - paragraph [ref=e137]: 85 instrumentos
+                  - paragraph [ref=e138]: calibrados con programa documentado
+              - generic [ref=e139]:
+                - img [ref=e141]
+                - generic [ref=e144]:
+                  - paragraph [ref=e145]: Acceso a mercado
+                  - paragraph [ref=e146]: europeo habilitado para exportación
+          - blockquote [ref=e147]:
+            - text: "\"Sin el programa de calibración que INyMET nos ayudó a construir, no hubiéramos pasado la auditoría BRC.\""
+            - generic [ref=e148]: — Gerente de Inocuidad Alimentaria
+      - generic [ref=e150]:
+        - heading "¿Tu empresa necesita resultados similares?" [level=2] [ref=e151]
+        - paragraph [ref=e152]: Cuéntanos tu situación y te decimos exactamente cómo podemos ayudarte antes de tu próxima auditoría.
+        - link "Solicitar diagnóstico gratuito" [ref=e153] [cursor=pointer]:
+          - /url: /contacto
+          - text: Solicitar diagnóstico gratuito
+          - img [ref=e154]
+  - contentinfo [ref=e156]:
+    - generic [ref=e157]:
+      - generic [ref=e158]:
+        - generic [ref=e159]:
+          - link "INyMET" [ref=e160] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=e161]: Laboratorio de metrología y calibración certificado ISO 17025. Reducimos riesgos en auditorías ISO con tiempos de respuesta líderes en México.
+          - generic [ref=e162]:
+            - link "+52 (XX) XXXX-XXXX" [ref=e163] [cursor=pointer]:
+              - /url: tel:+52XXXXXXXXXX
+              - img [ref=e164]
+              - text: +52 (XX) XXXX-XXXX
+            - link "contacto@inymet.com" [ref=e166] [cursor=pointer]:
+              - /url: mailto:contacto@inymet.com
+              - img [ref=e167]
+              - text: contacto@inymet.com
+            - paragraph [ref=e170]:
+              - img [ref=e171]
+              - text: México
+        - generic [ref=e174]:
+          - heading "Servicios" [level=3] [ref=e175]
+          - list [ref=e176]:
+            - listitem [ref=e177]:
+              - link "Calibración de temperatura" [ref=e178] [cursor=pointer]:
+                - /url: /calibracion#temperatura
+            - listitem [ref=e179]:
+              - link "Calibración de presión" [ref=e180] [cursor=pointer]:
+                - /url: /calibracion#presion
+            - listitem [ref=e181]:
+              - link "Calibración de multímetros" [ref=e182] [cursor=pointer]:
+                - /url: /calibracion#electricos
+            - listitem [ref=e183]:
+              - link "Metrología dimensional" [ref=e184] [cursor=pointer]:
+                - /url: /metrologia
+        - generic [ref=e185]:
+          - heading "Industrias" [level=3] [ref=e186]
+          - list [ref=e187]:
+            - listitem [ref=e188]:
+              - link "Automotriz" [ref=e189] [cursor=pointer]:
+                - /url: /industrias/automotriz
+            - listitem [ref=e190]:
+              - link "Farmacéutica" [ref=e191] [cursor=pointer]:
+                - /url: /industrias/farmaceutica
+            - listitem [ref=e192]:
+              - link "Alimentos" [ref=e193] [cursor=pointer]:
+                - /url: /industrias/alimentos
+        - generic [ref=e194]:
+          - heading "Recursos" [level=3] [ref=e195]
+          - list [ref=e196]:
+            - listitem [ref=e197]:
+              - link "Blog" [ref=e198] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e199]:
+              - link "Casos de éxito" [ref=e200] [cursor=pointer]:
+                - /url: /casos-de-exito
+            - listitem [ref=e201]:
+              - link "Recursos y guías" [ref=e202] [cursor=pointer]:
+                - /url: /recursos
+            - listitem [ref=e203]:
+              - link "Solicitar cotización" [ref=e204] [cursor=pointer]:
+                - /url: /contacto
+          - link "Cotizar en 24h" [ref=e206] [cursor=pointer]:
+            - /url: /contacto
+      - generic [ref=e207]:
+        - paragraph [ref=e208]: © 2026 INyMET. Todos los derechos reservados.
+        - generic [ref=e209]:
+          - link "Aviso de Privacidad" [ref=e210] [cursor=pointer]:
+            - /url: /aviso-privacidad
+          - link "Términos de Uso" [ref=e211] [cursor=pointer]:
+            - /url: /terminos

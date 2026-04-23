@@ -1,0 +1,84 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Lead {
+  id          String   @id @default(cuid())
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  name        String
+  company     String
+  email       String
+  phone       String
+  industry    Industry
+  equipment   String   @db.Text
+  urgency     Urgency
+  message     String?  @db.Text
+  source      String   @default("website_form")
+
+  // CRM references
+  hubspotContactId String?
+  hubspotDealId    String?
+
+  // Pipeline stage
+  status      LeadStatus @default(NEW)
+
+  // Chatbot sessions
+  chatSessions ChatSession[]
+
+  @@index([email])
+  @@index([status])
+  @@index([industry])
+  @@index([createdAt])
+}
+
+model ChatSession {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+
+  sessionId String   @unique
+  leadId    String?
+  lead      Lead?    @relation(fields: [leadId], references: [id])
+
+  messages  ChatMessage[]
+}
+
+model ChatMessage {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+
+  sessionId String
+  session   ChatSession @relation(fields: [sessionId], references: [id])
+  role      String      // "user" | "assistant"
+  content   String      @db.Text
+}
+
+enum Industry {
+  automotriz
+  farmaceutica
+  alimentos
+  otro
+}
+
+enum Urgency {
+  inmediato
+  semanas_1_2  @map("1-2_semanas")
+  mes_1        @map("1_mes")
+  sin_urgencia
+}
+
+enum LeadStatus {
+  NEW
+  QUALIFIED
+  DIAGNOSIS
+  PROPOSAL_SENT
+  NEGOTIATION
+  CLOSED_WON
+  CLOSED_LOST
+}

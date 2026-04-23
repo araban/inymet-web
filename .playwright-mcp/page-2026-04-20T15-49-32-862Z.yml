@@ -1,0 +1,169 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "INyMET Metrología & Calibración" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e6]: INyMET
+        - generic [ref=e7]: Metrología & Calibración
+      - navigation [ref=e8]:
+        - link "Calibración" [ref=e9] [cursor=pointer]:
+          - /url: /calibracion
+        - link "Metrología" [ref=e10] [cursor=pointer]:
+          - /url: /metrologia
+        - link "Industrias" [ref=e11] [cursor=pointer]:
+          - /url: /industrias
+        - link "Blog" [ref=e12] [cursor=pointer]:
+          - /url: /blog
+        - link "Casos de Éxito" [ref=e13] [cursor=pointer]:
+          - /url: /casos-de-exito
+        - link "Recursos" [ref=e14] [cursor=pointer]:
+          - /url: /recursos
+      - generic [ref=e15]:
+        - link "+52 (XX) XXXX-XXXX" [ref=e16] [cursor=pointer]:
+          - /url: tel:+52XXXXXXXXXX
+          - img [ref=e17]
+          - generic [ref=e19]: +52 (XX) XXXX-XXXX
+        - link "Cotizar en 24h" [ref=e20] [cursor=pointer]:
+          - /url: /contacto
+  - main [ref=e21]:
+    - generic [ref=e24]:
+      - generic [ref=e25]:
+        - heading "Solicita tu Cotización Gratuita" [level=1] [ref=e26]
+        - paragraph [ref=e27]: Completa el formulario y un especialista en metrología te contactará en menos de 24 horas.
+      - generic [ref=e28]:
+        - generic [ref=e29]:
+          - generic [ref=e31]:
+            - img [ref=e33]
+            - generic [ref=e36]:
+              - paragraph [ref=e37]: Tiempo de respuesta
+              - paragraph [ref=e38]: < 24 horas hábiles
+          - generic [ref=e40]:
+            - img [ref=e42]
+            - generic [ref=e44]:
+              - paragraph [ref=e45]: Teléfono
+              - paragraph [ref=e46]: +52 (XX) XXXX-XXXX
+          - generic [ref=e48]:
+            - img [ref=e50]
+            - generic [ref=e53]:
+              - paragraph [ref=e54]: Email
+              - paragraph [ref=e55]: contacto@inymet.com
+          - generic [ref=e57]:
+            - img [ref=e59]
+            - generic [ref=e62]:
+              - paragraph [ref=e63]: Cobertura
+              - paragraph [ref=e64]: Nacional (México)
+          - generic [ref=e65]:
+            - heading "¿Auditoría urgente?" [level=3] [ref=e66]
+            - paragraph [ref=e67]: Si tienes una auditoría en menos de 48 horas, llámanos directamente para atención prioritaria.
+            - link "Llamar ahora" [ref=e68] [cursor=pointer]:
+              - /url: tel:+52XXXXXXXXXX
+        - generic [ref=e70]:
+          - generic [ref=e71]:
+            - generic [ref=e72]:
+              - generic [ref=e73]: Nombre completo *
+              - textbox "Juan García" [ref=e74]
+            - generic [ref=e75]:
+              - generic [ref=e76]: Empresa *
+              - textbox "Nombre de tu empresa" [ref=e77]
+          - generic [ref=e78]:
+            - generic [ref=e79]:
+              - generic [ref=e80]: Email *
+              - textbox "juan@empresa.com" [ref=e81]
+            - generic [ref=e82]:
+              - generic [ref=e83]: Teléfono *
+              - textbox "+52 (55) 1234-5678" [ref=e84]
+          - generic [ref=e85]:
+            - generic [ref=e86]:
+              - generic [ref=e87]: Industria *
+              - combobox [ref=e88]:
+                - option "Selecciona tu industria" [selected]
+                - option "Automotriz"
+                - option "Farmacéutica"
+                - option "Alimentos y Bebidas"
+                - option "Otro sector"
+            - generic [ref=e89]:
+              - generic [ref=e90]: Urgencia *
+              - combobox [ref=e91]:
+                - option "¿Cuándo necesitas el servicio?" [selected]
+                - option "Inmediato (auditoría próxima)"
+                - option "En 1–2 semanas"
+                - option "En el próximo mes"
+                - option "Planeación anual"
+          - generic [ref=e92]:
+            - generic [ref=e93]: Equipos a calibrar *
+            - 'textbox "Ej: 5 termómetros RTD, 3 manómetros de presión, 2 multímetros..." [ref=e94]'
+          - generic [ref=e95]:
+            - generic [ref=e96]: Comentarios adicionales
+            - textbox "Estándares requeridos, cantidad de equipos, ubicación, etc." [ref=e97]
+          - button "Solicitar cotización gratuita" [ref=e98] [cursor=pointer]
+          - paragraph [ref=e99]: Sin compromiso. Recibirás respuesta en menos de 24 horas hábiles.
+  - contentinfo [ref=e100]:
+    - generic [ref=e101]:
+      - generic [ref=e102]:
+        - generic [ref=e103]:
+          - link "INyMET" [ref=e104] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=e105]: Laboratorio de metrología y calibración certificado ISO 17025. Reducimos riesgos en auditorías ISO con tiempos de respuesta líderes en México.
+          - generic [ref=e106]:
+            - link "+52 (XX) XXXX-XXXX" [ref=e107] [cursor=pointer]:
+              - /url: tel:+52XXXXXXXXXX
+              - img [ref=e108]
+              - text: +52 (XX) XXXX-XXXX
+            - link "contacto@inymet.com" [ref=e110] [cursor=pointer]:
+              - /url: mailto:contacto@inymet.com
+              - img [ref=e111]
+              - text: contacto@inymet.com
+            - paragraph [ref=e114]:
+              - img [ref=e115]
+              - text: México
+        - generic [ref=e118]:
+          - heading "Servicios" [level=3] [ref=e119]
+          - list [ref=e120]:
+            - listitem [ref=e121]:
+              - link "Calibración de temperatura" [ref=e122] [cursor=pointer]:
+                - /url: /calibracion#temperatura
+            - listitem [ref=e123]:
+              - link "Calibración de presión" [ref=e124] [cursor=pointer]:
+                - /url: /calibracion#presion
+            - listitem [ref=e125]:
+              - link "Calibración de multímetros" [ref=e126] [cursor=pointer]:
+                - /url: /calibracion#electricos
+            - listitem [ref=e127]:
+              - link "Metrología dimensional" [ref=e128] [cursor=pointer]:
+                - /url: /metrologia
+        - generic [ref=e129]:
+          - heading "Industrias" [level=3] [ref=e130]
+          - list [ref=e131]:
+            - listitem [ref=e132]:
+              - link "Automotriz" [ref=e133] [cursor=pointer]:
+                - /url: /industrias/automotriz
+            - listitem [ref=e134]:
+              - link "Farmacéutica" [ref=e135] [cursor=pointer]:
+                - /url: /industrias/farmaceutica
+            - listitem [ref=e136]:
+              - link "Alimentos" [ref=e137] [cursor=pointer]:
+                - /url: /industrias/alimentos
+        - generic [ref=e138]:
+          - heading "Recursos" [level=3] [ref=e139]
+          - list [ref=e140]:
+            - listitem [ref=e141]:
+              - link "Blog" [ref=e142] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e143]:
+              - link "Casos de éxito" [ref=e144] [cursor=pointer]:
+                - /url: /casos-de-exito
+            - listitem [ref=e145]:
+              - link "Recursos y guías" [ref=e146] [cursor=pointer]:
+                - /url: /recursos
+            - listitem [ref=e147]:
+              - link "Solicitar cotización" [ref=e148] [cursor=pointer]:
+                - /url: /contacto
+          - link "Cotizar en 24h" [ref=e150] [cursor=pointer]:
+            - /url: /contacto
+      - generic [ref=e151]:
+        - paragraph [ref=e152]: © 2026 INyMET. Todos los derechos reservados.
+        - generic [ref=e153]:
+          - link "Aviso de Privacidad" [ref=e154] [cursor=pointer]:
+            - /url: /aviso-privacidad
+          - link "Términos de Uso" [ref=e155] [cursor=pointer]:
+            - /url: /terminos

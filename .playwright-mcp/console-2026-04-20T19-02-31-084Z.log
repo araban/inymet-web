@@ -1,0 +1,7 @@
+[     391ms] Uncaught TypeError: Cannot read properties of undefined (reading 'defaults')
+    at <anonymous> (https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js:4:363)
+    at <anonymous> (https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js:4:282)
+    at <anonymous> (https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js:4:309)
+[     392ms] Unexpected token '<'
+[     401ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://inymet.com.mx/Clientes/:0
+[     583ms] [ERROR] Manifest: Line: 1, column: 1, Syntax error. @ https://inymet.com.mx/manifest.json:0

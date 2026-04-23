@@ -1,0 +1,197 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "INyMET Metrología & Calibración" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e6]: INyMET
+        - generic [ref=e7]: Metrología & Calibración
+      - navigation [ref=e8]:
+        - link "Calibración" [ref=e9] [cursor=pointer]:
+          - /url: /calibracion
+        - link "Metrología" [ref=e10] [cursor=pointer]:
+          - /url: /metrologia
+        - link "Industrias" [ref=e11] [cursor=pointer]:
+          - /url: /industrias
+        - link "Blog" [ref=e12] [cursor=pointer]:
+          - /url: /blog
+        - link "Casos de Éxito" [ref=e13] [cursor=pointer]:
+          - /url: /casos-de-exito
+        - link "Recursos" [ref=e14] [cursor=pointer]:
+          - /url: /recursos
+      - generic [ref=e15]:
+        - link "+52 (XX) XXXX-XXXX" [ref=e16] [cursor=pointer]:
+          - /url: tel:+52XXXXXXXXXX
+          - img [ref=e17]
+          - generic [ref=e19]: +52 (XX) XXXX-XXXX
+        - link "Cotizar en 24h" [ref=e20] [cursor=pointer]:
+          - /url: /contacto
+  - main [ref=e21]:
+    - generic [ref=e22]:
+      - generic [ref=e24]:
+        - heading "Recursos Gratuitos de Metrología y Calibración" [level=1] [ref=e25]
+        - paragraph [ref=e26]: Guías, checklists y herramientas para gerentes de calidad, responsables de metrología y directores de operaciones en industrias certificadas de México.
+      - generic [ref=e28]:
+        - heading "Descargables y herramientas" [level=2] [ref=e29]
+        - generic [ref=e30]:
+          - generic [ref=e31]:
+            - generic [ref=e32]:
+              - img [ref=e33]
+              - text: Checklist
+            - heading "Lista de Verificación para Auditorías ISO — Calibración" [level=3] [ref=e36]
+            - paragraph [ref=e37]: Los 15 puntos que los auditores siempre revisan en materia de calibración. Verifica el estado de tu sistema antes de la auditoría.
+            - link "Descargar checklist" [ref=e38] [cursor=pointer]:
+              - /url: /contacto?recurso=checklist-auditoria-iso-calibracion
+              - img [ref=e39]
+              - text: Descargar checklist
+              - img [ref=e42]
+          - generic [ref=e44]:
+            - generic [ref=e45]:
+              - img [ref=e46]
+              - text: Herramienta
+            - heading "Calculadora de Intervalos de Calibración" [level=3] [ref=e48]
+            - paragraph [ref=e49]: Determina la frecuencia óptima de calibración para cada tipo de instrumento basándote en el historial de desempeño y los requerimientos normativos.
+            - link "Usar calculadora" [ref=e50] [cursor=pointer]:
+              - /url: /contacto?recurso=calculadora-intervalos-calibracion
+              - img [ref=e51]
+              - text: Usar calculadora
+              - img [ref=e54]
+          - generic [ref=e56]:
+            - generic [ref=e57]:
+              - img [ref=e58]
+              - text: Guía
+            - 'heading "Guía: Cómo Leer un Certificado de Calibración" [level=3] [ref=e61]'
+            - paragraph [ref=e62]: "Aprende a interpretar los datos en un certificado de calibración: incertidumbre, trazabilidad, errores y criterios de aceptación."
+            - link "Descargar guía" [ref=e63] [cursor=pointer]:
+              - /url: /contacto?recurso=guia-leer-certificado-calibracion
+              - img [ref=e64]
+              - text: Descargar guía
+              - img [ref=e67]
+          - generic [ref=e69]:
+            - generic [ref=e70]:
+              - img [ref=e71]
+              - text: Plantilla
+            - 'heading "Plantilla: Plan Anual de Calibración" [level=3] [ref=e73]'
+            - paragraph [ref=e74]: "Plantilla en Excel para gestionar tu programa anual de calibración: inventario de equipos, fechas, responsables y estado."
+            - link "Descargar plantilla" [ref=e75] [cursor=pointer]:
+              - /url: /contacto?recurso=plantilla-plan-anual-calibracion
+              - img [ref=e76]
+              - text: Descargar plantilla
+              - img [ref=e79]
+          - generic [ref=e81]:
+            - generic [ref=e82]:
+              - img [ref=e83]
+              - text: Checklist
+            - 'heading "Checklist: Preparación para Auditoría IATF 16949 — Metrología" [level=3] [ref=e86]'
+            - paragraph [ref=e87]: Los requerimientos específicos de IATF 16949 en materia de calibración y MSA. Para plantas automotrices en México.
+            - link "Descargar checklist" [ref=e88] [cursor=pointer]:
+              - /url: /contacto?recurso=checklist-iatf-16949-metrologia
+              - img [ref=e89]
+              - text: Descargar checklist
+              - img [ref=e92]
+          - generic [ref=e94]:
+            - generic [ref=e95]:
+              - img [ref=e96]
+              - text: Guía
+            - heading "Guía de Errores Comunes en Calibración (y Cómo Evitarlos)" [level=3] [ref=e98]
+            - paragraph [ref=e99]: Los 10 errores más frecuentes que generan no conformidades en auditorías ISO relacionadas con calibración de instrumentos.
+            - link "Descargar guía" [ref=e100] [cursor=pointer]:
+              - /url: /contacto?recurso=guia-errores-calibracion
+              - img [ref=e101]
+              - text: Descargar guía
+              - img [ref=e104]
+        - generic [ref=e106]:
+          - heading "Artículos recomendados" [level=2] [ref=e107]:
+            - img [ref=e108]
+            - text: Artículos recomendados
+          - generic [ref=e110]:
+            - link "¿Cada cuánto calibrar equipos industriales? 6 min" [ref=e111] [cursor=pointer]:
+              - /url: /blog/cada-cuanto-calibrar-equipos-industriales
+              - generic [ref=e112]: ¿Cada cuánto calibrar equipos industriales?
+              - generic [ref=e113]: 6 min
+            - link "Costos ocultos de no calibrar tus instrumentos 7 min" [ref=e114] [cursor=pointer]:
+              - /url: /blog/costos-ocultos-no-calibrar
+              - generic [ref=e115]: Costos ocultos de no calibrar tus instrumentos
+              - generic [ref=e116]: 7 min
+            - link "Cómo preparar una auditoría ISO 17025 12 min" [ref=e117] [cursor=pointer]:
+              - /url: /blog/como-preparar-auditoria-iso-17025
+              - generic [ref=e118]: Cómo preparar una auditoría ISO 17025
+              - generic [ref=e119]: 12 min
+            - link "5 errores en auditorías ISO por mala calibración 8 min" [ref=e120] [cursor=pointer]:
+              - /url: /blog/errores-auditoria-iso-mala-calibracion
+              - generic [ref=e121]: 5 errores en auditorías ISO por mala calibración
+              - generic [ref=e122]: 8 min
+      - generic [ref=e125]:
+        - heading "¿Necesitas algo más específico?" [level=2] [ref=e126]
+        - paragraph [ref=e127]: Nuestros especialistas pueden ayudarte con una consulta personalizada sin costo.
+        - link "Hablar con un especialista" [ref=e128] [cursor=pointer]:
+          - /url: /contacto
+  - contentinfo [ref=e129]:
+    - generic [ref=e130]:
+      - generic [ref=e131]:
+        - generic [ref=e132]:
+          - link "INyMET" [ref=e133] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=e134]: Laboratorio de metrología y calibración certificado ISO 17025. Reducimos riesgos en auditorías ISO con tiempos de respuesta líderes en México.
+          - generic [ref=e135]:
+            - link "+52 (XX) XXXX-XXXX" [ref=e136] [cursor=pointer]:
+              - /url: tel:+52XXXXXXXXXX
+              - img [ref=e137]
+              - text: +52 (XX) XXXX-XXXX
+            - link "contacto@inymet.com" [ref=e139] [cursor=pointer]:
+              - /url: mailto:contacto@inymet.com
+              - img [ref=e140]
+              - text: contacto@inymet.com
+            - paragraph [ref=e143]:
+              - img [ref=e144]
+              - text: México
+        - generic [ref=e147]:
+          - heading "Servicios" [level=3] [ref=e148]
+          - list [ref=e149]:
+            - listitem [ref=e150]:
+              - link "Calibración de temperatura" [ref=e151] [cursor=pointer]:
+                - /url: /calibracion#temperatura
+            - listitem [ref=e152]:
+              - link "Calibración de presión" [ref=e153] [cursor=pointer]:
+                - /url: /calibracion#presion
+            - listitem [ref=e154]:
+              - link "Calibración de multímetros" [ref=e155] [cursor=pointer]:
+                - /url: /calibracion#electricos
+            - listitem [ref=e156]:
+              - link "Metrología dimensional" [ref=e157] [cursor=pointer]:
+                - /url: /metrologia
+        - generic [ref=e158]:
+          - heading "Industrias" [level=3] [ref=e159]
+          - list [ref=e160]:
+            - listitem [ref=e161]:
+              - link "Automotriz" [ref=e162] [cursor=pointer]:
+                - /url: /industrias/automotriz
+            - listitem [ref=e163]:
+              - link "Farmacéutica" [ref=e164] [cursor=pointer]:
+                - /url: /industrias/farmaceutica
+            - listitem [ref=e165]:
+              - link "Alimentos" [ref=e166] [cursor=pointer]:
+                - /url: /industrias/alimentos
+        - generic [ref=e167]:
+          - heading "Recursos" [level=3] [ref=e168]
+          - list [ref=e169]:
+            - listitem [ref=e170]:
+              - link "Blog" [ref=e171] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e172]:
+              - link "Casos de éxito" [ref=e173] [cursor=pointer]:
+                - /url: /casos-de-exito
+            - listitem [ref=e174]:
+              - link "Recursos y guías" [ref=e175] [cursor=pointer]:
+                - /url: /recursos
+            - listitem [ref=e176]:
+              - link "Solicitar cotización" [ref=e177] [cursor=pointer]:
+                - /url: /contacto
+          - link "Cotizar en 24h" [ref=e179] [cursor=pointer]:
+            - /url: /contacto
+      - generic [ref=e180]:
+        - paragraph [ref=e181]: © 2026 INyMET. Todos los derechos reservados.
+        - generic [ref=e182]:
+          - link "Aviso de Privacidad" [ref=e183] [cursor=pointer]:
+            - /url: /aviso-privacidad
+          - link "Términos de Uso" [ref=e184] [cursor=pointer]:
+            - /url: /terminos

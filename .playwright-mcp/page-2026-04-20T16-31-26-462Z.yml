@@ -1,0 +1,174 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "INyMET Metrología & Calibración" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e6]: INyMET
+        - generic [ref=e7]: Metrología & Calibración
+      - navigation [ref=e8]:
+        - link "Calibración" [ref=e9] [cursor=pointer]:
+          - /url: /calibracion
+        - link "Metrología" [ref=e10] [cursor=pointer]:
+          - /url: /metrologia
+        - link "Industrias" [ref=e11] [cursor=pointer]:
+          - /url: /industrias
+        - link "Blog" [ref=e12] [cursor=pointer]:
+          - /url: /blog
+        - link "Casos de Éxito" [ref=e13] [cursor=pointer]:
+          - /url: /casos-de-exito
+        - link "Recursos" [ref=e14] [cursor=pointer]:
+          - /url: /recursos
+      - generic [ref=e15]:
+        - link "+52 (XX) XXXX-XXXX" [ref=e16] [cursor=pointer]:
+          - /url: tel:+52XXXXXXXXXX
+          - img [ref=e17]
+          - generic [ref=e19]: +52 (XX) XXXX-XXXX
+        - link "Cotizar en 24h" [ref=e20] [cursor=pointer]:
+          - /url: /contacto
+  - main [ref=e21]:
+    - generic [ref=e22]:
+      - generic [ref=e24]:
+        - link "Volver al blog" [ref=e25] [cursor=pointer]:
+          - /url: /blog
+          - img [ref=e26]
+          - text: Volver al blog
+        - generic [ref=e29]: Auditorías ISO
+        - heading "5 Errores en Auditorías ISO por Mala Calibración (y Cómo Evitarlos)" [level=1] [ref=e30]
+        - generic [ref=e31]:
+          - generic [ref=e32]:
+            - img [ref=e33]
+            - text: 14 de abril de 2026
+          - generic [ref=e35]:
+            - img [ref=e36]
+            - text: 8 min de lectura
+      - img "5 Errores en Auditorías ISO por Mala Calibración (y Cómo Evitarlos)" [ref=e41]
+      - generic [ref=e43]:
+        - generic [ref=e44]:
+          - paragraph [ref=e45]: La calibración es uno de los puntos que los auditores ISO revisan con mayor detalle — y también uno donde más empresas fallan. Según nuestra experiencia en cientos de auditorías, estos son los 5 errores que generan más no conformidades.
+          - heading "1. Certificados de calibración vencidos" [level=2] [ref=e46]
+          - paragraph [ref=e47]: El error más frecuente y el más evitable. Muchas empresas calibran sus equipos pero no gestionan activamente las fechas de vencimiento. Un certificado vencido al momento de la auditoría es una no conformidad inmediata en ISO 9001 cláusula 7.1.5 e IATF 16949.
+          - paragraph [ref=e48]:
+            - strong [ref=e49]: "Cómo evitarlo:"
+            - text: Implementa un programa de calibración con alertas de vencimiento a 30, 60 y 90 días antes de la fecha límite. La plantilla de Plan Anual de Calibración que ofrecemos como recurso gratuito incluye este sistema.
+          - heading "2. Ausencia de trazabilidad metrológica documentada" [level=2] [ref=e50]
+          - paragraph [ref=e51]: "Un certificado de calibración sin trazabilidad al Sistema Internacional de Unidades (SI) no tiene validez ante un auditor certificado. La trazabilidad debe ser documentada e ininterrumpida: tu instrumento → patrón de trabajo → patrón de referencia → CENAM."
+          - paragraph [ref=e52]:
+            - strong [ref=e53]: "Cómo evitarlo:"
+            - text: Exige a tu laboratorio de calibración que sus certificados indiquen explícitamente la trazabilidad CENAM y el número de acreditación de la EMA (Entidad Mexicana de Acreditación).
+          - heading "3. Certificados sin cálculo de incertidumbre de medición" [level=2] [ref=e54]
+          - paragraph [ref=e55]: ISO 17025, GMP y IATF 16949 requieren que los certificados de calibración incluyan la incertidumbre de medición calculada conforme a la Guía GUM. Sin este dato, el certificado no cumple con los requisitos normativos modernos.
+          - paragraph [ref=e56]:
+            - strong [ref=e57]: "Cómo evitarlo:"
+            - text: Verifica que cada certificado incluya la sección de incertidumbre con el valor, factor de cobertura (k) y nivel de confianza. Si tu proveedor actual no lo incluye, es momento de cambiar.
+          - heading "4. Instrumentos críticos fuera del programa de calibración" [level=2] [ref=e58]
+          - paragraph [ref=e59]: "Es común encontrar que los instrumentos más visibles están calibrados pero se omiten equipos \"secundarios\" que en realidad son críticos para la calidad del producto: termómetros de referencia, medidores de humedad, niveles de precisión."
+          - paragraph [ref=e60]:
+            - strong [ref=e61]: "Cómo evitarlo:"
+            - text: Realiza un inventario completo de todos los equipos que afectan la calidad del producto o servicio. Clasifícalos como críticos, importantes y de referencia, y asigna intervalos de calibración según su impacto.
+          - heading "5. No verificar el estado de calibración antes de usar el equipo" [level=2] [ref=e62]
+          - paragraph [ref=e63]: "Tener un certificado vigente no garantiza que el equipo esté funcionando correctamente. Los auditores preguntan: ¿cómo saben que el equipo funciona bien entre calibraciones? Sin un procedimiento de verificación intermedia, no hay respuesta."
+          - paragraph [ref=e64]:
+            - strong [ref=e65]: "Cómo evitarlo:"
+            - text: Implementa verificaciones intermedias documentadas para equipos críticos. Puede ser tan simple como comparar lecturas contra un patrón de referencia interno y registrar el resultado.
+          - separator [ref=e66]
+          - paragraph [ref=e67]:
+            - text: La buena noticia es que todos estos errores son prevenibles con un sistema de gestión de calibración bien estructurado. Si tu próxima auditoría ISO está a menos de 90 días,
+            - link "contáctanos" [ref=e68] [cursor=pointer]:
+              - /url: /contacto
+            - text: para una evaluación rápida de tu sistema actual.
+        - generic [ref=e69]:
+          - generic [ref=e70]:
+            - img [ref=e71]
+            - heading "¿Necesitas apoyo con tu sistema de calibración?" [level=3] [ref=e74]
+          - paragraph [ref=e75]: Nuestros especialistas pueden revisar tu situación y decirte exactamente qué necesitas — sin costo.
+          - link "Solicitar diagnóstico gratuito" [ref=e76] [cursor=pointer]:
+            - /url: /contacto
+            - text: Solicitar diagnóstico gratuito
+            - img [ref=e77]
+      - generic [ref=e80]:
+        - heading "Artículos relacionados" [level=2] [ref=e81]
+        - generic [ref=e82]:
+          - link "Gestión de Calibración ¿Cada Cuánto Se Deben Calibrar los Equipos Industriales? 6 min" [ref=e83] [cursor=pointer]:
+            - /url: /blog/cada-cuanto-calibrar-equipos-industriales
+            - text: Gestión de Calibración
+            - heading "¿Cada Cuánto Se Deben Calibrar los Equipos Industriales?" [level=3] [ref=e84]
+            - generic [ref=e85]:
+              - img [ref=e86]
+              - text: 6 min
+          - link "Análisis de Costos Costos Ocultos de No Calibrar tus Instrumentos (Calculadora) 7 min" [ref=e89] [cursor=pointer]:
+            - /url: /blog/costos-ocultos-no-calibrar
+            - text: Análisis de Costos
+            - heading "Costos Ocultos de No Calibrar tus Instrumentos (Calculadora)" [level=3] [ref=e90]
+            - generic [ref=e91]:
+              - img [ref=e92]
+              - text: 7 min
+  - contentinfo [ref=e95]:
+    - generic [ref=e96]:
+      - generic [ref=e97]:
+        - generic [ref=e98]:
+          - link "INyMET" [ref=e99] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=e100]: Laboratorio de metrología y calibración certificado ISO 17025. Reducimos riesgos en auditorías ISO con tiempos de respuesta líderes en México.
+          - generic [ref=e101]:
+            - link "+52 (XX) XXXX-XXXX" [ref=e102] [cursor=pointer]:
+              - /url: tel:+52XXXXXXXXXX
+              - img [ref=e103]
+              - text: +52 (XX) XXXX-XXXX
+            - link "contacto@inymet.com" [ref=e105] [cursor=pointer]:
+              - /url: mailto:contacto@inymet.com
+              - img [ref=e106]
+              - text: contacto@inymet.com
+            - paragraph [ref=e109]:
+              - img [ref=e110]
+              - text: México
+        - generic [ref=e113]:
+          - heading "Servicios" [level=3] [ref=e114]
+          - list [ref=e115]:
+            - listitem [ref=e116]:
+              - link "Calibración de temperatura" [ref=e117] [cursor=pointer]:
+                - /url: /calibracion#temperatura
+            - listitem [ref=e118]:
+              - link "Calibración de presión" [ref=e119] [cursor=pointer]:
+                - /url: /calibracion#presion
+            - listitem [ref=e120]:
+              - link "Calibración de multímetros" [ref=e121] [cursor=pointer]:
+                - /url: /calibracion#electricos
+            - listitem [ref=e122]:
+              - link "Metrología dimensional" [ref=e123] [cursor=pointer]:
+                - /url: /metrologia
+        - generic [ref=e124]:
+          - heading "Industrias" [level=3] [ref=e125]
+          - list [ref=e126]:
+            - listitem [ref=e127]:
+              - link "Automotriz" [ref=e128] [cursor=pointer]:
+                - /url: /industrias/automotriz
+            - listitem [ref=e129]:
+              - link "Farmacéutica" [ref=e130] [cursor=pointer]:
+                - /url: /industrias/farmaceutica
+            - listitem [ref=e131]:
+              - link "Alimentos" [ref=e132] [cursor=pointer]:
+                - /url: /industrias/alimentos
+        - generic [ref=e133]:
+          - heading "Recursos" [level=3] [ref=e134]
+          - list [ref=e135]:
+            - listitem [ref=e136]:
+              - link "Blog" [ref=e137] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e138]:
+              - link "Casos de éxito" [ref=e139] [cursor=pointer]:
+                - /url: /casos-de-exito
+            - listitem [ref=e140]:
+              - link "Recursos y guías" [ref=e141] [cursor=pointer]:
+                - /url: /recursos
+            - listitem [ref=e142]:
+              - link "Solicitar cotización" [ref=e143] [cursor=pointer]:
+                - /url: /contacto
+          - link "Cotizar en 24h" [ref=e145] [cursor=pointer]:
+            - /url: /contacto
+      - generic [ref=e146]:
+        - paragraph [ref=e147]: © 2026 INyMET. Todos los derechos reservados.
+        - generic [ref=e148]:
+          - link "Aviso de Privacidad" [ref=e149] [cursor=pointer]:
+            - /url: /aviso-privacidad
+          - link "Términos de Uso" [ref=e150] [cursor=pointer]:
+            - /url: /terminos

@@ -1,0 +1,182 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "INyMET Metrología & Calibración" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e6]: INyMET
+        - generic [ref=e7]: Metrología & Calibración
+      - navigation [ref=e8]:
+        - link "Calibración" [ref=e9] [cursor=pointer]:
+          - /url: /calibracion
+        - link "Metrología" [ref=e10] [cursor=pointer]:
+          - /url: /metrologia
+        - link "Industrias" [ref=e11] [cursor=pointer]:
+          - /url: /industrias
+        - link "Blog" [ref=e12] [cursor=pointer]:
+          - /url: /blog
+        - link "Casos de Éxito" [ref=e13] [cursor=pointer]:
+          - /url: /casos-de-exito
+        - link "Recursos" [ref=e14] [cursor=pointer]:
+          - /url: /recursos
+      - generic [ref=e15]:
+        - link "+52 (XX) XXXX-XXXX" [ref=e16] [cursor=pointer]:
+          - /url: tel:+52XXXXXXXXXX
+          - img [ref=e17]
+          - generic [ref=e19]: +52 (XX) XXXX-XXXX
+        - link "Cotizar en 24h" [ref=e20] [cursor=pointer]:
+          - /url: /contacto
+  - main [ref=e21]:
+    - generic [ref=e22]:
+      - generic [ref=e24]:
+        - heading "Calibración Especializada por Industria" [level=1] [ref=e25]
+        - paragraph [ref=e26]: Cada industria tiene normas distintas. Nuestros servicios están adaptados a los requisitos de calibración específicos de tu sector.
+      - generic [ref=e28]:
+        - generic [ref=e30]:
+          - generic [ref=e31]:
+            - generic [ref=e32]: IATF 16949 · ISO 9001
+            - heading "Industria Automotriz" [level=2] [ref=e33]
+          - generic [ref=e34]:
+            - generic [ref=e35]:
+              - paragraph [ref=e36]: Calibración dimensional, eléctrica y de temperatura para plantas Tier 1 y Tier 2. Certificados aceptados en auditorías OEM y documentación lista para auditoría IATF.
+              - link "Ver soluciones automotrices" [ref=e37] [cursor=pointer]:
+                - /url: /industrias/automotriz
+                - text: Ver soluciones automotrices
+                - img [ref=e38]
+            - list [ref=e40]:
+              - listitem [ref=e41]:
+                - img [ref=e42]
+                - generic [ref=e45]: Respuesta de emergencia en 48 horas
+              - listitem [ref=e46]:
+                - img [ref=e47]
+                - generic [ref=e50]: Calibración en planta (servicio a domicilio)
+              - listitem [ref=e51]:
+                - img [ref=e52]
+                - generic [ref=e55]: Expediente completo listo para auditoría
+              - listitem [ref=e56]:
+                - img [ref=e57]
+                - generic [ref=e60]: Trazabilidad CENAM en todos los certificados
+        - generic [ref=e62]:
+          - generic [ref=e63]:
+            - generic [ref=e64]: GMP · FDA · COFEPRIS · NOM-059
+            - heading "Industria Farmacéutica" [level=2] [ref=e65]
+          - generic [ref=e66]:
+            - generic [ref=e67]:
+              - paragraph [ref=e68]: "Calibración con documentación GMP completa: cálculo de incertidumbre según GUM, formato aceptado por FDA y COFEPRIS. Para laboratorios, autoclaves, balanzas e incubadoras."
+              - link "Ver soluciones farmacéuticas" [ref=e69] [cursor=pointer]:
+                - /url: /industrias/farmaceutica
+                - text: Ver soluciones farmacéuticas
+                - img [ref=e70]
+            - list [ref=e72]:
+              - listitem [ref=e73]:
+                - img [ref=e74]
+                - generic [ref=e77]: Certificados con incertidumbre de medición (GUM)
+              - listitem [ref=e78]:
+                - img [ref=e79]
+                - generic [ref=e82]: Formato aceptado por FDA y COFEPRIS
+              - listitem [ref=e83]:
+                - img [ref=e84]
+                - generic [ref=e87]: Calibración de autoclaves e incubadoras
+              - listitem [ref=e88]:
+                - img [ref=e89]
+                - generic [ref=e92]: Validación de sistemas de temperatura
+        - generic [ref=e94]:
+          - generic [ref=e95]:
+            - generic [ref=e96]: BRC · SQF · HACCP · FSSC 22000
+            - heading "Industria Alimentaria" [level=2] [ref=e97]
+          - generic [ref=e98]:
+            - generic [ref=e99]:
+              - paragraph [ref=e100]: "Calibración de instrumentos críticos para inocuidad alimentaria: sensores de temperatura, balanzas industriales, pHmetros y equipos de proceso. Certificados para exportación."
+              - link "Ver soluciones alimentarias" [ref=e101] [cursor=pointer]:
+                - /url: /industrias/alimentos
+                - text: Ver soluciones alimentarias
+                - img [ref=e102]
+            - list [ref=e104]:
+              - listitem [ref=e105]:
+                - img [ref=e106]
+                - generic [ref=e109]: Calibración de puntos críticos de control (HACCP)
+              - listitem [ref=e110]:
+                - img [ref=e111]
+                - generic [ref=e114]: Documentación para certificación BRC / SQF
+              - listitem [ref=e115]:
+                - img [ref=e116]
+                - generic [ref=e119]: Habilitación para exportación a Europa y EE.UU.
+              - listitem [ref=e120]:
+                - img [ref=e121]
+                - generic [ref=e124]: Programa preventivo anual documentado
+      - generic [ref=e126]:
+        - heading "¿No encuentras tu industria?" [level=2] [ref=e127]
+        - paragraph [ref=e128]: También trabajamos con manufactura general, energía, construcción y más. Cuéntanos tu caso y evaluamos cómo podemos ayudarte.
+        - link "Consultar para mi industria" [ref=e129] [cursor=pointer]:
+          - /url: /contacto
+          - text: Consultar para mi industria
+          - img [ref=e130]
+  - contentinfo [ref=e132]:
+    - generic [ref=e133]:
+      - generic [ref=e134]:
+        - generic [ref=e135]:
+          - link "INyMET" [ref=e136] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=e137]: Laboratorio de metrología y calibración certificado ISO 17025. Reducimos riesgos en auditorías ISO con tiempos de respuesta líderes en México.
+          - generic [ref=e138]:
+            - link "+52 (XX) XXXX-XXXX" [ref=e139] [cursor=pointer]:
+              - /url: tel:+52XXXXXXXXXX
+              - img [ref=e140]
+              - text: +52 (XX) XXXX-XXXX
+            - link "contacto@inymet.com" [ref=e142] [cursor=pointer]:
+              - /url: mailto:contacto@inymet.com
+              - img [ref=e143]
+              - text: contacto@inymet.com
+            - paragraph [ref=e146]:
+              - img [ref=e147]
+              - text: México
+        - generic [ref=e150]:
+          - heading "Servicios" [level=3] [ref=e151]
+          - list [ref=e152]:
+            - listitem [ref=e153]:
+              - link "Calibración de temperatura" [ref=e154] [cursor=pointer]:
+                - /url: /calibracion#temperatura
+            - listitem [ref=e155]:
+              - link "Calibración de presión" [ref=e156] [cursor=pointer]:
+                - /url: /calibracion#presion
+            - listitem [ref=e157]:
+              - link "Calibración de multímetros" [ref=e158] [cursor=pointer]:
+                - /url: /calibracion#electricos
+            - listitem [ref=e159]:
+              - link "Metrología dimensional" [ref=e160] [cursor=pointer]:
+                - /url: /metrologia
+        - generic [ref=e161]:
+          - heading "Industrias" [level=3] [ref=e162]
+          - list [ref=e163]:
+            - listitem [ref=e164]:
+              - link "Automotriz" [ref=e165] [cursor=pointer]:
+                - /url: /industrias/automotriz
+            - listitem [ref=e166]:
+              - link "Farmacéutica" [ref=e167] [cursor=pointer]:
+                - /url: /industrias/farmaceutica
+            - listitem [ref=e168]:
+              - link "Alimentos" [ref=e169] [cursor=pointer]:
+                - /url: /industrias/alimentos
+        - generic [ref=e170]:
+          - heading "Recursos" [level=3] [ref=e171]
+          - list [ref=e172]:
+            - listitem [ref=e173]:
+              - link "Blog" [ref=e174] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e175]:
+              - link "Casos de éxito" [ref=e176] [cursor=pointer]:
+                - /url: /casos-de-exito
+            - listitem [ref=e177]:
+              - link "Recursos y guías" [ref=e178] [cursor=pointer]:
+                - /url: /recursos
+            - listitem [ref=e179]:
+              - link "Solicitar cotización" [ref=e180] [cursor=pointer]:
+                - /url: /contacto
+          - link "Cotizar en 24h" [ref=e182] [cursor=pointer]:
+            - /url: /contacto
+      - generic [ref=e183]:
+        - paragraph [ref=e184]: © 2026 INyMET. Todos los derechos reservados.
+        - generic [ref=e185]:
+          - link "Aviso de Privacidad" [ref=e186] [cursor=pointer]:
+            - /url: /aviso-privacidad
+          - link "Términos de Uso" [ref=e187] [cursor=pointer]:
+            - /url: /terminos

@@ -1,0 +1,188 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "INyMET Metrología & Calibración" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e6]: INyMET
+        - generic [ref=e7]: Metrología & Calibración
+      - navigation [ref=e8]:
+        - link "Calibración" [ref=e9] [cursor=pointer]:
+          - /url: /calibracion
+        - link "Metrología" [ref=e10] [cursor=pointer]:
+          - /url: /metrologia
+        - link "Industrias" [ref=e11] [cursor=pointer]:
+          - /url: /industrias
+        - link "Blog" [ref=e12] [cursor=pointer]:
+          - /url: /blog
+        - link "Casos de Éxito" [ref=e13] [cursor=pointer]:
+          - /url: /casos-de-exito
+        - link "Recursos" [ref=e14] [cursor=pointer]:
+          - /url: /recursos
+      - generic [ref=e15]:
+        - link "+52 (XX) XXXX-XXXX" [ref=e16] [cursor=pointer]:
+          - /url: tel:+52XXXXXXXXXX
+          - img [ref=e17]
+          - generic [ref=e19]: +52 (XX) XXXX-XXXX
+        - link "Cotizar en 24h" [ref=e20] [cursor=pointer]:
+          - /url: /contacto
+  - main [ref=e21]:
+    - generic [ref=e23]:
+      - generic [ref=e24]: Laboratorio acreditado ISO 17025
+      - generic [ref=e25]:
+        - generic [ref=e26]:
+          - heading "Metrología Industrial con Trazabilidad CENAM" [level=1] [ref=e27]
+          - paragraph [ref=e28]: "La metrología es la ciencia de la medición. En la industria, una mala medición tiene costos reales: productos rechazados, auditorías fallidas, paros de producción."
+          - generic [ref=e29]:
+            - link "Consulta gratuita con un metrólogo" [ref=e30] [cursor=pointer]:
+              - /url: /contacto
+            - link "Ver servicios de calibración" [ref=e31] [cursor=pointer]:
+              - /url: /calibracion
+              - text: Ver servicios de calibración
+              - img [ref=e32]
+        - img "Laboratorio de metrología INyMET con equipos de análisis de señal certificados ISO 17025" [ref=e35]
+    - generic [ref=e37]:
+      - generic [ref=e38]:
+        - heading "Fundamentos de la Metrología Industrial" [level=2] [ref=e39]
+        - paragraph [ref=e40]: Antes de calibrar, es importante entender qué garantiza que una calibración realmente sea válida.
+      - generic [ref=e41]:
+        - generic [ref=e42]:
+          - img [ref=e44]
+          - heading "Trazabilidad Metrológica" [level=3] [ref=e48]
+          - paragraph [ref=e49]: Cada medición está vinculada al Sistema Internacional de Unidades (SI) a través de una cadena ininterrumpida de calibraciones. Nuestros patrones están trazados al CENAM (Centro Nacional de Metrología de México).
+        - generic [ref=e50]:
+          - img [ref=e52]
+          - heading "Incertidumbre de Medición" [level=3] [ref=e55]
+          - paragraph [ref=e56]: Todo certificado de calibración incluye el cálculo de incertidumbre de medición conforme a la Guía GUM (Guide to the Expression of Uncertainty in Measurement), requisito clave para auditorías ISO.
+        - generic [ref=e57]:
+          - img [ref=e59]
+          - heading "Patrones de Referencia" [level=3] [ref=e61]
+          - paragraph [ref=e62]: Trabajamos con patrones primarios y secundarios calibrados directamente contra el CENAM, garantizando la máxima confiabilidad de cada certificado que emitimos.
+    - generic [ref=e64]:
+      - heading "¿Por qué la trazabilidad metrológica importa en tu empresa?" [level=2] [ref=e65]
+      - generic [ref=e66]:
+        - generic [ref=e67]:
+          - img [ref=e68]
+          - heading "Validez legal y normativa" [level=3] [ref=e71]
+          - paragraph [ref=e72]: Un certificado con trazabilidad CENAM es el único que tiene validez ante organismos de acreditación como EMA y ante auditorías de clientes internacionales.
+        - generic [ref=e73]:
+          - img [ref=e74]
+          - heading "Decisiones de producción confiables" [level=3] [ref=e77]
+          - paragraph [ref=e78]: Cuando tus instrumentos tienen trazabilidad, las decisiones de aceptar o rechazar producto se basan en mediciones confiables — reduciendo costos de no calidad.
+        - generic [ref=e79]:
+          - img [ref=e80]
+          - heading "Cumplimiento normativo garantizado" [level=3] [ref=e83]
+          - paragraph [ref=e84]: ISO 9001, IATF 16949, ISO 13485, GMP y BRC exigen trazabilidad metrológica. Sin ella, la no conformidad es inevitable.
+    - generic [ref=e87]:
+      - generic [ref=e88]:
+        - heading "Servicios de Metrología y Consultoría" [level=2] [ref=e89]
+        - paragraph [ref=e90]: Además de calibración, ofrecemos servicios de consultoría metrológica para ayudarte a construir un sistema de medición robusto que soporte tus certificaciones y auditorías.
+        - list [ref=e91]:
+          - listitem [ref=e92]:
+            - img [ref=e93]
+            - text: Gestión de sistemas de calibración
+          - listitem [ref=e96]:
+            - img [ref=e97]
+            - text: Asesoría en selección de instrumentos de medición
+          - listitem [ref=e100]:
+            - img [ref=e101]
+            - text: Diseño de programas de calibración preventiva
+          - listitem [ref=e104]:
+            - img [ref=e105]
+            - text: Evaluación de la conformidad de instrumentos
+          - listitem [ref=e108]:
+            - img [ref=e109]
+            - text: Capacitación en metrología industrial
+          - listitem [ref=e112]:
+            - img [ref=e113]
+            - text: Análisis de sistemas de medición (MSA)
+          - listitem [ref=e116]:
+            - img [ref=e117]
+            - text: Revisión de certificados de calibración
+          - listitem [ref=e120]:
+            - img [ref=e121]
+            - text: Consultoría para acreditación de laboratorios internos
+      - generic [ref=e124]:
+        - heading "¿Tienes dudas sobre metrología?" [level=3] [ref=e125]
+        - paragraph [ref=e126]: Nuestros metrólogos certificados pueden revisar tu sistema de calibración actual y decirte exactamente qué necesitas para superar tu próxima auditoría.
+        - list [ref=e127]:
+          - listitem [ref=e128]:
+            - img [ref=e129]
+            - text: Diagnóstico sin costo
+          - listitem [ref=e132]:
+            - img [ref=e133]
+            - text: Respuesta en menos de 24 horas
+          - listitem [ref=e136]:
+            - img [ref=e137]
+            - text: Especialista asignado a tu industria
+        - link "Hablar con un metrólogo" [ref=e140] [cursor=pointer]:
+          - /url: /contacto
+  - contentinfo [ref=e141]:
+    - generic [ref=e142]:
+      - generic [ref=e143]:
+        - generic [ref=e144]:
+          - link "INyMET" [ref=e145] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=e146]: Laboratorio de metrología y calibración certificado ISO 17025. Reducimos riesgos en auditorías ISO con tiempos de respuesta líderes en México.
+          - generic [ref=e147]:
+            - link "+52 (XX) XXXX-XXXX" [ref=e148] [cursor=pointer]:
+              - /url: tel:+52XXXXXXXXXX
+              - img [ref=e149]
+              - text: +52 (XX) XXXX-XXXX
+            - link "contacto@inymet.com" [ref=e151] [cursor=pointer]:
+              - /url: mailto:contacto@inymet.com
+              - img [ref=e152]
+              - text: contacto@inymet.com
+            - paragraph [ref=e155]:
+              - img [ref=e156]
+              - text: México
+        - generic [ref=e159]:
+          - heading "Servicios" [level=3] [ref=e160]
+          - list [ref=e161]:
+            - listitem [ref=e162]:
+              - link "Calibración de temperatura" [ref=e163] [cursor=pointer]:
+                - /url: /calibracion#temperatura
+            - listitem [ref=e164]:
+              - link "Calibración de presión" [ref=e165] [cursor=pointer]:
+                - /url: /calibracion#presion
+            - listitem [ref=e166]:
+              - link "Calibración de multímetros" [ref=e167] [cursor=pointer]:
+                - /url: /calibracion#electricos
+            - listitem [ref=e168]:
+              - link "Metrología dimensional" [ref=e169] [cursor=pointer]:
+                - /url: /metrologia
+        - generic [ref=e170]:
+          - heading "Industrias" [level=3] [ref=e171]
+          - list [ref=e172]:
+            - listitem [ref=e173]:
+              - link "Automotriz" [ref=e174] [cursor=pointer]:
+                - /url: /industrias/automotriz
+            - listitem [ref=e175]:
+              - link "Farmacéutica" [ref=e176] [cursor=pointer]:
+                - /url: /industrias/farmaceutica
+            - listitem [ref=e177]:
+              - link "Alimentos" [ref=e178] [cursor=pointer]:
+                - /url: /industrias/alimentos
+        - generic [ref=e179]:
+          - heading "Recursos" [level=3] [ref=e180]
+          - list [ref=e181]:
+            - listitem [ref=e182]:
+              - link "Blog" [ref=e183] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e184]:
+              - link "Casos de éxito" [ref=e185] [cursor=pointer]:
+                - /url: /casos-de-exito
+            - listitem [ref=e186]:
+              - link "Recursos y guías" [ref=e187] [cursor=pointer]:
+                - /url: /recursos
+            - listitem [ref=e188]:
+              - link "Solicitar cotización" [ref=e189] [cursor=pointer]:
+                - /url: /contacto
+          - link "Cotizar en 24h" [ref=e191] [cursor=pointer]:
+            - /url: /contacto
+      - generic [ref=e192]:
+        - paragraph [ref=e193]: © 2026 INyMET. Todos los derechos reservados.
+        - generic [ref=e194]:
+          - link "Aviso de Privacidad" [ref=e195] [cursor=pointer]:
+            - /url: /aviso-privacidad
+          - link "Términos de Uso" [ref=e196] [cursor=pointer]:
+            - /url: /terminos

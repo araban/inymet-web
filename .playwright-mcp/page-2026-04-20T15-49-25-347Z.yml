@@ -1,0 +1,186 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "INyMET Metrología & Calibración" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e6]: INyMET
+        - generic [ref=e7]: Metrología & Calibración
+      - navigation [ref=e8]:
+        - link "Calibración" [ref=e9] [cursor=pointer]:
+          - /url: /calibracion
+        - link "Metrología" [ref=e10] [cursor=pointer]:
+          - /url: /metrologia
+        - link "Industrias" [ref=e11] [cursor=pointer]:
+          - /url: /industrias
+        - link "Blog" [ref=e12] [cursor=pointer]:
+          - /url: /blog
+        - link "Casos de Éxito" [ref=e13] [cursor=pointer]:
+          - /url: /casos-de-exito
+        - link "Recursos" [ref=e14] [cursor=pointer]:
+          - /url: /recursos
+      - generic [ref=e15]:
+        - link "+52 (XX) XXXX-XXXX" [ref=e16] [cursor=pointer]:
+          - /url: tel:+52XXXXXXXXXX
+          - img [ref=e17]
+          - generic [ref=e19]: +52 (XX) XXXX-XXXX
+        - link "Cotizar en 24h" [ref=e20] [cursor=pointer]:
+          - /url: /contacto
+  - main [ref=e21]:
+    - generic [ref=e23]:
+      - generic [ref=e24]:
+        - heading "Blog de Metrología Industrial" [level=1] [ref=e25]
+        - paragraph [ref=e26]: Recursos prácticos para gerentes de calidad, responsables de metrología y directores de operaciones en México.
+      - link "Destacado Auditorías ISO 5 Errores en Auditorías ISO por Mala Calibración (y Cómo Evitarlos) Las no conformidades por calibración son más comunes de lo que crees. Descubre los 5 errores más frecuentes que afectan a empresas en sus auditorías ISO. 14 de abril de 2026 8 min de lectura" [ref=e27] [cursor=pointer]:
+        - /url: /blog/errores-auditoria-iso-mala-calibracion
+        - generic [ref=e28]:
+          - generic [ref=e29]:
+            - generic [ref=e30]: Destacado
+            - generic [ref=e31]: Auditorías ISO
+          - heading "5 Errores en Auditorías ISO por Mala Calibración (y Cómo Evitarlos)" [level=2] [ref=e32]
+          - paragraph [ref=e33]: Las no conformidades por calibración son más comunes de lo que crees. Descubre los 5 errores más frecuentes que afectan a empresas en sus auditorías ISO.
+          - generic [ref=e34]:
+            - generic [ref=e35]:
+              - img [ref=e36]
+              - text: 14 de abril de 2026
+            - generic [ref=e38]:
+              - img [ref=e39]
+              - text: 8 min de lectura
+      - generic [ref=e42]:
+        - link [ref=e43] [cursor=pointer]:
+          - /url: /blog/cada-cuanto-calibrar-equipos-industriales
+          - article [ref=e44]:
+            - generic [ref=e46]: Gestión de Calibración
+            - heading "¿Cada Cuánto Se Deben Calibrar los Equipos Industriales?" [level=2] [ref=e47]
+            - paragraph [ref=e48]: La frecuencia de calibración no es opcional — es un requisito normativo. Aprende cómo definir el intervalo correcto para cada tipo de instrumento.
+            - generic [ref=e49]:
+              - generic [ref=e50]:
+                - generic [ref=e51]:
+                  - img [ref=e52]
+                  - text: 9 abr 2026
+                - generic [ref=e54]:
+                  - img [ref=e55]
+                  - text: 6 min
+              - generic [ref=e58]:
+                - text: Leer
+                - img [ref=e59]
+        - link [ref=e61] [cursor=pointer]:
+          - /url: /blog/costos-ocultos-no-calibrar
+          - article [ref=e62]:
+            - generic [ref=e64]: Análisis de Costos
+            - heading "Costos Ocultos de No Calibrar tus Instrumentos (Calculadora)" [level=2] [ref=e65]
+            - paragraph [ref=e66]: Un instrumento descalibrado no solo te genera una no conformidad — tiene un costo económico real que pocos gerentes calculan.
+            - generic [ref=e67]:
+              - generic [ref=e68]:
+                - generic [ref=e69]:
+                  - img [ref=e70]
+                  - text: 4 abr 2026
+                - generic [ref=e72]:
+                  - img [ref=e73]
+                  - text: 7 min
+              - generic [ref=e76]:
+                - text: Leer
+                - img [ref=e77]
+        - link [ref=e79] [cursor=pointer]:
+          - /url: /blog/como-preparar-auditoria-iso-17025
+          - article [ref=e80]:
+            - generic [ref=e82]: ISO 17025
+            - 'heading "Guía Completa: Cómo Preparar una Auditoría ISO 17025" [level=2] [ref=e83]'
+            - paragraph [ref=e84]: Paso a paso para preparar tu sistema de gestión de metrología antes de una auditoría de acreditación ISO 17025.
+            - generic [ref=e85]:
+              - generic [ref=e86]:
+                - generic [ref=e87]:
+                  - img [ref=e88]
+                  - text: 27 mar 2026
+                - generic [ref=e90]:
+                  - img [ref=e91]
+                  - text: 12 min
+              - generic [ref=e94]:
+                - text: Leer
+                - img [ref=e95]
+        - link [ref=e97] [cursor=pointer]:
+          - /url: /blog/fallas-comunes-medicion-industrial
+          - article [ref=e98]:
+            - generic [ref=e100]: Mejora Continua
+            - heading "Las 7 Fallas más Comunes en Sistemas de Medición Industrial" [level=2] [ref=e101]
+            - paragraph [ref=e102]: Analiza las fallas que más afectan la confiabilidad de tus mediciones y aprende a prevenir errores costosos en producción.
+            - generic [ref=e103]:
+              - generic [ref=e104]:
+                - generic [ref=e105]:
+                  - img [ref=e106]
+                  - text: 19 mar 2026
+                - generic [ref=e108]:
+                  - img [ref=e109]
+                  - text: 9 min
+              - generic [ref=e112]:
+                - text: Leer
+                - img [ref=e113]
+  - contentinfo [ref=e115]:
+    - generic [ref=e116]:
+      - generic [ref=e117]:
+        - generic [ref=e118]:
+          - link "INyMET" [ref=e119] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=e120]: Laboratorio de metrología y calibración certificado ISO 17025. Reducimos riesgos en auditorías ISO con tiempos de respuesta líderes en México.
+          - generic [ref=e121]:
+            - link "+52 (XX) XXXX-XXXX" [ref=e122] [cursor=pointer]:
+              - /url: tel:+52XXXXXXXXXX
+              - img [ref=e123]
+              - text: +52 (XX) XXXX-XXXX
+            - link "contacto@inymet.com" [ref=e125] [cursor=pointer]:
+              - /url: mailto:contacto@inymet.com
+              - img [ref=e126]
+              - text: contacto@inymet.com
+            - paragraph [ref=e129]:
+              - img [ref=e130]
+              - text: México
+        - generic [ref=e133]:
+          - heading "Servicios" [level=3] [ref=e134]
+          - list [ref=e135]:
+            - listitem [ref=e136]:
+              - link "Calibración de temperatura" [ref=e137] [cursor=pointer]:
+                - /url: /calibracion#temperatura
+            - listitem [ref=e138]:
+              - link "Calibración de presión" [ref=e139] [cursor=pointer]:
+                - /url: /calibracion#presion
+            - listitem [ref=e140]:
+              - link "Calibración de multímetros" [ref=e141] [cursor=pointer]:
+                - /url: /calibracion#electricos
+            - listitem [ref=e142]:
+              - link "Metrología dimensional" [ref=e143] [cursor=pointer]:
+                - /url: /metrologia
+        - generic [ref=e144]:
+          - heading "Industrias" [level=3] [ref=e145]
+          - list [ref=e146]:
+            - listitem [ref=e147]:
+              - link "Automotriz" [ref=e148] [cursor=pointer]:
+                - /url: /industrias/automotriz
+            - listitem [ref=e149]:
+              - link "Farmacéutica" [ref=e150] [cursor=pointer]:
+                - /url: /industrias/farmaceutica
+            - listitem [ref=e151]:
+              - link "Alimentos" [ref=e152] [cursor=pointer]:
+                - /url: /industrias/alimentos
+        - generic [ref=e153]:
+          - heading "Recursos" [level=3] [ref=e154]
+          - list [ref=e155]:
+            - listitem [ref=e156]:
+              - link "Blog" [ref=e157] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e158]:
+              - link "Casos de éxito" [ref=e159] [cursor=pointer]:
+                - /url: /casos-de-exito
+            - listitem [ref=e160]:
+              - link "Recursos y guías" [ref=e161] [cursor=pointer]:
+                - /url: /recursos
+            - listitem [ref=e162]:
+              - link "Solicitar cotización" [ref=e163] [cursor=pointer]:
+                - /url: /contacto
+          - link "Cotizar en 24h" [ref=e165] [cursor=pointer]:
+            - /url: /contacto
+      - generic [ref=e166]:
+        - paragraph [ref=e167]: © 2026 INyMET. Todos los derechos reservados.
+        - generic [ref=e168]:
+          - link "Aviso de Privacidad" [ref=e169] [cursor=pointer]:
+            - /url: /aviso-privacidad
+          - link "Términos de Uso" [ref=e170] [cursor=pointer]:
+            - /url: /terminos

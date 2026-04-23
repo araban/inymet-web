@@ -1,0 +1,323 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "INyMET Metrología & Calibración" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e6]: INyMET
+        - generic [ref=e7]: Metrología & Calibración
+      - navigation [ref=e8]:
+        - link "Calibración" [ref=e9] [cursor=pointer]:
+          - /url: /calibracion
+        - link "Metrología" [ref=e10] [cursor=pointer]:
+          - /url: /metrologia
+        - link "Industrias" [ref=e11] [cursor=pointer]:
+          - /url: /industrias
+        - link "Blog" [ref=e12] [cursor=pointer]:
+          - /url: /blog
+        - link "Casos de Éxito" [ref=e13] [cursor=pointer]:
+          - /url: /casos-de-exito
+        - link "Recursos" [ref=e14] [cursor=pointer]:
+          - /url: /recursos
+      - generic [ref=e15]:
+        - link "+52 (XX) XXXX-XXXX" [ref=e16] [cursor=pointer]:
+          - /url: tel:+52XXXXXXXXXX
+          - img [ref=e17]
+          - generic [ref=e19]: +52 (XX) XXXX-XXXX
+        - link "Cotizar en 24h" [ref=e20] [cursor=pointer]:
+          - /url: /contacto
+  - main [ref=e21]:
+    - generic [ref=e22]:
+      - generic [ref=e26]:
+        - generic [ref=e27]: Certificado ISO 17025 · México
+        - heading "Reducimos riesgos en auditorías ISO con calibración certificada" [level=1] [ref=e29]
+        - paragraph [ref=e30]: Respuesta en menos de 24h para industrias automotriz, farmacéutica y de alimentos. Protege tu operación y cumple con tus certificaciones.
+        - generic [ref=e31]:
+          - generic [ref=e32]:
+            - img [ref=e33]
+            - text: Certificado ISO 17025
+          - generic [ref=e36]:
+            - img [ref=e37]
+            - text: Respuesta en < 24 horas
+          - generic [ref=e40]:
+            - img [ref=e41]
+            - text: Atención nacional
+        - generic [ref=e44]:
+          - link "Cotizar en 24 horas" [ref=e45] [cursor=pointer]:
+            - /url: /contacto
+            - img [ref=e46]
+            - text: Cotizar en 24 horas
+            - img [ref=e49]
+          - link "Ver servicios" [ref=e51] [cursor=pointer]:
+            - /url: /calibracion
+      - img [ref=e53]
+    - generic [ref=e56]:
+      - generic [ref=e57]:
+        - generic [ref=e58]:
+          - img [ref=e60]
+          - generic [ref=e63]: ISO 17025
+          - generic [ref=e64]: Certificación acreditada
+        - generic [ref=e65]:
+          - img [ref=e67]
+          - generic [ref=e70]: < 24h
+          - generic [ref=e71]: Tiempo de respuesta
+        - generic [ref=e72]:
+          - img [ref=e74]
+          - generic [ref=e76]: 100%
+          - generic [ref=e77]: Trazabilidad garantizada
+        - generic [ref=e78]:
+          - img [ref=e80]
+          - generic [ref=e83]: 3 sectores
+          - generic [ref=e84]: Industrias especializadas
+      - generic [ref=e85]:
+        - paragraph [ref=e86]: Certificaciones y Acreditaciones
+        - generic [ref=e87]:
+          - generic [ref=e88]:
+            - generic [ref=e89]: ISO 17025
+            - generic [ref=e90]: Acreditación laboratorio
+          - generic [ref=e91]:
+            - generic [ref=e92]: ISO 9001
+            - generic [ref=e93]: Sistema de calidad
+          - generic [ref=e94]:
+            - generic [ref=e95]: NMX-EC-17025
+            - generic [ref=e96]: Norma mexicana
+          - generic [ref=e97]:
+            - generic [ref=e98]: CENAM
+            - generic [ref=e99]: Trazabilidad nacional
+    - generic [ref=e101]:
+      - generic [ref=e102]:
+        - heading "Servicios de Calibración Certificada" [level=2] [ref=e103]
+        - paragraph [ref=e104]: Certificados de calibración con trazabilidad al Sistema Internacional de Unidades (SI). Cumple con ISO 9001, ISO 17025, ISO/TS 16949 y más.
+      - generic [ref=e105]:
+        - generic [ref=e106]:
+          - img [ref=e108]
+          - heading "Calibración de Temperatura" [level=3] [ref=e110]
+          - paragraph [ref=e111]: "Termómetros, termocoplas, RTDs y sistemas de registro. Rango: -200°C a +1200°C."
+          - generic [ref=e112]:
+            - generic [ref=e113]: Termómetros
+            - generic [ref=e114]: RTD
+            - generic [ref=e115]: Termocoplas
+          - link "Ver detalles" [ref=e116] [cursor=pointer]:
+            - /url: /calibracion#temperatura
+            - text: Ver detalles
+            - img [ref=e117]
+        - generic [ref=e119]:
+          - img [ref=e121]
+          - heading "Calibración de Presión" [level=3] [ref=e124]
+          - paragraph [ref=e125]: Manómetros, transmisores y sensores de presión diferencial. Trazabilidad CENAM.
+          - generic [ref=e126]:
+            - generic [ref=e127]: Manómetros
+            - generic [ref=e128]: Transmisores
+            - generic [ref=e129]: Vacío
+          - link "Ver detalles" [ref=e130] [cursor=pointer]:
+            - /url: /calibracion#presion
+            - text: Ver detalles
+            - img [ref=e131]
+        - generic [ref=e133]:
+          - img [ref=e135]
+          - heading "Calibración Eléctrica" [level=3] [ref=e137]
+          - paragraph [ref=e138]: Multímetros, fuentes de voltaje, amperímetros y analizadores de red.
+          - generic [ref=e139]:
+            - generic [ref=e140]: Multímetros
+            - generic [ref=e141]: Voltaje
+            - generic [ref=e142]: Corriente
+          - link "Ver detalles" [ref=e143] [cursor=pointer]:
+            - /url: /calibracion#electricos
+            - text: Ver detalles
+            - img [ref=e144]
+        - generic [ref=e146]:
+          - img [ref=e148]
+          - heading "Metrología Dimensional" [level=3] [ref=e154]
+          - paragraph [ref=e155]: Calibradores, micrómetros, bloques patrón y sistemas de medición dimensional.
+          - generic [ref=e156]:
+            - generic [ref=e157]: Calibradores
+            - generic [ref=e158]: Micrómetros
+            - generic [ref=e159]: Patrones
+          - link "Ver detalles" [ref=e160] [cursor=pointer]:
+            - /url: /metrologia
+            - text: Ver detalles
+            - img [ref=e161]
+      - link "Solicitar cotización sin costo" [ref=e164] [cursor=pointer]:
+        - /url: /contacto
+    - generic [ref=e166]:
+      - generic [ref=e167]:
+        - heading "Especialistas en Tu Industria" [level=2] [ref=e168]
+        - paragraph [ref=e169]: Entendemos los requerimientos normativos específicos de cada sector. No somos un laboratorio genérico — somos tu aliado estratégico.
+      - generic [ref=e170]:
+        - generic [ref=e171]:
+          - generic [ref=e172]: 🚗
+          - heading "Automotriz" [level=3] [ref=e173]
+          - paragraph [ref=e174]: Cumplimiento IATF 16949. Calibración de equipos en línea de producción, control de calidad y laboratorios de prueba.
+          - list [ref=e175]:
+            - listitem [ref=e176]:
+              - generic [ref=e177]: "!"
+              - text: Riesgo de paro de línea por equipos descalibrados
+            - listitem [ref=e178]:
+              - generic [ref=e179]: "!"
+              - text: No conformidades en auditorías IATF
+            - listitem [ref=e180]:
+              - generic [ref=e181]: "!"
+              - text: Trazabilidad de mediciones en producción
+          - link "Soluciones para Automotriz" [ref=e182] [cursor=pointer]:
+            - /url: /industrias/automotriz
+            - text: Soluciones para Automotriz
+            - img [ref=e183]
+        - generic [ref=e185]:
+          - generic [ref=e186]: 💊
+          - heading "Farmacéutica" [level=3] [ref=e187]
+          - paragraph [ref=e188]: Cumplimiento NOM-059, FDA, GMP. Calibración de equipos críticos para fabricación y control de calidad.
+          - list [ref=e189]:
+            - listitem [ref=e190]:
+              - generic [ref=e191]: "!"
+              - text: Riesgo en auditorías FDA y COFEPRIS
+            - listitem [ref=e192]:
+              - generic [ref=e193]: "!"
+              - text: Validación de equipos críticos
+            - listitem [ref=e194]:
+              - generic [ref=e195]: "!"
+              - text: Registros de calibración auditables
+          - link "Soluciones para Farmacéutica" [ref=e196] [cursor=pointer]:
+            - /url: /industrias/farmaceutica
+            - text: Soluciones para Farmacéutica
+            - img [ref=e197]
+        - generic [ref=e199]:
+          - generic [ref=e200]: 🏭
+          - heading "Alimentos" [level=3] [ref=e201]
+          - paragraph [ref=e202]: Cumplimiento FSMA, BRC, SQF. Calibración de equipos de proceso, temperatura y peso en plantas de alimentos.
+          - list [ref=e203]:
+            - listitem [ref=e204]:
+              - generic [ref=e205]: "!"
+              - text: Cumplimiento HACCP y BRC
+            - listitem [ref=e206]:
+              - generic [ref=e207]: "!"
+              - text: Control de temperaturas críticas
+            - listitem [ref=e208]:
+              - generic [ref=e209]: "!"
+              - text: Auditorías de inocuidad alimentaria
+          - link "Soluciones para Alimentos" [ref=e210] [cursor=pointer]:
+            - /url: /industrias/alimentos
+            - text: Soluciones para Alimentos
+            - img [ref=e211]
+    - generic [ref=e214]:
+      - generic [ref=e215]:
+        - heading "Por qué eligen INyMET" [level=2] [ref=e216]
+        - paragraph [ref=e217]: No solo calibramos instrumentos — protegemos tu certificación y tu reputación.
+      - generic [ref=e218]:
+        - generic [ref=e219]:
+          - img [ref=e221]
+          - heading "Respuesta en < 24 horas" [level=3] [ref=e224]
+          - paragraph [ref=e225]: Cotización formal en menos de 24 horas hábiles. Sin burocracia, sin demoras innecesarias.
+        - generic [ref=e226]:
+          - img [ref=e228]
+          - heading "Certificados con trazabilidad" [level=3] [ref=e232]
+          - paragraph [ref=e233]: Cada certificado incluye trazabilidad al SI y cumple con los requerimientos de auditorías ISO.
+        - generic [ref=e234]:
+          - img [ref=e236]
+          - heading "Servicio en tu planta" [level=3] [ref=e239]
+          - paragraph [ref=e240]: Calibración en sitio para minimizar tiempos de paro. También recibimos equipos en nuestro laboratorio.
+        - generic [ref=e241]:
+          - img [ref=e243]
+          - heading "Especialistas por industria" [level=3] [ref=e248]
+          - paragraph [ref=e249]: "Nuestros metrólogos conocen los estándares específicos de tu sector: IATF, GMP, BRC."
+    - generic [ref=e251]:
+      - generic [ref=e252]:
+        - heading "Proceso Simple, Resultado Certificado" [level=2] [ref=e253]
+        - paragraph [ref=e254]: En 4 pasos tienes tus instrumentos calibrados y listos para auditoría.
+      - generic [ref=e255]:
+        - generic [ref=e258]:
+          - generic [ref=e259]: "01"
+          - heading "Solicita tu cotización" [level=3] [ref=e260]
+          - paragraph [ref=e261]: Completa el formulario con tus equipos y necesidades. Sin compromiso.
+        - generic [ref=e264]:
+          - generic [ref=e265]: "02"
+          - heading "Recibe propuesta en < 24h" [level=3] [ref=e266]
+          - paragraph [ref=e267]: Un especialista analiza tus requerimientos y te envía cotización formal.
+        - generic [ref=e270]:
+          - generic [ref=e271]: "03"
+          - heading "Calibración certificada" [level=3] [ref=e272]
+          - paragraph [ref=e273]: Realizamos la calibración en tu planta o en nuestro laboratorio.
+        - generic [ref=e275]:
+          - generic [ref=e276]: "04"
+          - heading "Certificado y trazabilidad" [level=3] [ref=e277]
+          - paragraph [ref=e278]: Recibes certificado oficial con trazabilidad para tus auditorías ISO.
+    - generic [ref=e281]:
+      - heading "¿Tienes una auditoría próxima?" [level=2] [ref=e282]
+      - paragraph [ref=e283]: No esperes a que una no conformidad paralice tu operación. Cotiza hoy y recibe tu propuesta en menos de 24 horas hábiles.
+      - generic [ref=e284]:
+        - link "Cotizar ahora — es gratis" [ref=e285] [cursor=pointer]:
+          - /url: /contacto
+          - text: Cotizar ahora — es gratis
+          - img [ref=e286]
+        - link "Llamar ahora" [ref=e288] [cursor=pointer]:
+          - /url: tel:+52XXXXXXXXXX
+          - img [ref=e289]
+          - text: Llamar ahora
+  - contentinfo [ref=e291]:
+    - generic [ref=e292]:
+      - generic [ref=e293]:
+        - generic [ref=e294]:
+          - link "INyMET" [ref=e295] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=e296]: Laboratorio de metrología y calibración certificado ISO 17025. Reducimos riesgos en auditorías ISO con tiempos de respuesta líderes en México.
+          - generic [ref=e297]:
+            - link "+52 (XX) XXXX-XXXX" [ref=e298] [cursor=pointer]:
+              - /url: tel:+52XXXXXXXXXX
+              - img [ref=e299]
+              - text: +52 (XX) XXXX-XXXX
+            - link "contacto@inymet.com" [ref=e301] [cursor=pointer]:
+              - /url: mailto:contacto@inymet.com
+              - img [ref=e302]
+              - text: contacto@inymet.com
+            - paragraph [ref=e305]:
+              - img [ref=e306]
+              - text: México
+        - generic [ref=e309]:
+          - heading "Servicios" [level=3] [ref=e310]
+          - list [ref=e311]:
+            - listitem [ref=e312]:
+              - link "Calibración de temperatura" [ref=e313] [cursor=pointer]:
+                - /url: /calibracion#temperatura
+            - listitem [ref=e314]:
+              - link "Calibración de presión" [ref=e315] [cursor=pointer]:
+                - /url: /calibracion#presion
+            - listitem [ref=e316]:
+              - link "Calibración de multímetros" [ref=e317] [cursor=pointer]:
+                - /url: /calibracion#electricos
+            - listitem [ref=e318]:
+              - link "Metrología dimensional" [ref=e319] [cursor=pointer]:
+                - /url: /metrologia
+        - generic [ref=e320]:
+          - heading "Industrias" [level=3] [ref=e321]
+          - list [ref=e322]:
+            - listitem [ref=e323]:
+              - link "Automotriz" [ref=e324] [cursor=pointer]:
+                - /url: /industrias/automotriz
+            - listitem [ref=e325]:
+              - link "Farmacéutica" [ref=e326] [cursor=pointer]:
+                - /url: /industrias/farmaceutica
+            - listitem [ref=e327]:
+              - link "Alimentos" [ref=e328] [cursor=pointer]:
+                - /url: /industrias/alimentos
+        - generic [ref=e329]:
+          - heading "Recursos" [level=3] [ref=e330]
+          - list [ref=e331]:
+            - listitem [ref=e332]:
+              - link "Blog" [ref=e333] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e334]:
+              - link "Casos de éxito" [ref=e335] [cursor=pointer]:
+                - /url: /casos-de-exito
+            - listitem [ref=e336]:
+              - link "Recursos y guías" [ref=e337] [cursor=pointer]:
+                - /url: /recursos
+            - listitem [ref=e338]:
+              - link "Solicitar cotización" [ref=e339] [cursor=pointer]:
+                - /url: /contacto
+          - link "Cotizar en 24h" [ref=e341] [cursor=pointer]:
+            - /url: /contacto
+      - generic [ref=e342]:
+        - paragraph [ref=e343]: © 2026 INyMET. Todos los derechos reservados.
+        - generic [ref=e344]:
+          - link "Aviso de Privacidad" [ref=e345] [cursor=pointer]:
+            - /url: /aviso-privacidad
+          - link "Términos de Uso" [ref=e346] [cursor=pointer]:
+            - /url: /terminos

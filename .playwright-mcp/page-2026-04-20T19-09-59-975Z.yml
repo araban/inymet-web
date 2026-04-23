@@ -1,0 +1,330 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "INyMET Metrología & Calibración" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e6]: INyMET
+        - generic [ref=e7]: Metrología & Calibración
+      - navigation [ref=e8]:
+        - link "Calibración" [ref=e9] [cursor=pointer]:
+          - /url: /calibracion
+        - link "Metrología" [ref=e10] [cursor=pointer]:
+          - /url: /metrologia
+        - link "Industrias" [ref=e11] [cursor=pointer]:
+          - /url: /industrias
+        - link "Blog" [ref=e12] [cursor=pointer]:
+          - /url: /blog
+        - link "Casos de Éxito" [ref=e13] [cursor=pointer]:
+          - /url: /casos-de-exito
+        - link "Recursos" [ref=e14] [cursor=pointer]:
+          - /url: /recursos
+      - generic [ref=e15]:
+        - link "+52 (55) 5754-3087" [ref=e16] [cursor=pointer]:
+          - /url: tel:+525557543087
+          - img [ref=e17]
+          - generic [ref=e19]: +52 (55) 5754-3087
+        - link "Acceso Clientes" [ref=e20] [cursor=pointer]:
+          - /url: https://inymet.com.mx/Clientes/
+        - link "Cotizar en 24h" [ref=e21] [cursor=pointer]:
+          - /url: /contacto
+  - main [ref=e22]:
+    - generic [ref=e24]:
+      - generic [ref=e25]:
+        - generic [ref=e26]:
+          - heading "Servicios de Calibración Certificada ISO 17025" [level=1] [ref=e27]
+          - paragraph [ref=e28]: Certificados con trazabilidad al Sistema Internacional de Unidades (SI) a través de CENAM. Aceptados en auditorías ISO 9001, IATF 16949, GMP, BRC y más.
+        - img "Técnico de INyMET realizando calibración certificada ISO 17025 de multímetros Fluke en laboratorio acreditado" [ref=e30]
+      - generic [ref=e31]:
+        - link "Temperatura" [ref=e32] [cursor=pointer]:
+          - /url: "#temperatura"
+        - link "Presión" [ref=e33] [cursor=pointer]:
+          - /url: "#presión"
+        - link "Eléctrica" [ref=e34] [cursor=pointer]:
+          - /url: "#eléctrica"
+        - link "Dimensional" [ref=e35] [cursor=pointer]:
+          - /url: "#dimensional"
+    - generic [ref=e37]:
+      - generic [ref=e39]:
+        - generic [ref=e40]:
+          - generic [ref=e41]: 🌡️
+          - heading "Calibración de Temperatura" [level=2] [ref=e42]
+          - paragraph [ref=e43]: Calibramos termómetros, termocoplas tipo J/K/T/E/R/S, RTDs (Pt100, Pt1000), termistores y sistemas de registro de temperatura.
+          - generic [ref=e44]: "📏 Rango: -200°C a +1,200°C"
+          - generic [ref=e45]:
+            - generic [ref=e46]: ISO 17025
+            - generic [ref=e47]: ASTM E220
+            - generic [ref=e48]: ITS-90
+          - link "Cotizar calibración de Temperatura" [ref=e49] [cursor=pointer]:
+            - /url: /contacto?servicio=temperatura
+            - text: Cotizar calibración de Temperatura
+            - img [ref=e50]
+        - generic [ref=e52]:
+          - heading "Instrumentos que calibramos" [level=3] [ref=e53]
+          - list [ref=e54]:
+            - listitem [ref=e55]:
+              - img [ref=e56]
+              - text: Termómetros de vidrio y digitales
+            - listitem [ref=e59]:
+              - img [ref=e60]
+              - text: Termocoplas industriales (tipo J, K, T, E, R, S)
+            - listitem [ref=e63]:
+              - img [ref=e64]
+              - text: RTDs — Pt100 y Pt1000
+            - listitem [ref=e67]:
+              - img [ref=e68]
+              - text: Termistores
+            - listitem [ref=e71]:
+              - img [ref=e72]
+              - text: Transmisores de temperatura
+            - listitem [ref=e75]:
+              - img [ref=e76]
+              - text: Data loggers y registradores
+            - listitem [ref=e79]:
+              - img [ref=e80]
+              - text: Hornos y estufas de laboratorio
+            - listitem [ref=e83]:
+              - img [ref=e84]
+              - text: Incubadoras y cámaras ambientales
+      - generic [ref=e88]:
+        - generic [ref=e89]:
+          - generic [ref=e90]: ⚙️
+          - heading "Calibración de Presión" [level=2] [ref=e91]
+          - paragraph [ref=e92]: Calibración de manómetros, vacuómetros, transmisores de presión diferencial y sensores de proceso con trazabilidad CENAM.
+          - generic [ref=e93]: "📏 Rango: Vacío a 700 bar"
+          - generic [ref=e94]:
+            - generic [ref=e95]: ISO 17025
+            - generic [ref=e96]: ASME B40.100
+            - generic [ref=e97]: EN 837
+          - link "Cotizar calibración de Presión" [ref=e98] [cursor=pointer]:
+            - /url: /contacto?servicio=presion
+            - text: Cotizar calibración de Presión
+            - img [ref=e99]
+        - generic [ref=e101]:
+          - heading "Instrumentos que calibramos" [level=3] [ref=e102]
+          - list [ref=e103]:
+            - listitem [ref=e104]:
+              - img [ref=e105]
+              - text: Manómetros Bourdon
+            - listitem [ref=e108]:
+              - img [ref=e109]
+              - text: Vacuómetros y compuesto-manómetros
+            - listitem [ref=e112]:
+              - img [ref=e113]
+              - text: Transmisores de presión diferencial
+            - listitem [ref=e116]:
+              - img [ref=e117]
+              - text: Sensores piezoresistivos
+            - listitem [ref=e120]:
+              - img [ref=e121]
+              - text: Reguladores de presión
+            - listitem [ref=e124]:
+              - img [ref=e125]
+              - text: Presostatos industriales
+            - listitem [ref=e128]:
+              - img [ref=e129]
+              - text: Calibradores de presión portátiles
+      - generic [ref=e133]:
+        - generic [ref=e134]:
+          - generic [ref=e135]: ⚡
+          - heading "Calibración Eléctrica" [level=2] [ref=e136]
+          - paragraph [ref=e137]: Calibración de multímetros, fuentes de voltaje, amperímetros, vatímetros y analizadores de red eléctrica.
+          - generic [ref=e138]: 📏 DC, AC hasta 1,000V / 20A
+          - generic [ref=e139]:
+            - generic [ref=e140]: ISO 17025
+            - generic [ref=e141]: IEC 61010
+            - generic [ref=e142]: ANSI/NCSL Z540
+          - link "Cotizar calibración de Eléctrica" [ref=e143] [cursor=pointer]:
+            - /url: /contacto?servicio=electricos
+            - text: Cotizar calibración de Eléctrica
+            - img [ref=e144]
+        - generic [ref=e146]:
+          - heading "Instrumentos que calibramos" [level=3] [ref=e147]
+          - list [ref=e148]:
+            - listitem [ref=e149]:
+              - img [ref=e150]
+              - text: Multímetros digitales y analógicos
+            - listitem [ref=e153]:
+              - img [ref=e154]
+              - text: Fuentes de voltaje y corriente DC
+            - listitem [ref=e157]:
+              - img [ref=e158]
+              - text: Osciloscopios
+            - listitem [ref=e161]:
+              - img [ref=e162]
+              - text: Pinzas amperimétricas
+            - listitem [ref=e165]:
+              - img [ref=e166]
+              - text: Vatímetros y analizadores de potencia
+            - listitem [ref=e169]:
+              - img [ref=e170]
+              - text: Puentes RLC e impedancímetros
+            - listitem [ref=e173]:
+              - img [ref=e174]
+              - text: Generadores de señal
+            - listitem [ref=e177]:
+              - img [ref=e178]
+              - text: Calibradores de proceso 4–20 mA
+      - generic [ref=e182]:
+        - generic [ref=e183]:
+          - generic [ref=e184]: 📐
+          - heading "Metrología Dimensional" [level=2] [ref=e185]
+          - paragraph [ref=e186]: "Calibración de instrumentos de medición dimensional: calibradores, micrómetros, bloques patrón y equipos de verificación."
+          - generic [ref=e187]: "📏 Rango: 0.001 mm a 1,000 mm"
+          - generic [ref=e188]:
+            - generic [ref=e189]: ISO 17025
+            - generic [ref=e190]: ISO 3650
+            - generic [ref=e191]: ASME B89
+          - link "Cotizar calibración de Dimensional" [ref=e192] [cursor=pointer]:
+            - /url: /contacto?servicio=dimensional
+            - text: Cotizar calibración de Dimensional
+            - img [ref=e193]
+        - generic [ref=e195]:
+          - heading "Instrumentos que calibramos" [level=3] [ref=e196]
+          - list [ref=e197]:
+            - listitem [ref=e198]:
+              - img [ref=e199]
+              - text: Calibradores vernier y digitales
+            - listitem [ref=e202]:
+              - img [ref=e203]
+              - text: Micrómetros exteriores e interiores
+            - listitem [ref=e206]:
+              - img [ref=e207]
+              - text: Bloques patrón (gauge blocks)
+            - listitem [ref=e210]:
+              - img [ref=e211]
+              - text: Comparadores de carátula y digitales
+            - listitem [ref=e214]:
+              - img [ref=e215]
+              - text: Altímetros de trazo
+            - listitem [ref=e218]:
+              - img [ref=e219]
+              - text: Goniómetros
+            - listitem [ref=e222]:
+              - img [ref=e223]
+              - text: Niveles de precisión
+            - listitem [ref=e226]:
+              - img [ref=e227]
+              - text: Cintas métricas industriales
+    - generic [ref=e231]:
+      - generic [ref=e232]:
+        - heading "Solicita tu cotización de calibración" [level=2] [ref=e233]
+        - paragraph [ref=e234]: Indica los equipos que necesitas calibrar y recibirás una propuesta formal en menos de 24 horas.
+      - generic [ref=e236]:
+        - generic [ref=e237]:
+          - generic [ref=e238]:
+            - generic [ref=e239]: Nombre completo *
+            - textbox "Juan García" [ref=e240]
+          - generic [ref=e241]:
+            - generic [ref=e242]: Empresa *
+            - textbox "Nombre de tu empresa" [ref=e243]
+        - generic [ref=e244]:
+          - generic [ref=e245]:
+            - generic [ref=e246]: Email *
+            - textbox "juan@empresa.com" [ref=e247]
+          - generic [ref=e248]:
+            - generic [ref=e249]: Teléfono *
+            - textbox "+52 (55) 1234-5678" [ref=e250]
+        - generic [ref=e251]:
+          - generic [ref=e252]:
+            - generic [ref=e253]: Industria *
+            - combobox [ref=e254]:
+              - option "Selecciona tu industria" [selected]
+              - option "Automotriz"
+              - option "Farmacéutica"
+              - option "Alimentos y Bebidas"
+              - option "Otro sector"
+          - generic [ref=e255]:
+            - generic [ref=e256]: Urgencia *
+            - combobox [ref=e257]:
+              - option "¿Cuándo necesitas el servicio?" [selected]
+              - option "Inmediato (auditoría próxima)"
+              - option "En 1–2 semanas"
+              - option "En el próximo mes"
+              - option "Planeación anual"
+        - generic [ref=e258]:
+          - generic [ref=e259]: Equipos a calibrar *
+          - 'textbox "Ej: 5 termómetros RTD, 3 manómetros de presión, 2 multímetros..." [ref=e260]'
+        - generic [ref=e261]:
+          - generic [ref=e262]: Comentarios adicionales
+          - textbox "Estándares requeridos, cantidad de equipos, ubicación, etc." [ref=e263]
+        - button "Solicitar cotización gratuita" [ref=e264] [cursor=pointer]
+        - paragraph [ref=e265]: Sin compromiso. Recibirás respuesta en menos de 24 horas hábiles.
+  - contentinfo [ref=e266]:
+    - generic [ref=e267]:
+      - generic [ref=e268]:
+        - generic [ref=e269]:
+          - link "INyMET" [ref=e270] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=e271]: Laboratorio de metrología y calibración certificado ISO 17025. Reducimos riesgos en auditorías ISO con tiempos de respuesta líderes en México.
+          - generic [ref=e272]:
+            - link "(55) 5754-3087" [ref=e273] [cursor=pointer]:
+              - /url: tel:+525557543087
+              - img [ref=e274]
+              - text: (55) 5754-3087
+            - link "ventas@inymet.com.mx" [ref=e276] [cursor=pointer]:
+              - /url: mailto:ventas@inymet.com.mx
+              - img [ref=e277]
+              - text: ventas@inymet.com.mx
+            - link "servicios@inymet.com.mx" [ref=e280] [cursor=pointer]:
+              - /url: mailto:servicios@inymet.com.mx
+              - img [ref=e281]
+              - text: servicios@inymet.com.mx
+            - paragraph [ref=e284]:
+              - img [ref=e285]
+              - text: Salvatierra 32, CDMX 07730
+        - generic [ref=e288]:
+          - heading "Servicios" [level=3] [ref=e289]
+          - list [ref=e290]:
+            - listitem [ref=e291]:
+              - link "Calibración de temperatura" [ref=e292] [cursor=pointer]:
+                - /url: /calibracion#temperatura
+            - listitem [ref=e293]:
+              - link "Calibración de presión" [ref=e294] [cursor=pointer]:
+                - /url: /calibracion#presion
+            - listitem [ref=e295]:
+              - link "Calibración de multímetros" [ref=e296] [cursor=pointer]:
+                - /url: /calibracion#electricos
+            - listitem [ref=e297]:
+              - link "Metrología dimensional" [ref=e298] [cursor=pointer]:
+                - /url: /metrologia
+        - generic [ref=e299]:
+          - heading "Industrias" [level=3] [ref=e300]
+          - list [ref=e301]:
+            - listitem [ref=e302]:
+              - link "Automotriz" [ref=e303] [cursor=pointer]:
+                - /url: /industrias/automotriz
+            - listitem [ref=e304]:
+              - link "Farmacéutica" [ref=e305] [cursor=pointer]:
+                - /url: /industrias/farmaceutica
+            - listitem [ref=e306]:
+              - link "Alimentos" [ref=e307] [cursor=pointer]:
+                - /url: /industrias/alimentos
+        - generic [ref=e308]:
+          - heading "Recursos" [level=3] [ref=e309]
+          - list [ref=e310]:
+            - listitem [ref=e311]:
+              - link "Blog" [ref=e312] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e313]:
+              - link "Casos de éxito" [ref=e314] [cursor=pointer]:
+                - /url: /casos-de-exito
+            - listitem [ref=e315]:
+              - link "Recursos y guías" [ref=e316] [cursor=pointer]:
+                - /url: /recursos
+            - listitem [ref=e317]:
+              - link "Solicitar cotización" [ref=e318] [cursor=pointer]:
+                - /url: /contacto
+            - listitem [ref=e319]:
+              - link "Quejas y Sugerencias" [ref=e320] [cursor=pointer]:
+                - /url: /contacto?asunto=queja
+          - link "Cotizar en 24h" [ref=e322] [cursor=pointer]:
+            - /url: /contacto
+      - generic [ref=e323]:
+        - paragraph [ref=e324]: © 2026 INyMET. Todos los derechos reservados.
+        - generic [ref=e325]:
+          - link "Aviso de Privacidad" [ref=e326] [cursor=pointer]:
+            - /url: /aviso-de-privacidad
+          - link "Términos de Uso" [ref=e327] [cursor=pointer]:
+            - /url: /terminos-de-uso
+          - link "Acceso Clientes" [ref=e328] [cursor=pointer]:
+            - /url: https://inymet.com.mx/Clientes/
