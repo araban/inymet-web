@@ -95,12 +95,12 @@ export default function RootLayout({
         <ChatWidget />
         */}
         <ThemePicker />
-        {/* HubSpot Chat — carga diferida para no bloquear LCP */}
+        {/* HubSpot Chat */}
         {hubspotPortalId && (
           <Script
             id="hs-chat"
             src={`//js.hs-scripts.com/${hubspotPortalId}.js`}
-            strategy="lazyOnload"
+            strategy="afterInteractive"
           />
         )}
       </body>
