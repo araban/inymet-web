@@ -21,6 +21,34 @@ function db(): Sql | null {
   return neon(url);
 }
 
+/**
+ * Reintenta la operación con backoff corto (400 ms, 1.2 s). Cubre el caso
+ * de Neon suspendido por inactividad: el primer intento puede fallar o
+ * tardar mientras la BD despierta; el segundo casi siempre entra.
+ */
+async function withRetry<T>(fn: () => Promise<T>, attempts = 3): Promise<T> {
+  let lastErr: unknown;
+  for (let i = 0; i < attempts; i++) {
+    try {
+      return await fn();
+    } catch (err) {
+      lastErr = err;
+      if (i < attempts - 1) {
+        await new Promise((r) => setTimeout(r, 400 * Math.pow(3, i)));
+      }
+    }
+  }
+  throw lastErr;
+}
+
+/**
+ * Cota de tiempo total: si la BD no responde, devolvemos fallback y el
+ * funnel (HubSpot/email) continúa — el respaldo nunca debe tirar al resto.
+ */
+function withTimeout<T>(p: Promise<T>, ms: number, fallback: T): Promise<T> {
+  return Promise.race([p, new Promise<T>((r) => setTimeout(() => r(fallback), ms))]);
+}
+
 async function ensureTables(sql: Sql): Promise<void> {
   if (ensured) return;
   await sql`
@@ -69,13 +97,19 @@ export async function saveLeadBackup(lead: LeadBackupInput): Promise<number | nu
     return null;
   }
   try {
-    await ensureTables(sql);
-    const rows = (await sql`
-      INSERT INTO leads_backup (email, name, company, phone, quote_type, payload)
-      VALUES (${lead.email}, ${lead.name}, ${lead.company}, ${lead.phone},
-              ${lead.quoteType ?? "calibracion"}, ${JSON.stringify(lead)}::jsonb)
-      RETURNING id`) as { id: number }[];
-    return rows[0]?.id ?? null;
+    return await withTimeout(
+      withRetry(async () => {
+        await ensureTables(sql);
+        const rows = (await sql`
+          INSERT INTO leads_backup (email, name, company, phone, quote_type, payload)
+          VALUES (${lead.email}, ${lead.name}, ${lead.company}, ${lead.phone},
+                  ${lead.quoteType ?? "calibracion"}, ${JSON.stringify(lead)}::jsonb)
+          RETURNING id`) as { id: number }[];
+        return rows[0]?.id ?? null;
+      }),
+      8000, // cota total: con Neon despertando de suspensión sobra; si no, seguimos sin bloquear
+      null
+    );
   } catch (err) {
     console.error("[LEAD-BACKUP] Error al persistir:", err);
     return null;
@@ -92,7 +126,15 @@ export async function markLeadDelivery(
   const sql = db();
   if (!sql) return;
   try {
-    await sql`UPDATE leads_backup SET hubspot_ok = ${hubspotOk}, email_ok = ${emailOk} WHERE id = ${id}`;
+    await withTimeout(
+      withRetry(
+        async () =>
+          sql`UPDATE leads_backup SET hubspot_ok = ${hubspotOk}, email_ok = ${emailOk} WHERE id = ${id}`,
+        2 // el insert ya despertó la BD; con 2 intentos basta
+      ),
+      4000,
+      undefined
+    );
   } catch (err) {
     console.error("[LEAD-BACKUP] Error al marcar entrega:", err);
   }
@@ -112,11 +154,17 @@ export async function saveChatLog(entry: {
   const sql = db();
   if (!sql) return;
   try {
-    await ensureTables(sql);
-    await sql`
-      INSERT INTO chat_logs (session_id, user_message, assistant_reply, full_history)
-      VALUES (${entry.sessionId ?? null}, ${entry.userMessage}, ${entry.assistantReply},
-              ${JSON.stringify(entry.history ?? null)}::jsonb)`;
+    await withTimeout(
+      withRetry(async () => {
+        await ensureTables(sql);
+        await sql`
+          INSERT INTO chat_logs (session_id, user_message, assistant_reply, full_history)
+          VALUES (${entry.sessionId ?? null}, ${entry.userMessage}, ${entry.assistantReply},
+                  ${JSON.stringify(entry.history ?? null)}::jsonb)`;
+      }, 2),
+      5000,
+      undefined
+    );
   } catch (err) {
     console.error("[CHAT-LOG] Error al persistir:", err);
   }
