@@ -48,7 +48,7 @@ const LABS: LabDef[] = [
     startAngle: 0,
     size: 48,
     desc: "Multímetros · Fuentes · Osciloscopios · Analizadores",
-    href: "/calibracion",
+    href: "/calibracion#electricos",
   },
   {
     id: "temperatura",
@@ -61,7 +61,7 @@ const LABS: LabDef[] = [
     startAngle: 180,
     size: 48,
     desc: "Termómetros · Termopares · PT100 · Data loggers",
-    href: "/calibracion",
+    href: "/calibracion#temperatura",
   },
   // Ring 2 — r=130 (3 planets)
   {
@@ -75,7 +75,7 @@ const LABS: LabDef[] = [
     startAngle: 30,
     size: 44,
     desc: "Manómetros · Transmisores · Vacuómetros · Presostatos",
-    href: "/calibracion",
+    href: "/calibracion#presion",
   },
   {
     id: "dimensional",
@@ -88,7 +88,7 @@ const LABS: LabDef[] = [
     startAngle: 150,
     size: 44,
     desc: "Calibradores · Micrómetros · Altímetros · Bloques patrón",
-    href: "/calibracion",
+    href: "/calibracion#dimensional",
   },
   {
     id: "humedad",
@@ -101,7 +101,7 @@ const LABS: LabDef[] = [
     startAngle: 270,
     size: 44,
     desc: "Higrómetros · Transmisores · Data loggers",
-    href: "/calibracion",
+    href: "/calibracion#humedad",
   },
   // Ring 3 — r=180 (3 planets)
   {
@@ -115,7 +115,7 @@ const LABS: LabDef[] = [
     startAngle: 60,
     size: 40,
     desc: "Torquímetros de palanca · Llaves de torque",
-    href: "/calibracion",
+    href: "/calibracion#par-torsional",
   },
   {
     id: "frecuencia",
@@ -128,7 +128,7 @@ const LABS: LabDef[] = [
     startAngle: 180,
     size: 40,
     desc: "Cronómetros · Frecuencímetros",
-    href: "/calibracion",
+    href: "/calibracion#frecuencia-tiempo",
   },
   {
     id: "vibraciones",
@@ -141,7 +141,7 @@ const LABS: LabDef[] = [
     startAngle: 300,
     size: 40,
     desc: "Vibrómetros · Acelerómetros · Analizadores",
-    href: "/calibracion",
+    href: "/calibracion#vibraciones",
   },
   // Ring 4 — r=228 (3 planets)
   {
@@ -155,7 +155,7 @@ const LABS: LabDef[] = [
     startAngle: 45,
     size: 38,
     desc: "Pipetas · Buretas · Matraces · Dispensadores",
-    href: "/calibracion",
+    href: "/calibracion#volumen",
   },
   {
     id: "caudal-liq",
@@ -168,7 +168,7 @@ const LABS: LabDef[] = [
     startAngle: 165,
     size: 38,
     desc: "Medidores de flujo másico · Rotámetros",
-    href: "/calibracion",
+    href: "/calibracion#caudal-liquidos",
   },
   {
     id: "caudal-gas",
@@ -181,7 +181,7 @@ const LABS: LabDef[] = [
     startAngle: 285,
     size: 38,
     desc: "Flujómetros · Controladores de flujo másico",
-    href: "/calibracion",
+    href: "/calibracion#caudal-gases",
   },
 ];
 

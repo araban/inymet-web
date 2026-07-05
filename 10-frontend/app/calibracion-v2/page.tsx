@@ -1,31 +1,29 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowLeft, Atom } from "lucide-react";
-import { SolarSystem } from "@/components/sections/SolarSystem";
+import Image from "next/image";
+import QuoteForm from "@/components/forms/QuoteForm";
+import { CheckCircle, Clock, Award } from "lucide-react";
+import {
+  CalibracionLabsSection,
+  calibracionLabs,
+} from "@/components/sections/CalibracionLabs";
 
 export const metadata: Metadata = {
-  title: "Sistema Solar Metrológico — Concepto Visual | INyMET",
+  title: "Calibración de Instrumentos (versión anterior) | INyMET",
   description:
-    "Vista previa interactiva de los 11 laboratorios de calibración de INyMET. Haz hover sobre cada esfera para explorar el alcance de acreditación.",
+    "Versión anterior de la página de servicios de calibración de INyMET. Consulta la versión actual en /calibracion.",
   robots: { index: false, follow: false },
+  alternates: {
+    canonical: "https://inymet.com.mx/calibracion",
+  },
 };
 
-// ─── Stats strip ─────────────────────────────────────────────────────────────
-const STATS = [
-  { value: "11", label: "Laboratorios acreditados" },
-  { value: "+189", label: "Empresas certificadas" },
-  { value: "<9h", label: "Entrega del certificado" },
-  { value: "IAS CL-101", label: "Acreditación oficial" },
-] as const;
-
-// ─── Page ────────────────────────────────────────────────────────────────────
 export default function CalibracionV2Page() {
   return (
     <>
-      {/* ── Preview banner ─────────────────────────────────────────── */}
+      {/* ── Aviso versión anterior ─────────────────────────────────── */}
       <div className="bg-accent-600 text-white text-center py-2 px-4 text-xs font-semibold tracking-wide">
-        VISTA PREVIA EXPERIMENTAL — Concepto visual · Esta ruta no está en
-        producción &nbsp;·&nbsp;
+        VERSIÓN ANTERIOR — Esta página fue reemplazada &nbsp;·&nbsp;
         <Link
           href="/calibracion"
           className="underline underline-offset-2 hover:no-underline"
@@ -34,135 +32,83 @@ export default function CalibracionV2Page() {
         </Link>
       </div>
 
-      {/* ── Dark hero ──────────────────────────────────────────────── */}
-      <section className="relative bg-[#060d1f] pt-20 pb-4 overflow-hidden">
-        {/* Grid overlay */}
-        <div
-          className="absolute inset-0 pointer-events-none opacity-[0.035]"
-          style={{
-            backgroundImage:
-              "linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px)",
-            backgroundSize: "60px 60px",
-          }}
-        />
-        {/* Ambient glows */}
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-brand-600/15 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute top-0 right-1/4 w-64 h-64 bg-accent-500/8 rounded-full blur-3xl pointer-events-none" />
+      {/* Hero */}
+      <section className="relative bg-[#060d1f] text-white py-20 lg:py-28 overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/instrumentos-calibracion.jpg"
+            alt="Instrumentos de calibración certificada ISO 17025 en laboratorio INyMET"
+            fill
+            className="object-cover object-center opacity-15"
+            priority
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#060d1f] via-[#060d1f]/90 to-transparent" />
+        </div>
 
-        <div className="relative max-w-4xl mx-auto px-6 text-center">
-          {/* Back link */}
-          <Link
-            href="/calibracion"
-            className="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-white transition-colors mb-10 group"
-          >
-            <ArrowLeft className="w-4 h-4 group-hover:-translate-x-0.5 transition-transform" />
-            Volver a Calibración
-          </Link>
-
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-accent-500/10 border border-accent-500/25 text-accent-400 text-xs font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full mb-6">
-            <Atom className="w-3.5 h-3.5" />
-            Concepto Visual Interactivo
+        <div className="relative container-custom max-w-5xl">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent-500/15 border border-accent-500/30 mb-6">
+            <Award className="w-3.5 h-3.5 text-accent-400" />
+            <span className="text-xs font-semibold text-accent-300">ISO 17025 · IAS CL-101 · Trazabilidad CENAM</span>
           </div>
-
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.08] mb-5">
-            El Sistema Solar
-            <br />
-            <span className="bg-gradient-to-r from-brand-400 to-accent-400 bg-clip-text text-transparent">
-              Metrológico
+          <h1 className="text-3xl lg:text-5xl font-black mb-5 leading-tight max-w-2xl">
+            Servicios de Calibración{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-400 to-accent-300">
+              Certificada ISO 17025
             </span>
           </h1>
-
-          <p className="text-lg text-gray-300 max-w-xl mx-auto mb-3">
-            11 laboratorios acreditados en órbita constante.
+          <p className="text-lg text-slate-400 mb-6 max-w-xl">
+            11 laboratorios acreditados. Certificados con trazabilidad CENAM aceptados en auditorías
+            ISO 9001, IATF 16949, GMP, BRC y FDA. Respuesta en menos de 24 horas.
           </p>
-          <p className="text-sm text-gray-500">
-            Haz hover sobre cualquier esfera para explorar · Clic para ir al
-            laboratorio
-          </p>
-        </div>
-      </section>
 
-      {/* ── Solar System ───────────────────────────────────────────── */}
-      <section className="bg-[#060d1f]">
-        <SolarSystem />
-      </section>
-
-      {/* ── Stats strip ────────────────────────────────────────────── */}
-      <section className="bg-[#060d1f] border-t border-white/5 py-14">
-        <div className="max-w-4xl mx-auto px-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {STATS.map((stat) => (
-              <div key={stat.label}>
-                <div className="text-3xl font-black text-white mb-1.5">
-                  {stat.value}
-                </div>
-                <div className="text-xs text-gray-500 uppercase tracking-widest">
-                  {stat.label}
-                </div>
+          {/* Quick stats */}
+          <div className="flex flex-wrap gap-4 mb-8">
+            {[
+              { icon: Clock, text: "Certificados en < 24h" },
+              { icon: CheckCircle, text: "11 laboratorios acreditados" },
+              { icon: Award, text: "ISO 17025 · CENAM" },
+            ].map(({ icon: Icon, text }) => (
+              <div key={text} className="flex items-center gap-2 text-sm text-slate-300">
+                <Icon className="w-4 h-4 text-accent-400" />
+                {text}
               </div>
+            ))}
+          </div>
+
+          {/* Lab navigation */}
+          <div className="flex flex-wrap gap-2">
+            {calibracionLabs.map((s) => (
+              <a
+                key={s.id}
+                href={`#${s.id}`}
+                className="bg-white/8 hover:bg-white/15 border border-white/15 rounded-full px-4 py-1.5 text-xs font-medium transition-colors flex items-center gap-1.5"
+              >
+                <span>{s.icon}</span>
+                {s.title.replace("Calibración de ", "").replace("Calibración ", "").replace("Metrología ", "")}
+              </a>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ── Explainer — why this design ───────────────────────────── */}
-      <section className="bg-gray-950/60 border-t border-white/5 py-14">
-        <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-xl font-bold text-white mb-6 text-center">
-            Por qué este diseño
-          </h2>
-          <div className="grid sm:grid-cols-3 gap-6 text-sm text-gray-400">
-            <div>
-              <div className="text-white font-semibold mb-1.5">Amplitud de alcance</div>
-              <p>
-                Ver los 11 laboratorios simultáneamente comunica la capacidad
-                total de INyMET de un solo vistazo, algo imposible con una
-                lista de texto.
-              </p>
-            </div>
-            <div>
-              <div className="text-white font-semibold mb-1.5">Diferenciación radical</div>
-              <p>
-                Ningún competidor en metrología industrial en México tiene algo
-                comparable. Posiciona a INyMET como líder de vanguardia sin
-                decirlo explícitamente.
-              </p>
-            </div>
-            <div>
-              <div className="text-white font-semibold mb-1.5">Exploración activa</div>
-              <p>
-                El usuario interactúa, no solo lee. Eso reduce la tasa de
-                rebote y aumenta el tiempo en página antes de decidir qué
-                laboratorio necesita.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Services detail */}
+      <CalibracionLabsSection />
 
-      {/* ── CTA ────────────────────────────────────────────────────── */}
-      <section className="bg-[#060d1f] border-t border-white/5 py-16 text-center">
-        <div className="max-w-2xl mx-auto px-6">
-          <h2 className="text-2xl font-bold text-white mb-3">
-            ¿Listo para proteger su certificación?
-          </h2>
-          <p className="text-gray-400 text-sm mb-8">
-            Cotización sin costo en menos de 24 horas. Sin letra chica.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/contacto"
-              className="bg-accent-500 hover:bg-accent-600 text-white px-8 py-4 rounded-xl font-semibold transition-colors"
-            >
-              Solicitar cotización
-            </Link>
-            <Link
-              href="/calibracion"
-              className="border border-white/20 text-white hover:bg-white/5 px-8 py-4 rounded-xl font-semibold transition-colors"
-            >
-              Ver página de Calibración actual
-            </Link>
+      {/* CTA + Form */}
+      <section className="section-padding bg-gray-50 border-t border-gray-100">
+        <div className="container-custom max-w-2xl">
+          <div className="text-center mb-8">
+            <span className="section-label">Cotización gratuita</span>
+            <h2 className="section-title mb-3">
+              ¿Qué instrumentos necesitas calibrar?
+            </h2>
+            <p className="text-gray-500">
+              Completa el formulario y recibirás una propuesta formal con precios y tiempos de entrega en menos de 24 horas.
+            </p>
+          </div>
+          <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+            <QuoteForm />
           </div>
         </div>
       </section>

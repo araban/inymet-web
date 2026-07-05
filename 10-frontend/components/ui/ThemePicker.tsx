@@ -21,9 +21,9 @@ const themes: {
   {
     id: "clasico",
     name: "Clásico INyMET",
-    desc: "Azul institucional + naranja (sitio actual)",
+    desc: "Tonos azules del sitio actual",
     brand: "#127AB8",
-    accent: "#F3A22C",
+    accent: "#43BEEB",
   },
   {
     id: "marina",

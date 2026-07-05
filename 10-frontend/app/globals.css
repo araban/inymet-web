@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ─── Theme 0: Clásico INyMET — Azul institucional + Naranja (default) ───── */
-/* Colores muestreados del sitio actual inymet.com.mx:
-   navbar #127AB8 · tabs #0077B6 / #43BEEB · botón Cotización #F3A22C */
+/* ─── Theme 0: Clásico INyMET — Tonos azules del sitio actual (default) ──── */
+/* Colores muestreados de inymet.com.mx:
+   navbar #127AB8 · tab oscuro #0077B6 · tab claro #43BEEB */
 :root,
 [data-theme="clasico"] {
   --brand-50:  239 248 253;
@@ -18,16 +18,16 @@
   --brand-800:   4  58  89;
   --brand-900:   5  40  61;
 
-  --accent-50:  255 248 236;
-  --accent-100: 254 236 205;
-  --accent-200: 252 217 156;
-  --accent-300: 249 196 108;
-  --accent-400: 246 179  74;
-  --accent-500: 243 162  44;
-  --accent-600: 219 135  18;
-  --accent-700: 182 108  12;
-  --accent-800: 146  85  13;
-  --accent-900: 120  68  12;
+  --accent-50:  240 250 254;
+  --accent-100: 214 240 251;
+  --accent-200: 173 226 247;
+  --accent-300: 118 207 240;
+  --accent-400:  67 190 235;
+  --accent-500:  26 160 215;
+  --accent-600:  14 128 178;
+  --accent-700:  11 100 141;
+  --accent-800:   9  75 106;
+  --accent-900:   7  53  75;
 }
 
 /* ─── Theme 1: Marina — Navy + Emerald ───────────────────────────────────── */
