@@ -1,6 +1,13 @@
 # INyMET — Pendientes para Producción
-**Actualizado:** 2026-04-21  
-**Estado del redesign:** v3.4 — Sistema Solar Metrológico (preview `/calibracion-v2`) + v3.3 completo (Emma + SocialSidebar + WhatsApp integrado). TypeScript limpio (0 errores)
+**Actualizado:** 2026-07-05  
+**Estado del redesign:** v3.5 — Tema "Clásico INyMET" default (colores del sitio actual) + cotización dual (calibración / venta de instrumentos). TypeScript limpio (0 errores)
+
+---
+
+## 📌 DECISIÓN DE HOSTING (2026-07-05)
+
+**Elegido: Vercel Pro** (lanzamiento inmediato, cero refactor — `vercel.json` ya configurado).
+Re-evaluar en ~1-3 meses la migración a **Azure SWA Free + Azure Functions Consumption** (costo $0, operador domina Azure). El refactor requerido (~9-14 h) está documentado: export estático, portar `/api/chat` y `/api/leads` a Functions, `images.unoptimized` + pre-optimizar JPGs pesados, headers a `staticwebapp.config.json`. Nota: `20-backend/` (Railway) NO está conectado al frontend — las rutas `/api/*` de Next hacen todo; Railway puede eliminarse del plan.
 
 ---
 

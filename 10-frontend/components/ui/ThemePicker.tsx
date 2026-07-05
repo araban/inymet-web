@@ -3,7 +3,13 @@
 import { useState, useEffect } from "react";
 import { Palette, Check, X } from "lucide-react";
 
-type ThemeId = "marina" | "logotipo" | "prestige" | "industrial" | "oceano";
+type ThemeId =
+  | "clasico"
+  | "marina"
+  | "logotipo"
+  | "prestige"
+  | "industrial"
+  | "oceano";
 
 const themes: {
   id: ThemeId;
@@ -12,6 +18,13 @@ const themes: {
   brand: string;
   accent: string;
 }[] = [
+  {
+    id: "clasico",
+    name: "Clásico INyMET",
+    desc: "Azul institucional + naranja (sitio actual)",
+    brand: "#127AB8",
+    accent: "#F3A22C",
+  },
   {
     id: "marina",
     name: "Marina",
@@ -53,7 +66,7 @@ const STORAGE_KEY = "inymet-theme";
 
 export default function ThemePicker() {
   const [open, setOpen] = useState(false);
-  const [active, setActive] = useState<ThemeId>("marina");
+  const [active, setActive] = useState<ThemeId>("clasico");
 
   // Read stored theme on mount
   useEffect(() => {

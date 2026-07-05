@@ -1,9 +1,11 @@
 export interface LeadData {
+  quoteType?: "calibracion" | "instrumentos";
   name: string;
   company: string;
   email: string;
   phone: string;
   industry: string;
+  brand?: string;
   equipment: string;
   urgency: string;
   message?: string;
@@ -85,9 +87,13 @@ async function updateExistingContact(lead: LeadData): Promise<string> {
 }
 
 export async function createHubSpotDeal(contactId: string, lead: LeadData): Promise<string> {
+  const tipo =
+    lead.quoteType === "instrumentos"
+      ? `Venta Instrumentos${lead.brand ? ` (${lead.brand})` : ""}`
+      : "Calibración";
   const deal = await hs<{ id: string }>("/crm/v3/objects/deals", "POST", {
     properties: {
-      dealname: `[${lead.industry.toUpperCase()}] ${lead.company} - Calibración`,
+      dealname: `[${lead.industry.toUpperCase()}] ${lead.company} - ${tipo}`,
       pipeline: "default",
       dealstage: "appointmentscheduled",
       closedate: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString(),

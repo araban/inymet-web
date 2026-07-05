@@ -1,15 +1,22 @@
 import nodemailer from "nodemailer";
 
 export interface LeadNotification {
+  quoteType?: "calibracion" | "instrumentos";
   name: string;
   company: string;
   email: string;
   phone: string;
   industry: string;
+  brand?: string;
   equipment: string;
   urgency: string;
   message?: string;
 }
+
+const QUOTE_TYPE_LABEL: Record<string, string> = {
+  calibracion: "Servicios de calibración",
+  instrumentos: "Venta de instrumentos",
+};
 
 const URGENCY_LABEL: Record<string, string> = {
   inmediato: "URGENTE — Auditoría próxima",
@@ -29,20 +36,23 @@ function createTransport() {
 
 export async function sendLeadNotification(lead: LeadNotification): Promise<void> {
   const label = URGENCY_LABEL[lead.urgency] ?? lead.urgency;
+  const tipoLabel = QUOTE_TYPE_LABEL[lead.quoteType ?? "calibracion"];
   const html = `
     <div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto">
       <div style="background:#1e3a8a;color:white;padding:20px;border-radius:8px 8px 0 0">
         <h2 style="margin:0">🆕 Nuevo Lead — INyMET</h2>
-        <p style="margin:4px 0 0;opacity:.8">Urgencia: <strong>${label}</strong></p>
+        <p style="margin:4px 0 0;opacity:.8">${tipoLabel} · Urgencia: <strong>${label}</strong></p>
       </div>
       <div style="padding:24px;background:#f9fafb;border:1px solid #e5e7eb;border-top:none;border-radius:0 0 8px 8px">
         <table style="width:100%;border-collapse:collapse">
-          <tr><td style="padding:8px 0;font-weight:bold;width:140px">Nombre:</td><td>${lead.name}</td></tr>
+          <tr><td style="padding:8px 0;font-weight:bold;width:140px">Tipo:</td><td>${tipoLabel}</td></tr>
+          <tr><td style="padding:8px 0;font-weight:bold">Nombre:</td><td>${lead.name}</td></tr>
           <tr><td style="padding:8px 0;font-weight:bold">Empresa:</td><td>${lead.company}</td></tr>
           <tr><td style="padding:8px 0;font-weight:bold">Industria:</td><td>${lead.industry}</td></tr>
+          ${lead.brand ? `<tr><td style="padding:8px 0;font-weight:bold">Marca:</td><td>${lead.brand}</td></tr>` : ""}
           <tr><td style="padding:8px 0;font-weight:bold">Email:</td><td><a href="mailto:${lead.email}">${lead.email}</a></td></tr>
           <tr><td style="padding:8px 0;font-weight:bold">Teléfono:</td><td><a href="tel:${lead.phone}">${lead.phone}</a></td></tr>
-          <tr><td style="padding:8px 0;font-weight:bold;vertical-align:top">Equipos:</td><td>${lead.equipment}</td></tr>
+          <tr><td style="padding:8px 0;font-weight:bold;vertical-align:top">${lead.quoteType === "instrumentos" ? "Instrumentos solicitados:" : "Equipos:"}</td><td>${lead.equipment}</td></tr>
           ${lead.message ? `<tr><td style="padding:8px 0;font-weight:bold;vertical-align:top">Notas:</td><td>${lead.message}</td></tr>` : ""}
         </table>
         <div style="margin-top:20px;padding-top:20px;border-top:1px solid #e5e7eb">
@@ -57,7 +67,7 @@ export async function sendLeadNotification(lead: LeadNotification): Promise<void
   await createTransport().sendMail({
     from: `"INyMET Notificaciones" <${process.env.SMTP_USER}>`,
     to: process.env.NOTIFY_EMAIL ?? process.env.SMTP_USER,
-    subject: `🆕 [${lead.industry.toUpperCase()}] Nuevo lead: ${lead.company} — ${label}`,
+    subject: `🆕 [${lead.quoteType === "instrumentos" ? "VENTA" : "CALIBRACIÓN"}] [${lead.industry.toUpperCase()}] ${lead.company} — ${label}`,
     html,
   });
 }

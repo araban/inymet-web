@@ -4,11 +4,13 @@ import { createHubSpotContact, createHubSpotDeal } from "@/lib/hubspot";
 import { sendLeadNotification, sendLeadConfirmation } from "@/lib/email";
 
 const leadSchema = z.object({
+  quoteType: z.enum(["calibracion", "instrumentos"]).default("calibracion"),
   name: z.string().min(2).max(100),
   company: z.string().min(2).max(200),
   email: z.string().email(),
   phone: z.string().min(10).max(20),
   industry: z.enum(["automotriz", "farmaceutica", "alimentos", "otro"]),
+  brand: z.string().max(100).optional(),
   equipment: z.string().min(5).max(1000),
   urgency: z.enum(["inmediato", "1-2_semanas", "1_mes", "sin_urgencia"]),
   message: z.string().max(2000).optional(),
@@ -30,7 +32,13 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  const lead = { ...parsed.data, source: "website_form" };
+  const lead = {
+    ...parsed.data,
+    source:
+      parsed.data.quoteType === "instrumentos"
+        ? "website_form_instrumentos"
+        : "website_form_calibracion",
+  };
 
   try {
     const [contactResult] = await Promise.allSettled([

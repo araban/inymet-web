@@ -241,7 +241,7 @@ export default function InstrumentacionPage() {
                   </div>
                   <p className="text-gray-700 mb-6 leading-relaxed">{marca.descripcion}</p>
                   <Link
-                    href={`/contacto?marca=${marca.slug}`}
+                    href={`/contacto?tipo=instrumentos&marca=${marca.slug}`}
                     className="inline-flex items-center gap-2 btn-primary text-sm py-2.5"
                   >
                     Solicitar cotización {marca.nombre}
@@ -283,7 +283,7 @@ export default function InstrumentacionPage() {
             especificaciones del equipo que necesitas y te cotizamos en menos de 24 horas.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contacto" className="btn-primary">
+            <Link href="/contacto?tipo=instrumentos" className="btn-primary">
               Solicitar cotización de equipo
             </Link>
             <Link href="/calibracion" className="btn-outline">
