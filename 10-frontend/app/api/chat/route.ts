@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import Anthropic from "@anthropic-ai/sdk";
+import { saveChatLog } from "@/lib/leadStore";
 
 const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY,
@@ -151,6 +152,8 @@ export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
     const messages: Anthropic.Messages.MessageParam[] = body.messages ?? [];
+    const sessionId: string | undefined =
+      typeof body.sessionId === "string" ? body.sessionId.slice(0, 64) : undefined;
 
     if (!Array.isArray(messages) || messages.length === 0) {
       return NextResponse.json({ error: "Mensajes inválidos." }, { status: 400 });
@@ -158,6 +161,9 @@ export async function POST(req: NextRequest) {
 
     // Limit history to last 20 messages to control token usage
     const trimmedMessages = messages.slice(-20);
+    const lastUser = trimmedMessages[trimmedMessages.length - 1];
+    const lastUserText =
+      typeof lastUser?.content === "string" ? lastUser.content : JSON.stringify(lastUser?.content ?? "");
 
     // First call — may trigger tool use
     const response = await anthropic.messages.create({
@@ -204,6 +210,7 @@ export async function POST(req: NextRequest) {
         .map((b) => b.text)
         .join("");
 
+      await saveChatLog({ sessionId, userMessage: lastUserText, assistantReply: text, history: trimmedMessages });
       return NextResponse.json({ content: text });
     }
 
@@ -213,6 +220,7 @@ export async function POST(req: NextRequest) {
       .map((b) => b.text)
       .join("");
 
+    await saveChatLog({ sessionId, userMessage: lastUserText, assistantReply: text, history: trimmedMessages });
     return NextResponse.json({ content: text });
   } catch (err) {
     console.error("[chat/route] Error:", err);

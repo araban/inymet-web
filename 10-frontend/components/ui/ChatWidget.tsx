@@ -96,6 +96,10 @@ export default function ChatWidget() {
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const hasInteracted = useRef(false);
+  // Identificador de sesión para agrupar la conversación en el respaldo del servidor
+  const sessionIdRef = useRef(
+    `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 10)}`
+  );
 
   // Auto-scroll to latest message
   useEffect(() => {
@@ -153,7 +157,7 @@ export default function ChatWidget() {
         const res = await fetch("/api/chat", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ messages: apiMessages }),
+          body: JSON.stringify({ messages: apiMessages, sessionId: sessionIdRef.current }),
         });
 
         const data = await res.json();

@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 import { createHubSpotContact, createHubSpotDeal } from "@/lib/hubspot";
 import { sendLeadNotification, sendLeadConfirmation } from "@/lib/email";
+import { saveLeadBackup, markLeadDelivery } from "@/lib/leadStore";
 
 const leadSchema = z.object({
   quoteType: z.enum(["calibracion", "instrumentos"]).default("calibracion"),
@@ -40,32 +41,46 @@ export async function POST(req: NextRequest) {
         : "website_form_calibracion",
   };
 
-  try {
-    const [contactResult] = await Promise.allSettled([
-      createHubSpotContact(lead),
-      sendLeadNotification(lead),
-      sendLeadConfirmation(lead.email, lead.name),
-    ]);
+  // Respaldo PRIMERO: aunque HubSpot y el email fallen, el dato es recuperable.
+  const backupId = await saveLeadBackup(lead);
 
-    if (contactResult.status === "fulfilled" && contactResult.value) {
-      try {
-        await createHubSpotDeal(contactResult.value, lead);
-      } catch {
-        // Non-critical: deal creation failure does not block the response
-      }
+  const [contactResult, notifyResult] = await Promise.allSettled([
+    createHubSpotContact(lead),
+    sendLeadNotification(lead),
+    sendLeadConfirmation(lead.email, lead.name),
+  ]);
+
+  const hubspotOk = contactResult.status === "fulfilled" && Boolean(contactResult.value);
+  const emailOk = notifyResult.status === "fulfilled";
+
+  if (hubspotOk) {
+    try {
+      await createHubSpotDeal(contactResult.value as string, lead);
+    } catch {
+      // Non-critical: deal creation failure does not block the response
     }
+  } else {
+    console.error("[leads] HubSpot falló:", contactResult.status === "rejected" ? contactResult.reason : "sin id");
+  }
+  if (!emailOk) {
+    console.error("[leads] Notificación email falló:", (notifyResult as PromiseRejectedResult).reason);
+  }
 
-    console.info(`[leads] New lead: ${lead.email} (${lead.industry})`);
+  await markLeadDelivery(backupId, hubspotOk, emailOk);
 
+  console.info(`[leads] New lead: ${lead.email} (${lead.industry}) hubspot=${hubspotOk} email=${emailOk} backup=${backupId}`);
+
+  // Éxito si el lead llegó al CRM, al correo de ventas O quedó respaldado en BD:
+  // en cualquiera de esos casos INyMET puede contactar a la persona.
+  if (hubspotOk || emailOk || backupId !== null) {
     return NextResponse.json(
       { success: true, message: "Solicitud recibida. Te contactaremos en menos de 24 horas." },
       { status: 201 }
     );
-  } catch (err) {
-    console.error("[leads] Error:", err);
-    return NextResponse.json(
-      { error: "Error al procesar tu solicitud. Por favor intenta de nuevo." },
-      { status: 500 }
-    );
   }
+
+  return NextResponse.json(
+    { error: "Error al procesar tu solicitud. Por favor intenta de nuevo o llámanos al (55) 5754-3087." },
+    { status: 500 }
+  );
 }
