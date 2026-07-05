@@ -62,7 +62,7 @@ Usuario
 
 ### Qué se agrega
 - Base de datos propia: historial de leads, folios de calibración
-- Endpoint `consultar_folio` (herramienta del chatbot Emma, actualmente mock)
+- Endpoint `consultar_folio` (herramienta del chatbot Eve, actualmente mock)
 - Rate limiting en Redis (en lugar de memoria)
 - Logs estructurados (Winston → servicio externo)
 
@@ -97,7 +97,7 @@ Usuario
 ```
 
 ### Qué se agrega
-- Chatbot Emma reactivado con Claude API
+- Chatbot Eve reactivado con Claude API
 - RAG con documentos técnicos de INyMET (catálogos, normas, FAQs)
 - `consultar_folio` conectado a base de datos real
 - Calificación automática de leads por urgencia

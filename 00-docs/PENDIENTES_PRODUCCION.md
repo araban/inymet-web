@@ -10,7 +10,7 @@
 |---|---|
 | 2026-07-05 | **Hosting: Vercel Pro.** Re-evaluar Azure SWA Free + Functions en ~2 meses (refactor ~9-14 h documentado). `20-backend/` (Railway) NO está conectado — el frontend hace todo vía `/api/*`; Railway se elimina del plan |
 | 2026-07-05 | **Tema default: "Clásico INyMET"** (solo azules del sitio actual). El cliente rechazó el naranja |
-| 2026-07-05 | **Chatbot: HubSpot Chat en producción** (portal 2870195). Emma (Claude) queda desactivada en `layout.tsx` hasta cumplir los requisitos de la sección "Chatbot Emma" abajo |
+| 2026-07-05 | **Chatbot: HubSpot Chat en producción** (portal 2870195). Eve (Claude) queda desactivada en `layout.tsx` hasta cumplir los requisitos de la sección "Chatbot Eve" abajo |
 | 2026-07-05 | `/calibracion` = Sistema Solar Metrológico con las 11 secciones indexables; la versión clásica quedó en `/calibracion-v2` (noindex) |
 
 ---
@@ -21,7 +21,7 @@
 |---|-----------|---------|
 | C1 | **Env vars en Vercel** | `HUBSPOT_ACCESS_TOKEN` (leads del formulario al CRM), `SMTP_HOST/USER/PASS/NOTIFY_EMAIL` (emails de cotización), `NEXT_PUBLIC_GA4_ID` + `NEXT_PUBLIC_GTM_ID` (medición). Sin esto el sitio se ve bien pero **no captura ni mide** |
 | C2 | **Migrar dominio inymet.com.mx → Vercel** | Cambio de DNS + redirects 301 de las rutas del sitio viejo a las nuevas. Hasta entonces, todo el SEO trabaja para inymet-web.vercel.app (URL temporal) |
-| C3 | **Rate limiting en `/api/leads`** | Endpoint abierto sin protección anti-spam. Agregar límite por IP o Cloudflare Turnstile. (`/api/chat` también, pero solo importa si se reactiva Emma) |
+| C3 | **Rate limiting en `/api/leads`** | Endpoint abierto sin protección anti-spam. Agregar límite por IP o Cloudflare Turnstile. (`/api/chat` también, pero solo importa si se reactiva Eve) |
 | C4 | **Prueba end-to-end del funnel** | Submit del formulario (ambos tipos: calibración y venta) → verificar contacto+deal en HubSpot → verificar emails de notificación |
 
 ## 🟡 IMPORTANTE — Conversión (2-4 semanas)
@@ -44,9 +44,9 @@
 | S3 | **OG images por página** | Imágenes 1200×630 personalizadas para industrias y servicios |
 | S4 | ~~Sitemap~~ / ~~robots.txt~~ | ✅ Ya existen (`app/sitemap.ts`, `app/robots.ts`) |
 
-## 🤖 Chatbot Emma (Claude) — requisitos para reactivarla
+## 🤖 Chatbot Eve (Claude) — requisitos para reactivarla
 
-Hoy el chat en producción es **HubSpot** (gratis, cae en el inbox del CRM, con handoff humano). Emma se reactiva descomentándola en `app/layout.tsx` **solo cuando**:
+Hoy el chat en producción es **HubSpot** (gratis, cae en el inbox del CRM, con handoff humano). Eve se reactiva descomentándola en `app/layout.tsx` **solo cuando**:
 1. `ANTHROPIC_API_KEY` configurada en Vercel.
 2. **Rate limiting** en `/api/chat` (es un proxy a una API de pago).
 3. **Logging de conversaciones/leads a HubSpot** implementado (spec en `00-docs/CHATBOT_SPEC.md`) — si no, las conversaciones no llegan al CRM y ventas no las ve.
@@ -86,7 +86,7 @@ NEXT_PUBLIC_GA4_ID=G-XXXXXXXXXX
 NEXT_PUBLIC_GTM_ID=GTM-XXXXXXX
 NEXT_PUBLIC_HUBSPOT_PORTAL_ID=2870195        # ✅ ya configurada (chat HubSpot activo)
 NEXT_PUBLIC_SITE_URL=https://inymet.com.mx
-ANTHROPIC_API_KEY=sk-ant-...                 # solo al reactivar Emma
+ANTHROPIC_API_KEY=sk-ant-...                 # solo al reactivar Eve
 NEXT_PUBLIC_LINKEDIN=...                     # solo si la URL final no es /company/inymet
 ```
 
@@ -108,5 +108,5 @@ NEXT_PUBLIC_LINKEDIN=...                     # solo si la URL final no es /compa
 
 - Modificar estructura de rutas existentes sin redirects 301
 - Cambiar canonical URLs
-- Activar Emma sin cumplir los 3 requisitos de la sección Chatbot
+- Activar Eve sin cumplir los 3 requisitos de la sección Chatbot
 - Reintroducir colores fuera del tema Clásico (solo azules)

@@ -11,7 +11,7 @@ Eres el QA del funnel de conversión de INyMET. El sitio existe para generar lea
 - `/api/leads` (app/api/leads/route.ts): valida con Zod → `Promise.allSettled` de [createHubSpotContact, sendLeadNotification, sendLeadConfirmation] → createHubSpotDeal (no crítico). `lead_source` distingue `website_form_instrumentos` / `website_form_calibracion`; el dealname lleva el tipo y la marca.
 - `lib/hubspot.ts`: fetch puro contra api.hubapi.com (requiere `HUBSPOT_ACCESS_TOKEN`).
 - `lib/email.ts`: nodemailer SMTP (requiere `SMTP_HOST/USER/PASS`, opcional `NOTIFY_EMAIL`). Asunto distingue [VENTA]/[CALIBRACIÓN].
-- Chatbot "Emma": `components/ui/ChatWidget.tsx` → POST `/api/chat` → Claude (claude-haiku, requiere `ANTHROPIC_API_KEY`, max 2 llamadas con tool `consultar_folio` — mock, sin DB real). Sin streaming: responde JSON completo.
+- Chatbot "Eve": `components/ui/ChatWidget.tsx` → POST `/api/chat` → Claude (claude-haiku, requiere `ANTHROPIC_API_KEY`, max 2 llamadas con tool `consultar_folio` — mock, sin DB real). Sin streaming: responde JSON completo.
 - GA4: evento `form_submit` con `quote_type` e `industry` (requiere `NEXT_PUBLIC_GA4_ID`).
 
 ## Checklist de verificación

@@ -74,11 +74,11 @@ Archivo: `app/api/chat/route.ts` → constante `SYSTEM_PROMPT`
 ```
 EJEMPLO — Cliente que pregunta precio exacto:
 Usuario: "¿Cuánto cuesta calibrar un manómetro?"
-Emma: "El precio depende del rango y número de puntos de calibración. Para darle un precio exacto necesito un par de datos más, ¿me permite hacerle unas preguntas rápidas? O si prefiere, le enviamos cotización en menos de 24 horas. ¿Cuántos manómetros necesita calibrar?"
+Eve: "El precio depende del rango y número de puntos de calibración. Para darle un precio exacto necesito un par de datos más, ¿me permite hacerle unas preguntas rápidas? O si prefiere, le enviamos cotización en menos de 24 horas. ¿Cuántos manómetros necesita calibrar?"
 
 EJEMPLO — Folio no encontrado:
 Usuario: "Mi folio es INY-0091 y no puedo encontrar mi equipo"
-Emma: "Revisé el sistema y el folio INY-0091 no aparece todavía. Esto puede ser porque el registro aún está en proceso. Le recomiendo contactar directamente a servicios@inymet.com.mx con el folio y le darán seguimiento inmediato. Disculpe el inconveniente."
+Eve: "Revisé el sistema y el folio INY-0091 no aparece todavía. Esto puede ser porque el registro aún está en proceso. Le recomiendo contactar directamente a servicios@inymet.com.mx con el folio y le darán seguimiento inmediato. Disculpe el inconveniente."
 ```
 
 ### Nivel 3 — RAG (Retrieval-Augmented Generation) — Futuro
@@ -264,17 +264,17 @@ model ChatConversacion {
 
 ---
 
-## 7. Personalización de Emma (futura)
+## 7. Personalización de Eve (futura)
 
 ### Cambiar nombre/persona
-En `ChatWidget.tsx`: cambiar la constante `WELCOME_MESSAGE` y el texto "Emma".  
-En `route.ts`: cambiar la línea "Eres Emma..." en `SYSTEM_PROMPT`.
+En `ChatWidget.tsx`: cambiar la constante `WELCOME_MESSAGE` y el texto "Eve".  
+En `route.ts`: cambiar la línea "Eres Eve..." en `SYSTEM_PROMPT`.
 
 ### Cambiar idioma a inglés
 Modificar `SYSTEM_PROMPT` para responder en inglés y actualizar los textos del widget.
 
 ### Agregar una foto/avatar real
-Reemplazar el componente `EmmaAvatar` con `<Image>` que cargue una foto desde `/public/images/ana-avatar.jpg`.
+Reemplazar el componente `EveAvatar` con `<Image>` que cargue una foto desde `/public/images/ana-avatar.jpg`.
 
 ### Agregar integración con HubSpot
 Cuando el usuario proporcione su nombre/email en el chat, hacer POST a la API de HubSpot para crear un contacto automáticamente:

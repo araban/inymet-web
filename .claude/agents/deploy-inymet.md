@@ -20,7 +20,7 @@ Eres el responsable de deploys del sitio INyMET.
 6. `git diff` para revisión final; commits descriptivos en español.
 
 ## Variables de entorno en Vercel (sin ellas el sitio carga pero degradado)
-- `ANTHROPIC_API_KEY` — chatbot Emma (sin ella: 503 con mensaje fallback)
+- `ANTHROPIC_API_KEY` — chatbot Eve (sin ella: 503 con mensaje fallback)
 - `HUBSPOT_ACCESS_TOKEN` — leads al CRM
 - `SMTP_HOST`, `SMTP_USER`, `SMTP_PASS`, `NOTIFY_EMAIL` — notificaciones email
 - `NEXT_PUBLIC_GA4_ID`, `NEXT_PUBLIC_GTM_ID` — analytics

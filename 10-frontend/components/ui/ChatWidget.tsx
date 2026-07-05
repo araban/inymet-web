@@ -27,7 +27,7 @@ const WELCOME_MESSAGE: Message = {
   id: "welcome",
   role: "assistant",
   content:
-    "¡Hola! 👋 Soy **Emma**, especialista de calibración en INyMET.\n\nEstoy aquí para ayudarle con cotizaciones, consultar el estado de sus equipos o resolver cualquier duda técnica. ¿En qué le puedo ayudar hoy?",
+    "¡Hola! 👋 Soy **Eve**, especialista de calibración en INyMET.\n\nEstoy aquí para ayudarle con cotizaciones, consultar el estado de sus equipos o resolver cualquier duda técnica. ¿En qué le puedo ayudar hoy?",
   timestamp: new Date(),
 };
 
@@ -47,7 +47,7 @@ function TypingDots() {
   );
 }
 
-function EmmaAvatar({ size = "sm" }: { size?: "sm" | "md" }) {
+function EveAvatar({ size = "sm" }: { size?: "sm" | "md" }) {
   const dim = size === "sm" ? "w-7 h-7" : "w-9 h-9";
   const text = size === "sm" ? "text-[10px]" : "text-xs";
   return (
@@ -206,12 +206,12 @@ export default function ChatWidget() {
             {/* Header */}
             <div className="bg-gradient-to-r from-brand-700 to-brand-600 px-4 py-3 flex items-center gap-3 flex-shrink-0">
               <div className="relative">
-                <EmmaAvatar size="md" />
+                <EveAvatar size="md" />
                 <span className="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-accent-400 rounded-full border-2 border-brand-700" />
               </div>
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-1.5">
-                  <p className="text-sm font-bold text-white leading-none">Emma</p>
+                  <p className="text-sm font-bold text-white leading-none">Eve</p>
                   <Sparkles className="w-3 h-3 text-accent-300" />
                 </div>
                 <p className="text-[11px] text-brand-200 mt-0.5">
@@ -240,7 +240,7 @@ export default function ChatWidget() {
                   }`}
                 >
                   {msg.role === "assistant" && (
-                    <EmmaAvatar size="sm" />
+                    <EveAvatar size="sm" />
                   )}
 
                   <div
@@ -277,7 +277,7 @@ export default function ChatWidget() {
                     exit={{ opacity: 0 }}
                     className="flex gap-2 items-center"
                   >
-                    <EmmaAvatar size="sm" />
+                    <EveAvatar size="sm" />
                     <div className="bg-white rounded-2xl rounded-bl-md shadow-sm border border-gray-100">
                       <TypingDots />
                     </div>
