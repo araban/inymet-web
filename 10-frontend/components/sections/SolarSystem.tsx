@@ -297,9 +297,8 @@ export function SolarSystem() {
                 className="absolute inset-0 rounded-full bg-brand-500/20 animate-ping pointer-events-none"
                 style={{ animationDuration: "3.5s" }}
               />
-              <div className="relative w-[80px] h-[80px] rounded-full bg-gradient-to-br from-brand-400 to-brand-700 flex flex-col items-center justify-center border-2 border-brand-300/40 shadow-[0_0_50px_rgba(29,90,148,0.65)]">
-                <span className="text-white font-black text-[14px] leading-none tracking-tight">INy</span>
-                <span className="text-white font-black text-[14px] leading-none tracking-tight">MET</span>
+              <div className="relative w-[80px] h-[80px] rounded-full bg-gradient-to-br from-brand-400 to-brand-700 flex items-center justify-center border-2 border-brand-300/40 shadow-[0_0_50px_rgba(29,90,148,0.65)]">
+                <span className="text-white font-black text-[15px] leading-none tracking-tight">INyMET</span>
               </div>
             </div>
           </div>
