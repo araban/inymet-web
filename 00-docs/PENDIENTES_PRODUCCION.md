@@ -19,7 +19,7 @@
 
 | # | Pendiente | Detalle |
 |---|-----------|---------|
-| C1 | **Env vars en Vercel** | `HUBSPOT_ACCESS_TOKEN` (leads del formulario al CRM), `SMTP_HOST/USER/PASS/NOTIFY_EMAIL` (emails de cotización), `NEXT_PUBLIC_GA4_ID` + `NEXT_PUBLIC_GTM_ID` (medición). Sin esto el sitio se ve bien pero **no captura ni mide** |
+| C1 | **Env vars en Vercel** | ✅ SMTP configurado y probado 2026-07-05 (mail.inymet.com.mx:465, usuario antonio.aranaa@ — `email_ok=true` en prueba real; notificaciones llegan a esa bandeja hasta definir `NOTIFY_EMAIL=ventas@`). ⏳ Faltan: `HUBSPOT_ACCESS_TOKEN` (leads al CRM) y `NEXT_PUBLIC_GA4_ID` + `NEXT_PUBLIC_GTM_ID` (medición) |
 | C2 | **Migrar dominio inymet.com.mx → Vercel** | Cambio de DNS + redirects 301 de las rutas del sitio viejo a las nuevas. Hasta entonces, todo el SEO trabaja para inymet-web.vercel.app (URL temporal) |
 | C3 | **Rate limiting en `/api/leads`** | Endpoint abierto sin protección anti-spam. Agregar límite por IP o Cloudflare Turnstile. (`/api/chat` también, pero solo importa si se reactiva Eve) |
 | C4 | **Prueba end-to-end del funnel** | Submit del formulario (ambos tipos: calibración y venta) → verificar contacto+deal en HubSpot → verificar emails de notificación |
