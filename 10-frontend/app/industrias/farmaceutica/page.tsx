@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PhoneCTA from "@/components/ui/PhoneCTA";
 import Link from "next/link";
 import QuoteForm from "@/components/forms/QuoteForm";
 import { CheckCircle, AlertTriangle, ArrowRight, Award, Clock, Shield, FileText } from "lucide-react";
@@ -148,9 +149,12 @@ export default function FarmaceuticaPage() {
               Cotizar para mi planta
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
-            <a href="tel:+525557543087" className="inline-flex items-center gap-2 px-7 py-4 bg-white/[0.07] hover:bg-white/[0.13] text-white font-semibold text-sm rounded-xl border border-white/15 transition-all">
-              Hablar con especialista farmacéutico
-            </a>
+            <PhoneCTA
+              className="items-center gap-2 px-7 py-4 bg-white/[0.07] hover:bg-white/[0.13] text-white font-semibold text-sm rounded-xl border border-white/15 transition-all"
+              iconClass={null}
+              mobileLabel="Hablar con especialista farmacéutico"
+              desktopLabel="Hablar con especialista farmacéutico"
+            />
           </div>
         </div>
       </section>
@@ -260,10 +264,13 @@ export default function FarmaceuticaPage() {
                 <p className="text-sm text-slate-300 mb-4 leading-relaxed">
                   Llámanos directamente para atención prioritaria. Movilizamos técnicos a tus instalaciones en menos de 24 horas.
                 </p>
-                <a href="tel:+525557543087"
-                  className="flex items-center justify-center gap-2 w-full bg-accent-500 hover:bg-accent-400 text-white font-bold text-sm py-3 rounded-xl transition-colors">
-                  Llamar ahora — (55) 5754-3087
-                </a>
+                <PhoneCTA
+                  display="flex"
+                  className="items-center justify-center gap-2 w-full bg-accent-500 hover:bg-accent-400 text-white font-bold text-sm py-3 rounded-xl transition-colors"
+                  iconClass={null}
+                  mobileLabel="Llamar ahora — (55) 5754-3087"
+                  desktopLabel="Solicitar atención prioritaria"
+                />
               </div>
 
               <div className="bg-gray-50 border border-gray-100 rounded-2xl p-6 flex items-center gap-4">

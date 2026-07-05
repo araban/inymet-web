@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { ArrowRight, Phone, Clock, CheckCircle } from "lucide-react";
-import { CONTACT } from "@/lib/contact";
+import { ArrowRight, Clock, CheckCircle } from "lucide-react";
+import PhoneCTA from "@/components/ui/PhoneCTA";
 
 const guarantees = [
   "Cotización en menos de 24 horas",
@@ -70,13 +70,11 @@ export default function CTASection() {
               Cotizar en 24 horas — Gratis
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
-            <a
-              href={`tel:${CONTACT.phoneTel}`}
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/[0.06] hover:bg-white/[0.12] text-white font-semibold rounded-xl border border-white/15 transition-all text-base"
-            >
-              <Phone className="w-5 h-5" />
-              {CONTACT.phoneDisplay}
-            </a>
+            <PhoneCTA
+              className="items-center justify-center gap-2 px-8 py-4 bg-white/[0.06] hover:bg-white/[0.12] text-white font-semibold rounded-xl border border-white/15 transition-all text-base"
+              iconClass="w-5 h-5"
+              desktopLabel="Solicitar una llamada"
+            />
           </div>
 
           <p className="text-xs text-slate-500 mt-8">

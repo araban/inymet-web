@@ -395,13 +395,13 @@ export default function Header() {
 
           {/* Right-side actions */}
           <div className="hidden lg:flex items-center gap-2">
-            <a
-              href={`tel:${CONTACT.phoneTel}`}
-              className="flex items-center gap-1.5 text-sm font-medium text-gray-600 hover:text-brand-700 px-3 py-2 rounded-lg transition-colors"
+            <span
+              className="flex items-center gap-1.5 text-sm font-medium text-gray-600 px-3 py-2 select-all"
+              title="Llámenos o solicite una cotización"
             >
               <Phone className="w-3.5 h-3.5" />
               {CONTACT.phoneDisplay}
-            </a>
+            </span>
             <a
               href="https://inymet.com.mx/Clientes/"
               target="_blank"

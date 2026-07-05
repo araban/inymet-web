@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PhoneCTA from "@/components/ui/PhoneCTA";
 import Link from "next/link";
 import QuoteForm from "@/components/forms/QuoteForm";
 import { CheckCircle, AlertTriangle, ArrowRight, Award, Clock, Shield, Zap } from "lucide-react";
@@ -110,9 +111,12 @@ export default function AutorizPage() {
               Cotizar para mi planta
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
-            <a href="tel:+525557543087" className="inline-flex items-center gap-2 px-7 py-4 bg-white/[0.07] hover:bg-white/[0.13] text-white font-semibold text-sm rounded-xl border border-white/15 transition-all">
-              Hablar con especialista automotriz
-            </a>
+            <PhoneCTA
+              className="items-center gap-2 px-7 py-4 bg-white/[0.07] hover:bg-white/[0.13] text-white font-semibold text-sm rounded-xl border border-white/15 transition-all"
+              iconClass={null}
+              mobileLabel="Hablar con especialista automotriz"
+              desktopLabel="Hablar con especialista automotriz"
+            />
           </div>
         </div>
       </section>
@@ -220,12 +224,13 @@ export default function AutorizPage() {
                   Si tienes una auditoría en menos de 72 horas, llámanos ahora para atención prioritaria.
                   Certificados urgentes entregados en el día.
                 </p>
-                <a
-                  href="tel:+525557543087"
-                  className="flex items-center justify-center gap-2 w-full bg-accent-500 hover:bg-accent-400 text-white font-bold text-sm py-3 rounded-xl transition-colors"
-                >
-                  Llamar ahora — (55) 5754-3087
-                </a>
+                <PhoneCTA
+                  display="flex"
+                  className="items-center justify-center gap-2 w-full bg-accent-500 hover:bg-accent-400 text-white font-bold text-sm py-3 rounded-xl transition-colors"
+                  iconClass={null}
+                  mobileLabel="Llamar ahora — (55) 5754-3087"
+                  desktopLabel="Solicitar atención prioritaria"
+                />
               </div>
 
               {/* Speed guarantee */}

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PhoneCTA from "@/components/ui/PhoneCTA";
 import Link from "next/link";
 import { ArrowRight, CheckCircle, Shield, Clock, Award } from "lucide-react";
 
@@ -205,10 +206,11 @@ export default function IndustriasPage() {
               Solicitar diagnóstico gratuito
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
-            <a href="tel:+525557543087"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-white/[0.07] hover:bg-white/[0.13] text-white font-semibold rounded-xl border border-white/15 transition-all">
-              (55) 5754-3087
-            </a>
+            <PhoneCTA
+              className="items-center gap-2 px-8 py-4 bg-white/[0.07] hover:bg-white/[0.13] text-white font-semibold rounded-xl border border-white/15 transition-all"
+              iconClass={null}
+              desktopLabel="Solicitar una llamada"
+            />
           </div>
         </div>
       </section>

@@ -59,10 +59,14 @@ export default function Footer() {
               Reducimos riesgos en auditorías ISO con tiempos de respuesta líderes en México.
             </p>
             <div className="space-y-2 text-sm">
-              <a href={`tel:${CONTACT.phoneTel}`} className="flex items-center gap-2 hover:text-white transition-colors">
+              <a href={`tel:${CONTACT.phoneTel}`} className="flex lg:hidden items-center gap-2 hover:text-white transition-colors">
                 <Phone className="w-4 h-4 text-brand-400" />
                 {CONTACT.phoneDisplay}
               </a>
+              <span className="hidden lg:flex items-center gap-2 select-all">
+                <Phone className="w-4 h-4 text-brand-400" />
+                {CONTACT.phoneDisplay}
+              </span>
               <a href={`mailto:${CONTACT.emailSales}`} className="flex items-center gap-2 hover:text-white transition-colors">
                 <Mail className="w-4 h-4 text-brand-400" />
                 {CONTACT.emailSales}

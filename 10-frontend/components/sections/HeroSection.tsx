@@ -2,8 +2,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import { ArrowRight, CheckCircle, Phone, Shield, Clock, Award } from "lucide-react";
-import { CONTACT } from "@/lib/contact";
+import { ArrowRight, CheckCircle, Shield, Clock, Award } from "lucide-react";
+import PhoneCTA from "@/components/ui/PhoneCTA";
 
 function CountUp({ end, prefix = "", suffix = "" }: { end: number; prefix?: string; suffix?: string }) {
   const [count, setCount] = useState(0);
@@ -96,11 +96,10 @@ export default function HeroSection() {
                   Cotizar en 24 horas
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
-                <a href={`tel:${CONTACT.phoneTel}`}
-                  className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-white/[0.07] hover:bg-white/[0.13] text-white font-semibold text-sm rounded-xl border border-white/15 transition-all">
-                  <Phone className="w-4 h-4" />
-                  {CONTACT.phoneDisplay}
-                </a>
+                <PhoneCTA
+                  className="items-center justify-center gap-2 px-7 py-4 bg-white/[0.07] hover:bg-white/[0.13] text-white font-semibold text-sm rounded-xl border border-white/15 transition-all"
+                  desktopLabel="Solicitar una llamada"
+                />
               </div>
 
               {/* Trust list */}

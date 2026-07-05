@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PhoneCTA from "@/components/ui/PhoneCTA";
 import QuoteForm from "@/components/forms/QuoteForm";
 import { Phone, Mail, Clock, MapPin, Building2, CheckCircle, Zap } from "lucide-react";
 
@@ -62,13 +63,13 @@ export default function ContactPage() {
                 <p className="text-xs text-slate-300 mb-3 leading-relaxed">
                   Si tienes una auditoría en menos de 48 horas, llámanos directamente para atención prioritaria.
                 </p>
-                <a
-                  href="tel:+525557543087"
-                  className="flex items-center justify-center gap-2 w-full bg-accent-500 hover:bg-accent-400 text-white font-bold text-sm py-2.5 rounded-xl transition-colors"
-                >
-                  <Phone className="w-4 h-4" />
-                  Llamar ahora
-                </a>
+                <PhoneCTA
+                  display="flex"
+                  className="items-center justify-center gap-2 w-full bg-accent-500 hover:bg-accent-400 text-white font-bold text-sm py-2.5 rounded-xl transition-colors"
+                  mobileLabel="Llamar ahora"
+                  desktopLabel="Ir al formulario de cotización"
+                  desktopHref="#formulario"
+                />
               </div>
 
               {/* Contact info */}
@@ -82,9 +83,20 @@ export default function ContactPage() {
                     <div>
                       <p className="text-[11px] text-gray-400 font-medium">{info.label}</p>
                       {info.href ? (
-                        <a href={info.href} className="text-sm font-semibold text-brand-700 hover:underline">
-                          {info.value}
-                        </a>
+                        info.href.startsWith("tel:") ? (
+                          <>
+                            <a href={info.href} className="lg:hidden text-sm font-semibold text-brand-700 hover:underline">
+                              {info.value}
+                            </a>
+                            <p className="hidden lg:block text-sm font-semibold text-gray-800 select-all">
+                              {info.value}
+                            </p>
+                          </>
+                        ) : (
+                          <a href={info.href} className="text-sm font-semibold text-brand-700 hover:underline">
+                            {info.value}
+                          </a>
+                        )
                       ) : (
                         <p className="text-sm font-semibold text-gray-800">{info.value}</p>
                       )}
@@ -108,7 +120,7 @@ export default function ContactPage() {
             </div>
 
             {/* Form */}
-            <div className="lg:col-span-2 bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+            <div id="formulario" className="lg:col-span-2 bg-white rounded-2xl p-8 shadow-sm border border-gray-100 scroll-mt-24">
               <h2 className="text-xl font-bold text-gray-900 mb-1">Cuéntanos qué necesitas calibrar</h2>
               <p className="text-sm text-gray-500 mb-6">
                 Entre más detalle nos des, más precisa será tu cotización.
