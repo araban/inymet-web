@@ -23,6 +23,7 @@
 | C2 | **Migrar dominio inymet.com.mx → Vercel** | Cambio de DNS + redirects 301 de las rutas del sitio viejo a las nuevas. Hasta entonces, todo el SEO trabaja para inymet-web.vercel.app (URL temporal) |
 | C3 | **Rate limiting en `/api/leads`** | Endpoint abierto sin protección anti-spam. Agregar límite por IP o Cloudflare Turnstile. (`/api/chat` también, pero solo importa si se reactiva Eve) |
 | C4 | **Prueba end-to-end del funnel** | Submit del formulario (ambos tipos: calibración y venta) → verificar contacto+deal en HubSpot → verificar emails de notificación |
+| C5 | **`DATABASE_URL` en Vercel (respaldo de leads)** | El código ya persiste cada lead/chat en Postgres ANTES de HubSpot/email (`lib/leadStore.ts`, crea sus tablas solo). Falta: crear BD gratis en Vercel Marketplace → Neon y pegar la connection string. Recuperación: `SELECT * FROM leads_backup WHERE hubspot_ok IS NOT TRUE`. Sin BD, el respaldo mínimo son los logs `[LEAD-BACKUP]` de Vercel (retención corta — considerar Log Drain a Axiom gratis) |
 
 ## 🟡 IMPORTANTE — Conversión (2-4 semanas)
 
