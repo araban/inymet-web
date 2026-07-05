@@ -1,141 +1,112 @@
-# INyMET — Pendientes para Producción
-**Actualizado:** 2026-07-05  
-**Estado del redesign:** v3.5 — Tema "Clásico INyMET" default (colores del sitio actual) + cotización dual (calibración / venta de instrumentos). TypeScript limpio (0 errores)
+# INyMET — Pendientes para Producción (documento maestro)
+**Actualizado:** 2026-07-05
+**Estado:** v4.0 — Tema Clásico default real · `/calibracion` = Sistema Solar (SEO completo) · cotización dual · CTAs telefónicos adaptativos · video publicitario v4 producido · guías YouTube y LinkedIn listas
 
 ---
 
-## 📌 DECISIÓN DE HOSTING (2026-07-05)
+## 📌 DECISIONES TOMADAS
 
-**Elegido: Vercel Pro** (lanzamiento inmediato, cero refactor — `vercel.json` ya configurado).
-Re-evaluar en ~1-3 meses la migración a **Azure SWA Free + Azure Functions Consumption** (costo $0, operador domina Azure). El refactor requerido (~9-14 h) está documentado: export estático, portar `/api/chat` y `/api/leads` a Functions, `images.unoptimized` + pre-optimizar JPGs pesados, headers a `staticwebapp.config.json`. Nota: `20-backend/` (Railway) NO está conectado al frontend — las rutas `/api/*` de Next hacen todo; Railway puede eliminarse del plan.
-
----
-
-## ✅ COMPLETADO — Sesión 2026-04-21 (v3.4: Solar System + chatbot + redes)
-
-| # | Tarea | Detalles |
-|---|-------|---------|
-| D1 | **Sistema de 5 paletas de color** | `globals.css` con 5 themes (Marina, Logotipo, Prestige, Industrial, Océano). `tailwind.config.ts` usa CSS variables para cambio en tiempo real sin reload |
-| D2 | **ThemePicker widget** | `components/ui/ThemePicker.tsx` — botón flotante bottom-left, panel con swatches, persiste en localStorage |
-| D3 | **Anti-FOUC** | Script inline en `<head>` restaura tema guardado antes del primer paint |
-| D4 | **Iconos en submenús** | Header reescrito con icons de lucide-react en los 3 dropdowns (Calibración, Industrias, Instrumentación) |
-| D5 | **Color reduction** | Todos los colores hardcoded eliminados — todas las páginas usan exclusivamente `brand-*` y `accent-*` |
-| D6 | **TypeScript verificado** | `npx tsc --noEmit` pasa con 0 errores |
-| D7 | **Screenshots de los 5 temas** | Guardados en `00-docs/screenshots/theme-*.png` |
-| D8 | **Chatbot "Emma" con Claude** | `components/ui/ChatWidget.tsx` + `app/api/chat/route.ts` — framer-motion, tool use `consultar_folio`, quick replies. Renombrado Ana→Emma en v3.3 |
-| D9 | **Knowledge base chatbot** | `40-ai/knowledge-base/` — 6 archivos MD actualizables sin código |
-| D10 | **Spec técnica chatbot** | `00-docs/CHATBOT_SPEC.md` — arquitectura, mejora precisión, esquema DB, integración HubSpot |
-| D11 | **Redes sociales en Footer** | LinkedIn + YouTube + WhatsApp Business con SVG inline y hover en brand colors |
-| D12 | **Artefactos Estrategia de Redes** | `40-ai/redes-sociales/` — 5 archivos: carruseles LinkedIn (5 completos), canal YouTube (setup + 2 scripts + 8 outlines), WhatsApp Business (setup + 8 quick replies + flujo), thought leadership directivos (10 templates), biblioteca de hashtags |
-| D13 | **SocialSidebar — redes visibles en desktop** | `components/ui/SocialSidebar.tsx` — tabs fijos en borde izquierdo, top-1/2 centrado, expand-on-hover (LinkedIn/YouTube/WhatsApp). WhatsApp unificado aquí (reemplaza botón flotante). Solo visible en lg+; Footer cubre móvil |
-| D14 | **Sistema Solar Metrológico (preview)** | `app/calibracion-v2/page.tsx` + `components/sections/SolarSystem.tsx` — 11 labs como esferas en órbita (4 anillos, 500×500px). Native rAF loop (sin framer-motion). Tooltips hover con nombre/desc/badges ISO. Fallback card-grid en móvil. `robots: noindex`. **Decisión pendiente: sustituir `/calibracion` o mantener experimental** |
+| Fecha | Decisión |
+|---|---|
+| 2026-07-05 | **Hosting: Vercel Pro.** Re-evaluar Azure SWA Free + Functions en ~2 meses (refactor ~9-14 h documentado). `20-backend/` (Railway) NO está conectado — el frontend hace todo vía `/api/*`; Railway se elimina del plan |
+| 2026-07-05 | **Tema default: "Clásico INyMET"** (solo azules del sitio actual). El cliente rechazó el naranja |
+| 2026-07-05 | **Chatbot: HubSpot Chat en producción** (portal 2870195). Emma (Claude) queda desactivada en `layout.tsx` hasta cumplir los requisitos de la sección "Chatbot Emma" abajo |
+| 2026-07-05 | `/calibracion` = Sistema Solar Metrológico con las 11 secciones indexables; la versión clásica quedó en `/calibracion-v2` (noindex) |
 
 ---
 
-## 🔴 CRÍTICO — Bloquea el lanzamiento (nuevo item para chatbot)
+## 🔴 CRÍTICO — Bloquea que el sitio genere leads (esta semana)
 
 | # | Pendiente | Detalle |
 |---|-----------|---------|
-| C0 | **`ANTHROPIC_API_KEY` en `.env.local`** | Sin esto el chatbot retorna error 503. Obtener en console.anthropic.com → API Keys |
-| C0b | **`ANTHROPIC_API_KEY` en Vercel** | Agregar como variable de entorno en Vercel Dashboard antes del deploy |
+| C1 | **Env vars en Vercel** | `HUBSPOT_ACCESS_TOKEN` (leads del formulario al CRM), `SMTP_HOST/USER/PASS/NOTIFY_EMAIL` (emails de cotización), `NEXT_PUBLIC_GA4_ID` + `NEXT_PUBLIC_GTM_ID` (medición). Sin esto el sitio se ve bien pero **no captura ni mide** |
+| C2 | **Migrar dominio inymet.com.mx → Vercel** | Cambio de DNS + redirects 301 de las rutas del sitio viejo a las nuevas. Hasta entonces, todo el SEO trabaja para inymet-web.vercel.app (URL temporal) |
+| C3 | **Rate limiting en `/api/leads`** | Endpoint abierto sin protección anti-spam. Agregar límite por IP o Cloudflare Turnstile. (`/api/chat` también, pero solo importa si se reactiva Emma) |
+| C4 | **Prueba end-to-end del funnel** | Submit del formulario (ambos tipos: calibración y venta) → verificar contacto+deal en HubSpot → verificar emails de notificación |
 
-## 🔴 CRÍTICO — Bloquea el lanzamiento
-
-| # | Pendiente | Detalle |
-|---|-----------|---------|
-| C1 | **Variable `NEXT_PUBLIC_API_URL`** | Sin esto, el formulario de cotización falla silenciosamente. Debe apuntar al backend en Railway (ej: `https://api.inymet.com.mx`) |
-| C2 | **Variable `NEXT_PUBLIC_GA4_ID`** | Sin tracking no se puede medir qué páginas convierten ni de dónde vienen los leads |
-| C3 | **Variable `NEXT_PUBLIC_GTM_ID`** | Google Tag Manager para eventos avanzados |
-| C4 | **Backend en Railway** | El servicio `20-backend/` debe estar corriendo para recibir leads desde el formulario y enviarlos a HubSpot |
-| C5 | **`HUBSPOT_ACCESS_TOKEN` en backend** | El token real de HubSpot para que los leads lleguen al CRM |
-| C6 | **`prisma db push`** | Ejecutar en la base de datos de producción para crear las tablas |
-
----
-
-## 🟡 IMPORTANTE — Afecta conversión directa
+## 🟡 IMPORTANTE — Conversión (2-4 semanas)
 
 | # | Pendiente | Detalle |
 |---|-----------|---------|
-| I1 | **Testimoniales reales** | Los 3 testimonios en `TestimonialsSection` son placeholders. Conseguir quotes firmados de clientes reales (automotriz, farmacéutica, alimentos) |
-| I2 | **Casos de éxito con datos** | `/casos-de-exito` tiene datos inventados. Reemplazar con casos reales: empresa, reto, resultado medible (ej: "evitó 2 no conformidades en auditoría IATF 2024") |
-| I3 | **PDF de acreditación descargable** | `/recursos` promete descarga del certificado IAS. Subir el PDF real a `/public/docs/acreditacion-ias.pdf` |
-| ~~I4~~ | ~~**ChatWidget**~~ | ✅ Implementado como chatbot "Emma" (D8 + D13) |
-| I5 | **Fotos propias del laboratorio** | Las imágenes actuales (lab-tecnico-multimetros.jpg, etc.) funcionan pero fotos reales del laboratorio INyMET generan más confianza |
-| I6 | **Número de WhatsApp verificado** | El botón WA usa +525557543087. Confirmar que este número tiene WhatsApp Business activo |
+| I1 | **Testimonios reales** | Los 3 de `TestimonialsSection` son placeholders. Conseguir quotes firmados (automotriz, farmacéutica, alimentos) |
+| I2 | **Casos de éxito reales** | `/casos-de-exito` tiene datos inventados. Reemplazar con casos medibles reales |
+| I3 | **Unificar cifras oficiales** | ⚠️ La homepage dice "+500 empresas / <24 h" y `/calibracion` dice "+189 / <9 h". Decidir los números reales y unificar en todo el sitio, el chatbot y el video |
+| I4 | **PDF de acreditación IAS** | Subirlo a `/public/docs/` + link verificable al portal de IAS para auditores |
+| I5 | **Fotos propias del laboratorio** | Las actuales son banners del sitio viejo; fotos reales generan más confianza |
+| I6 | **WhatsApp Business verificado** | Confirmar que +52 55 5754-3087 tiene WhatsApp Business activo (setup en `40-ai/redes-sociales/03-whatsapp-business.md`) |
 
----
-
-## 🟢 SEO / Autoridad — Para los primeros 90 días
+## 🟢 SEO / Autoridad — 90 días (KPI principal: +500% tráfico orgánico)
 
 | # | Pendiente | Detalle |
 |---|-----------|---------|
-| S1 | **Artículos de blog reales** | Las páginas `/blog` y `/blog/[slug]` ya existen. Publicar los primeros 3–5 artículos siguiendo los templates de `30-seo/` |
-| S2 | **Sitemap automático** | Agregar `generateSitemaps` o `sitemap.ts` en `app/` para que Next.js lo genere. Luego enviarlo en Google Search Console |
-| S3 | **Google Search Console** | Verificar la propiedad y enviar sitemap una vez en producción |
-| S4 | **Open Graph images personalizadas** | Las páginas de industria usan la imagen genérica. Crear OG images 1200×630 por página |
-| S5 | **Robots.txt** | Crear `public/robots.txt` con directivas básicas |
-| S6 | **Link de acreditación verificable** | Poner link directo al número de acreditación en el portal IAS (ias.org) para que auditores puedan verificarlo |
+| S1 | **Google Search Console** | Verificar propiedad y enviar sitemap (después de C2) |
+| S2 | **Más artículos de blog** | Hay 5 publicados; el keyword research de `30-seo/` da para 15-20 más. Usar el agente `redactor-blog-inymet` |
+| S3 | **OG images por página** | Imágenes 1200×630 personalizadas para industrias y servicios |
+| S4 | ~~Sitemap~~ / ~~robots.txt~~ | ✅ Ya existen (`app/sitemap.ts`, `app/robots.ts`) |
+
+## 🤖 Chatbot Emma (Claude) — requisitos para reactivarla
+
+Hoy el chat en producción es **HubSpot** (gratis, cae en el inbox del CRM, con handoff humano). Emma se reactiva descomentándola en `app/layout.tsx` **solo cuando**:
+1. `ANTHROPIC_API_KEY` configurada en Vercel.
+2. **Rate limiting** en `/api/chat` (es un proxy a una API de pago).
+3. **Logging de conversaciones/leads a HubSpot** implementado (spec en `00-docs/CHATBOT_SPEC.md`) — si no, las conversaciones no llegan al CRM y ventas no las ve.
+4. Idealmente: herramienta `consultar_folio` conectada a BD real (hoy es mock; el esquema Prisma está en `app/api/chat/route.ts`).
+⚠️ Nunca tener los dos chats activos a la vez (dos burbujas flotantes).
+
+## 🔵 Funcionalidades futuras
+
+| # | Feature |
+|---|---------|
+| F1 | Alertas automáticas de vencimiento de calibración (tabla `instruments` + cron) |
+| F2 | Sanity CMS para blog sin código (ya está en dependencias) |
+| F3 | Cotización con PDF automático por email |
+| F4 | Versión en inglés (clientes multinacionales) |
+| F5 | Portal interno de clientes (hoy redirect a sitio externo) |
+
+## 📣 Ejecución comercial (material ya producido, falta ejecutar)
+
+| # | Acción | Material |
+|---|--------|---------|
+| M1 | Alta de canal de YouTube + publicar video | Guía: `40-ai/redes-sociales/06-guia-alta-youtube-publicacion.md` · Video: `E:\ClaudePersonal\inymet\video-youtube\INyMET-video-youtube-v4.mp4` · Miniatura: `miniatura-youtube.png` · Subtítulos CC: `subs2.srt` |
+| M2 | Página institucional de LinkedIn (páginas viejas irrecuperables → reportar y crear nueva) | Guía: `40-ai/redes-sociales/07-guia-linkedin-pagina-institucional.md` |
+| M3 | WhatsApp Business | `40-ai/redes-sociales/03-whatsapp-business.md` |
+| M4 | Carruseles LinkedIn (5 guionizados) + thought leadership directivos | `01-linkedin-carruseles.md` · `04-thought-leadership-directivos.md` |
 
 ---
 
-## 🔵 FUNCIONALIDADES FUTURAS
+## 📁 Env vars requeridas en Vercel
 
-| # | Feature | Descripción |
-|---|---------|-------------|
-| F1 | **Alertas de vencimiento** | El paso 4 del proceso promete alertas automáticas de vencimiento. Requiere tabla `instruments` en BD + cron job en backend |
-| F2 | **Área de clientes** | `/Clientes/` en el header apunta al sitio externo. Integrar portal interno o mantener redirect |
-| F3 | **Cotización con PDF automático** | Al completar el form, generar PDF de propuesta y enviarlo por email |
-| F4 | **Multilenguaje EN** | Para clientes de empresas multinacionales (Ford, Nissan, J&J) que solicitan documentación en inglés |
-| F5 | **Blog CMS (Sanity)** | Conectar Sanity para que el equipo pueda publicar artículos sin tocar código. Ya está en las dependencias |
-
----
-
-## 📁 Archivos de entorno requeridos
-
-### `10-frontend/.env.local`
 ```env
-NEXT_PUBLIC_SITE_URL=https://inymet.com.mx
-NEXT_PUBLIC_GA4_ID=G-XXXXXXXXXX
-NEXT_PUBLIC_GTM_ID=GTM-XXXXXXX
-NEXT_PUBLIC_HUBSPOT_PORTAL_ID=XXXXXXX
-NEXT_PUBLIC_API_URL=https://api.inymet.com.mx
-```
-
-### `20-backend/.env`
-```env
-PORT=3001
-DATABASE_URL=postgresql://user:pass@host:5432/inymet_prod
-HUBSPOT_ACCESS_TOKEN=pat-na1-XXXXXXXX
-OPENAI_API_KEY=sk-...
-ANTHROPIC_API_KEY=sk-ant-...
+HUBSPOT_ACCESS_TOKEN=pat-na1-XXXXXXXX        # leads al CRM
 SMTP_HOST=smtp.gmail.com
 SMTP_USER=ventas@inymet.com.mx
 SMTP_PASS=...
+NOTIFY_EMAIL=ventas@inymet.com.mx
+NEXT_PUBLIC_GA4_ID=G-XXXXXXXXXX
+NEXT_PUBLIC_GTM_ID=GTM-XXXXXXX
+NEXT_PUBLIC_HUBSPOT_PORTAL_ID=2870195        # ✅ ya configurada (chat HubSpot activo)
+NEXT_PUBLIC_SITE_URL=https://inymet.com.mx
+ANTHROPIC_API_KEY=sk-ant-...                 # solo al reactivar Emma
+NEXT_PUBLIC_LINKEDIN=...                     # solo si la URL final no es /company/inymet
 ```
 
----
-
-## 🚀 Checklist de deploy (Vercel + Railway)
+## 🚀 Checklist de lanzamiento
 
 ```
-[ ] Subir repositorio a GitHub (privado)
-[ ] Conectar 10-frontend con Vercel
-[ ] Configurar variables de entorno en Vercel dashboard
-[ ] Conectar 20-backend con Railway
-[ ] Configurar variables de entorno en Railway
-[ ] Ejecutar: prisma db push (en Railway)
-[ ] Apuntar dominio inymet.com.mx → Vercel (cambio de DNS)
-[ ] Verificar HTTPS automático (Vercel lo genera)
-[ ] Enviar sitemap en Google Search Console
-[ ] Prueba completa del formulario de cotización en producción
-[ ] Verificar que leads llegan a HubSpot
-[ ] Activar GA4 y verificar eventos
+[ ] Env vars C1 en Vercel + redeploy
+[ ] Prueba end-to-end del formulario (calibración + venta) → HubSpot + emails
+[ ] Rate limiting / Turnstile en /api/leads
+[ ] DNS inymet.com.mx → Vercel + 301s del sitio viejo
+[ ] Google Search Console + sitemap
+[ ] Verificar GA4 recibiendo eventos (form_submit con quote_type)
+[ ] Publicar video en YouTube (guía 06)
+[ ] Resolver LinkedIn (guía 07)
+[ ] Unificar cifras oficiales (+189 vs +500 / <9h vs <24h)
 ```
-
----
 
 ## 🛑 No hacer en producción sin autorización
 
-- Modificar estructura de rutas existentes (afecta SEO del dominio actual)
-- Cambiar canonical URL sin redireccionamientos 301
-- Forzar push a rama `main` sin PR review
+- Modificar estructura de rutas existentes sin redirects 301
+- Cambiar canonical URLs
+- Activar Emma sin cumplir los 3 requisitos de la sección Chatbot
+- Reintroducir colores fuera del tema Clásico (solo azules)

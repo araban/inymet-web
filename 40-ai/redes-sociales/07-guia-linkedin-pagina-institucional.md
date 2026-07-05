@@ -1,13 +1,29 @@
 # Guía paso a paso — Página institucional de INyMET en LinkedIn
-**Fecha:** 2026-07-05
-**Situación de partida:** existen 2–3 páginas de INyMET creadas en distintos momentos y **nadie tiene ya acceso de administrador** a ninguna.
+**Fecha:** 2026-07-05 (actualizada tras confirmar situación)
+**Situación confirmada:** existen 2–3 páginas huérfanas **irrecuperables** (no se sabe ni desde qué correo se crearon) → la ruta es **reportarlas para eliminación y crear página nueva**. Quien opera esto es un **consultor externo** (no empleado de INyMET) con correo del dominio ya creado.
 **Documentos relacionados:** `01-linkedin-carruseles.md` (contenido), `04-thought-leadership-directivos.md` (perfiles personales), `05-hashtags-biblioteca.md`
 
 ---
 
-## PARTE 0 — Resolver las páginas huérfanas (antes de crear nada)
+## ⭐ RUTA RECOMENDADA PARA ESTE CASO (consultor externo)
 
-> ⚠️ No crees la página nueva todavía. Si LinkedIn detecta duplicados después, el proceso de limpieza es más lento. Primero intenta **recuperar** la mejor página existente (conserva seguidores); si no se puede, se **reportan para eliminación** y entonces sí se crea una nueva.
+LinkedIn **no permite crear páginas de empresa sin un perfil personal** — no existen "cuentas de empresa" independientes, y crear un perfil ficticio viola sus términos y pone en riesgo la página. Dos opciones honestas:
+
+**Opción A (recomendada): que la cree un empleado real de INyMET.**
+1. El director o la persona de marketing/ventas de INyMET crea la página desde SU perfil personal (con INyMET en su Experiencia y el correo del dominio verificado).
+2. Una vez creada, **te agrega a ti como administrador** — los administradores NO necesitan declarar empleo en la empresa; las agencias externas administran páginas de clientes así todos los días. Tu perfil solo necesita ser conexión de 1er grado de quien te invita.
+3. Resultado: tú operas la página sin que tu perfil diga que trabajas en INyMET.
+
+**Opción B: crearla tú, declarando la relación real de consultoría.**
+Si nadie interno puede hacerlo, agrega en tu Experiencia una posición **veraz**: puesto "Consultor de Tecnología / Marketing Digital", empresa "Grupo INyMET", tipo de empleo **"Contrato" o "Profesional independiente"** (LinkedIn tiene ese campo justamente para esto). Eso no afirma que seas empleado — declara una relación de servicios que sí existe, y puedes cerrarla con fecha fin cuando termine el proyecto. Con eso + el correo del dominio verificado puedes crear la página.
+
+En ambas opciones, aplica después la regla de gobernanza (sección 0.4): mínimo 2 admins, siempre incluyendo a alguien de INyMET.
+
+---
+
+## PARTE 0 — Resolver las páginas huérfanas
+
+> ✅ Confirmado que son irrecuperables (no se conoce correo ni cuenta creadora) → **saltar la sección 0.2** e ir directo al reporte de duplicados (0.3). El reporte puede correr en paralelo a la creación de la página nueva; solo verifica primero si alguna huérfana ocupa la URL `linkedin.com/company/inymet`.
 
 ### 0.1 Inventario
 1. Busca en LinkedIn: `INyMET`, `Grupo INyMET`, `Inymet calibración`.
