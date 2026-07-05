@@ -70,7 +70,7 @@ export default function RootLayout({
   const hubspotPortalId = process.env.NEXT_PUBLIC_HUBSPOT_PORTAL_ID;
 
   return (
-    <html lang="es" data-theme="marina">
+    <html lang="es" data-theme="clasico">
       <head>
         {/* Restore saved theme before first paint to prevent flash */}
         <script
