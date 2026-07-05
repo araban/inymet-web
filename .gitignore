@@ -7,3 +7,7 @@ yarn-debug.log*
 yarn-error.log*
 .next/
 .env.local
+
+.vercel
+.env*
+.vercel/
