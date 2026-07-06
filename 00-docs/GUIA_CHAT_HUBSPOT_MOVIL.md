@@ -60,9 +60,28 @@
 
 ---
 
+## C. Dar acceso a otra persona de INyMET
+
+Link directo: **app.hubspot.com/settings/2870195/users**
+(o: ⚙️ Settings → **Usuarios y equipos** → botón **Crear usuario**)
+
+1. Escribe el correo de la persona (usar su correo `@inymet.com.mx`).
+2. **Permisos** — no des Super Admin por default; elige según el rol:
+   - **Ventas / atención del chat**: acceso a CRM (contactos, negocios: ver + editar) y a Conversaciones. Es el perfil típico.
+   - **Marketing**: lo anterior + herramientas de marketing.
+   - **Super Admin**: solo para el responsable general (máximo 2 personas).
+3. **Enviar invitación** → la persona recibe un correo, crea su contraseña y entra.
+4. Pídele que active **2FA** (Perfil → Seguridad) y que instale la **app móvil** con notificaciones (sección B).
+5. Si va a atender el chat: agrégala también al inbox → **Conversations → Inbox → ⚙️ → Access** → añadir miembro.
+
+> Regla de oro (la misma que LinkedIn): **mínimo 2 personas con acceso admin** y registradas en el gestor de contraseñas — así el portal nunca queda huérfano.
+
+---
+
 ## Checklist
 - [ ] Bot de captura configurado en el chatflow (A.2)
 - [ ] Zona horaria del inbox en America/Mexico_City + horario + away message (A.3)
 - [ ] App HubSpot instalada con push activo en ≥2 celulares (B.1)
 - [ ] Snippets de respuestas frecuentes creados
 - [ ] Decisión sobre IA: bot de reglas hoy → Eve al validar la guía de conocimiento (largo plazo)
+- [ ] Segundo usuario de INyMET invitado con permisos correctos + 2FA + app móvil (C)
