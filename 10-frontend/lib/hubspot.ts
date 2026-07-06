@@ -91,6 +91,7 @@ export async function createHubSpotDeal(contactId: string, lead: LeadData): Prom
     lead.quoteType === "instrumentos"
       ? `Venta Instrumentos${lead.brand ? ` (${lead.brand})` : ""}`
       : "Calibración";
+  // Asociación inline al crear (atómica) — associationTypeId 3 = deal→contact
   const deal = await hs<{ id: string }>("/crm/v3/objects/deals", "POST", {
     properties: {
       dealname: `[${lead.industry.toUpperCase()}] ${lead.company} - ${tipo}`,
@@ -98,11 +99,13 @@ export async function createHubSpotDeal(contactId: string, lead: LeadData): Prom
       dealstage: "appointmentscheduled",
       closedate: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString(),
     },
+    associations: [
+      {
+        to: { id: contactId },
+        types: [{ associationCategory: "HUBSPOT_DEFINED", associationTypeId: 3 }],
+      },
+    ],
   });
-
-  await hs(`/crm/v4/objects/deals/${deal.id}/associations/contacts/${contactId}/3`, "PUT", [
-    { associationCategory: "HUBSPOT_DEFINED", associationTypeId: 3 },
-  ]);
 
   return deal.id;
 }
