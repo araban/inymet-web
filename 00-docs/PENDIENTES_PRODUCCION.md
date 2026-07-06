@@ -19,7 +19,7 @@
 
 | # | Pendiente | Detalle |
 |---|-----------|---------|
-| C1 | **Env vars en Vercel** | ✅ SMTP configurado y probado 2026-07-05 (mail.inymet.com.mx:465, usuario antonio.aranaa@ — `email_ok=true` en prueba real; notificaciones llegan a esa bandeja hasta definir `NOTIFY_EMAIL=ventas@`). ⏳ Faltan: `HUBSPOT_ACCESS_TOKEN` (leads al CRM) y `NEXT_PUBLIC_GA4_ID` + `NEXT_PUBLIC_GTM_ID` (medición) |
+| C1 | **Env vars en Vercel** | ✅ SMTP probado (mail.inymet.com.mx:465, `email_ok=true`; notificaciones a antonio.aranaa@ hasta definir `NOTIFY_EMAIL=ventas@`). ✅ HubSpot conectado y probado 2026-07-06: private app "Sitio Web INyMET — Leads", propiedades `equipment_to_calibrate`/`urgency_level`/`lead_source` creadas, contacto+deal con asociación verificados en CRM (se corrigió bug de asociación v4), ruta de email duplicado validada. ⏳ Solo falta: `NEXT_PUBLIC_GA4_ID` + `NEXT_PUBLIC_GTM_ID` (medición) |
 | C2 | **Migrar dominio inymet.com.mx → Vercel** | Cambio de DNS + redirects 301 de las rutas del sitio viejo a las nuevas. Hasta entonces, todo el SEO trabaja para inymet-web.vercel.app (URL temporal) |
 | C3 | **Rate limiting en `/api/leads`** | Endpoint abierto sin protección anti-spam. Agregar límite por IP o Cloudflare Turnstile. (`/api/chat` también, pero solo importa si se reactiva Eve) |
 | C4 | **Prueba end-to-end del funnel** | Submit del formulario (ambos tipos: calibración y venta) → verificar contacto+deal en HubSpot → verificar emails de notificación |
