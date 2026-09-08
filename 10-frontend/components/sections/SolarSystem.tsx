@@ -283,9 +283,9 @@ export function SolarSystem() {
                 cy={CONTAINER_SIZE / 2}
                 r={r}
                 fill="none"
-                stroke="rgba(255,255,255,0.09)"
-                strokeWidth="1"
-                strokeDasharray="3 10"
+                stroke="rgba(255,255,255,0.28)"
+                strokeWidth="1.5"
+                strokeDasharray="4 6"
               />
             ))}
           </svg>

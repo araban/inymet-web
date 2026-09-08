@@ -19,6 +19,12 @@ const nextConfig = {
     optimizePackageImports: ["lucide-react", "framer-motion"],
   },
 
+  async redirects() {
+    return [
+      { source: "/casos-de-exito", destination: "/industrias", permanent: true },
+    ];
+  },
+
   async headers() {
     return [
       {
