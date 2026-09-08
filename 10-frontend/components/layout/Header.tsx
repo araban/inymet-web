@@ -43,9 +43,9 @@ const instrumentacionBrands: { name: string; href: string; icon: LucideIcon }[] 
 ];
 
 const industriasItems: { name: string; href: string; desc: string; icon: LucideIcon }[] = [
-  { name: "Automotriz",   href: "/industrias/automotriz",  desc: "IATF 16949 · PPAP",       icon: Car },
-  { name: "Farmacéutica", href: "/industrias/farmaceutica",desc: "GMP · FDA · COFEPRIS",     icon: Pill },
-  { name: "Alimentos",    href: "/industrias/alimentos",   desc: "BRC · FSSC 22000 · HACCP", icon: Leaf },
+  { name: "Automotriz",   href: "/industrias/automotriz",  desc: "Instrumentos de línea de producción", icon: Car },
+  { name: "Farmacéutica", href: "/industrias/farmaceutica",desc: "Control de proceso crítico",           icon: Pill },
+  { name: "Alimentos",    href: "/industrias/alimentos",   desc: "Temperatura y control de proceso",     icon: Leaf },
 ];
 
 // ─── Types ───────────────────────────────────────────────────────────────────

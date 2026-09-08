@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     "calibración industrial certificada",
     "metrología certificada CENAM",
     "calibración temperatura presión eléctrica",
-    "calibración IATF 16949 GMP BRC",
+    "calibración certificada acreditada ISO 17025",
   ],
   alternates: {
     canonical: BASE_URL,

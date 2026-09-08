@@ -5,15 +5,15 @@ import QuoteForm from "@/components/forms/QuoteForm";
 import { CheckCircle, AlertTriangle, ArrowRight, Award, Clock, Shield, Zap } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Calibración para Industria Automotriz | IATF 16949 | INyMET",
+  title: "Calibración para Industria Automotriz | ISO 17025 | INyMET",
   description:
-    "Calibración certificada para industria automotriz. IATF 16949, ISO 9001, MSA. Evita no conformidades y paros de línea. Respuesta en 24h en México.",
+    "Calibración certificada ISO 17025 para industria automotriz. Evita no conformidades y paros de línea. Respuesta en 24h en México.",
   keywords: [
     "calibración automotriz México",
-    "IATF 16949 calibración",
+    "calibración certificada ISO 17025",
     "laboratorio metrología automotriz",
     "calibración instrumentos planta automotriz",
-    "MSA gauge R&R calibración",
+    "análisis de sistemas de medición calibración",
   ],
 };
 
@@ -21,20 +21,20 @@ const automotiveSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   name: "Calibración para Industria Automotriz",
-  description: "Calibración certificada ISO 17025 para plantas automotrices. Cumplimiento IATF 16949 y MSA.",
+  description: "Calibración certificada ISO 17025 para plantas automotrices, con trazabilidad CENAM.",
   provider: { "@type": "Organization", name: "INyMET" },
   areaServed: "México",
 };
 
 const painPoints = [
   {
-    title: "No conformidades en auditorías IATF",
-    desc: "Un instrumento no calibrado genera una no conformidad mayor que puede detener tu certificación IATF 16949 y paralizar la línea de producción.",
+    title: "No conformidades por calibración en tus auditorías",
+    desc: "Un instrumento no calibrado genera una no conformidad mayor que puede detener tu certificación de calidad y paralizar la línea de producción.",
     severity: "Riesgo crítico",
   },
   {
-    title: "Rechazo de PPAP por MSA deficiente",
-    desc: "Un análisis de sistemas de medición (MSA) con instrumentos descalibrados invalida tu Gauge R&R y retrasa la aprobación de tu cliente OEM.",
+    title: "Rechazo de aprobaciones por mediciones no confiables",
+    desc: "Un análisis de sistema de medición con instrumentos descalibrados invalida tus resultados y retrasa la aprobación de tu cliente OEM.",
     severity: "Impacto en producción",
   },
   {
@@ -54,8 +54,8 @@ const services = [
 ];
 
 const guarantees = [
-  "Certificados válidos para auditorías IATF 16949 y FORD Q1",
-  "Reportes de incertidumbre para MSA y Gauge R&R",
+  "Certificados válidos para tus auditorías de calidad",
+  "Reportes de incertidumbre de medición",
   "Trazabilidad completa al SI vía CENAM",
   "Historial auditab de calibración por instrumento",
   "Entrega de certificados en menos de 24 horas",
@@ -90,7 +90,7 @@ export default function AutorizPage() {
 
         <div className="relative container-custom max-w-5xl">
           <div className="flex flex-wrap gap-2 mb-6">
-            {["IATF 16949", "ISO 9001", "MSA", "PPAP", "APQP"].map((s) => (
+            {["ISO 17025"].map((s) => (
               <span key={s} className="bg-accent-500/15 border border-accent-400/30 text-accent-300 text-xs font-bold px-3 py-1 rounded-full">
                 {s}
               </span>
@@ -103,8 +103,8 @@ export default function AutorizPage() {
             </span>
           </h1>
           <p className="text-slate-400 text-lg mb-8 max-w-2xl">
-            Evita no conformidades en auditorías IATF 16949. Certificados ISO 17025 con trazabilidad
-            CENAM, válidos para PPAP, MSA y auditorías de clientes OEM.
+            Evita no conformidades por calibración en tus auditorías de calidad. Certificados ISO 17025
+            con trazabilidad CENAM, válidos para tus auditorías y las de tus clientes OEM.
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
             <Link href="/contacto" className="group inline-flex items-center gap-2 px-7 py-4 bg-accent-500 hover:bg-accent-400 text-white font-bold text-sm rounded-xl transition-all shadow-lg hover:-translate-y-px">
@@ -218,7 +218,7 @@ export default function AutorizPage() {
               <div className="bg-brand-900 border-2 border-brand-700 rounded-2xl p-6">
                 <div className="flex items-center gap-2 mb-3">
                   <Zap className="w-5 h-5 text-accent-400" />
-                  <h3 className="font-black text-white text-base">¿Auditoría IATF próxima?</h3>
+                  <h3 className="font-black text-white text-base">¿Auditoría próxima?</h3>
                 </div>
                 <p className="text-sm text-slate-300 mb-4 leading-relaxed">
                   Si tienes una auditoría en menos de 72 horas, llámanos ahora para atención prioritaria.

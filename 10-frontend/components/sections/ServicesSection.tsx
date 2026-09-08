@@ -28,8 +28,8 @@ export default function ServicesSection() {
               <span className="text-brand-600">de tu planta</span>
             </h2>
             <p className="text-gray-500 text-base mt-3 max-w-xl">
-              Trazabilidad CENAM en todas las magnitudes. Certificados aceptados en auditorías
-              ISO 9001, IATF 16949, GMP, BRC y FDA sin excepción.
+              Trazabilidad CENAM en todas las magnitudes. Certificados con acreditación
+              ISO 17025, aceptados en tus auditorías de calidad sin excepción.
             </p>
           </div>
           <Link

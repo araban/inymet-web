@@ -16,14 +16,14 @@ const cases = [
     badgeColor: "bg-brand-50 text-brand-700",
     borderColor: "border-brand-100",
     accentColor: "bg-brand-50",
-    challenge: "Planta Tier 1 con auditoría IATF 16949 en 30 días",
+    challenge: "Planta Tier 1 con auditoría de calidad en 30 días",
     context: "Instrumento clave",
     situation:
-      "Una planta de manufactura automotriz Tier 1 detectó que el 40% de sus instrumentos de medición dimensional tenían certificados de calibración vencidos, a 30 días de una auditoría IATF 16949 de renovación.",
+      "Una planta de manufactura automotriz Tier 1 detectó que el 40% de sus instrumentos de medición dimensional tenían certificados de calibración vencidos, a 30 días de una auditoría de renovación de su sistema de calidad.",
     action:
       "Diseñamos un plan de calibración de emergencia. En 15 días hábiles calibramos 127 instrumentos críticos —calibradores, micrómetros, manómetros y sensores de temperatura— emitimos certificados con trazabilidad CENAM y entregamos el expediente completo listo para auditoría.",
     results: [
-      { icon: Shield, metric: "0 no conformidades", label: "relacionadas con calibración en auditoría IATF", highlight: true },
+      { icon: Shield, metric: "0 no conformidades", label: "relacionadas con calibración en la auditoría", highlight: true },
       { icon: Clock, metric: "15 días", label: "para calibrar 127 instrumentos en sitio" },
       { icon: TrendingUp, metric: "Certificación renovada", label: "sin observaciones en metrología" },
     ],
@@ -36,18 +36,18 @@ const cases = [
     badgeColor: "bg-brand-50 text-brand-700",
     borderColor: "border-brand-100",
     accentColor: "bg-brand-50",
-    challenge: "Laboratorio farmacéutico con inspección FDA programada",
-    context: "Cumplimiento GMP",
+    challenge: "Laboratorio farmacéutico con inspección regulatoria programada",
+    context: "Cumplimiento normativo",
     situation:
-      "Un laboratorio de manufactura farmacéutica recibió notificación de inspección FDA con 45 días de anticipación. Su programa de calibración no cumplía con los requisitos GMP para incertidumbre de medición ni para trazabilidad metrológica documentada.",
+      "Un laboratorio de manufactura farmacéutica recibió notificación de una inspección regulatoria con 45 días de anticipación. Su programa de calibración no cumplía con los requisitos de incertidumbre de medición ni con la trazabilidad metrológica documentada.",
     action:
-      "Realizamos una auditoría completa de su sistema de calibración, identificamos 23 equipos críticos sin documentación adecuada y calibramos todo con certificados que incluían cálculo de incertidumbre según GUM, en el formato requerido por FDA 21 CFR.",
+      "Realizamos una auditoría completa de su sistema de calibración, identificamos 23 equipos críticos sin documentación adecuada y calibramos todo con certificados que incluían cálculo de incertidumbre según la Guía GUM, en el formato requerido para la inspección.",
     results: [
-      { icon: Shield, metric: "Inspección FDA aprobada", label: "sin observaciones en calibración", highlight: true },
-      { icon: Clock, metric: "23 equipos críticos", label: "calibrados con documentación GMP completa" },
+      { icon: Shield, metric: "Inspección regulatoria aprobada", label: "sin observaciones en calibración", highlight: true },
+      { icon: Clock, metric: "23 equipos críticos", label: "calibrados con documentación completa" },
       { icon: TrendingUp, metric: "100% trazabilidad", label: "documentada para todos los equipos" },
     ],
-    quote: "La documentación que entregó INyMET fue exactamente lo que el auditor de FDA necesitaba ver. Profesionales y muy detallados.",
+    quote: "La documentación que entregó INyMET fue exactamente lo que el auditor necesitaba ver. Profesionales y muy detallados.",
     role: "Director de Aseguramiento de Calidad — Laboratorio farmacéutico, Jalisco",
   },
   {
@@ -56,18 +56,18 @@ const cases = [
     badgeColor: "bg-brand-50 text-brand-700",
     borderColor: "border-brand-100",
     accentColor: "bg-brand-50",
-    challenge: "Primera certificación BRC para acceso a mercado europeo",
+    challenge: "Primera certificación de inocuidad alimentaria para acceso a mercado europeo",
     context: "Inocuidad alimentaria",
     situation:
-      "Una empresa procesadora de alimentos buscaba obtener la certificación BRC Global Standards por primera vez para exportar a Europa. No contaban con un programa formal de calibración ni con registros históricos de ningún instrumento.",
+      "Una empresa procesadora de alimentos buscaba obtener su primera certificación de inocuidad alimentaria para exportar a Europa. No contaban con un programa formal de calibración ni con registros históricos de ningún instrumento.",
     action:
-      "Desarrollamos desde cero su programa de calibración: inventario de 85 instrumentos críticos, definición de intervalos óptimos de calibración, calibración de todos los equipos y creación de un sistema de registros alineado con los requerimientos de BRC.",
+      "Desarrollamos desde cero su programa de calibración: inventario de 85 instrumentos críticos, definición de intervalos óptimos de calibración, calibración de todos los equipos y creación de un sistema de registros alineado con los requerimientos de la certificación.",
     results: [
-      { icon: Shield, metric: "Certificación BRC", label: "obtenida en el primer intento", highlight: true },
+      { icon: Shield, metric: "Certificación aprobada", label: "obtenida en el primer intento", highlight: true },
       { icon: Clock, metric: "85 instrumentos", label: "calibrados con programa documentado" },
       { icon: TrendingUp, metric: "Acceso a Europa", label: "habilitado — nuevos contratos de exportación" },
     ],
-    quote: "Sin el programa de calibración que INyMET nos ayudó a construir, no hubiéramos pasado la auditoría BRC. Ahora exportamos a Europa.",
+    quote: "Sin el programa de calibración que INyMET nos ayudó a construir, no hubiéramos pasado la auditoría de certificación. Ahora exportamos a Europa.",
     role: "Gerente de Inocuidad Alimentaria — Empresa de alimentos, Estado de México",
   },
 ];

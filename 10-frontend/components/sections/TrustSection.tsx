@@ -9,10 +9,7 @@ const stats = [
   { icon: TrendingUp, value: "+500",       label: "Empresas certificadas" },
 ];
 
-const certs = [
-  "IAS CL-101", "ISO 17025", "ISO 9001", "NMX-EC-17025", "CENAM",
-  "IATF 16949", "GMP / NOM-059", "BRC Food", "FDA 21 CFR", "HACCP", "FSSC 22000", "SQF",
-];
+const certs = ["IAS CL-101", "ISO 17025", "CENAM"];
 
 function useFadeIn() {
   const ref = useRef<HTMLDivElement>(null);
@@ -63,7 +60,7 @@ export default function TrustSection() {
 
         <div className="border-t border-gray-100 pt-7">
           <p className="text-center text-[10px] text-gray-400 font-bold uppercase tracking-[0.2em] mb-4">
-            Estándares y normas que cubrimos con nuestros certificados
+            Acreditación y trazabilidad de nuestros certificados
           </p>
           <div className="flex flex-wrap justify-center gap-2">
             {certs.map((c) => (

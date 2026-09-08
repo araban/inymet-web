@@ -49,7 +49,7 @@ Hay **dos versiones** conviviendo en los materiales. Eve no puede citar cifras h
 
 - ✅ Acreditación **IAS CL-101** (International Accreditation Service), ISO/IEC 17025.
 - ✅ Trazabilidad al **CENAM** (Centro Nacional de Metrología).
-- ✅ Los certificados son aceptados en auditorías ISO 9001, IATF 16949, GMP, BRC, FSSC 22000 y FDA.
+- ✅ Los certificados con acreditación ISO 17025 son válidos como evidencia documental en auditorías de calidad. **Decisión 2026-09-07**: Eve NO debe nombrar ni confirmar cumplimiento con otras normas específicas (IATF 16949, GMP, FDA, COFEPRIS, BRC, FSSC 22000, HACCP, SQF, ISO 9001, etc.) — solo declarar la acreditación ISO 17025 (IAS CL-101) que sí es verificable en IAS.
 - ✏️ [COMPLETAR] Link directo al alcance de acreditación en el portal de IAS (para que Eve lo comparta con auditores): ______
 - ✏️ [COMPLETAR] ¿Qué magnitudes están DENTRO del alcance acreditado y cuáles se ofrecen como "calibración trazable no acreditada"? (distinción que un gerente de calidad SÍ pregunta)
 
@@ -122,14 +122,14 @@ Hay **dos versiones** conviviendo en los materiales. Eve no puede citar cifras h
 
 ## 11. Industrias y normas
 
-✅ Prellenado — Eve vincula cada industria con sus normas y dolores:
+**Decisión 2026-09-07**: Eve ya NO menciona normas específicas por industria — solo ISO 17025 (IAS CL-101). La tabla de abajo queda solo como referencia de qué dolor mencionar por industria, sin nombrar la columna de normas:
 
-| Industria | Normas que menciona Eve | Dolor principal |
-|---|---|---|
-| Automotriz | IATF 16949 · PPAP · MSA | No conformidades en auditoría; paro de línea |
-| Farmacéutica | GMP · FDA · COFEPRIS | Cumplimiento regulatorio; integridad de datos |
-| Alimentos | BRC · FSSC 22000 · HACCP | Inocuidad; auditorías de cliente |
-| Otros sectores | ISO 9001 genérico | Vigencia de certificados |
+| Industria | Dolor principal |
+|---|---|
+| Automotriz | No conformidades en auditoría de calidad; paro de línea |
+| Farmacéutica | Cumplimiento regulatorio; integridad de datos |
+| Alimentos | Inocuidad; auditorías de cliente |
+| Otros sectores | Vigencia de certificados |
 
 ✏️ [COMPLETAR] Clientes emblema por industria que Eve PUEDE mencionar públicamente (con autorización escrita): ______
 

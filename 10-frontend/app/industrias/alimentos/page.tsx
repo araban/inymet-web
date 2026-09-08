@@ -5,14 +5,14 @@ import QuoteForm from "@/components/forms/QuoteForm";
 import { CheckCircle, AlertTriangle, ArrowRight, Award, Clock, Shield, Thermometer } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Calibración para Industria Alimentaria | HACCP BRC FSSC | INyMET",
+  title: "Calibración para Industria Alimentaria | ISO 17025 | INyMET",
   description:
-    "Calibración certificada para plantas de alimentos y bebidas. Cumplimiento HACCP, BRC, FSSC 22000, SQF. Temperatura, peso y proceso. México.",
+    "Calibración certificada ISO 17025 para plantas de alimentos y bebidas. Temperatura, peso y proceso, con trazabilidad CENAM. México.",
   keywords: [
     "calibración industria alimentos México",
-    "calibración HACCP BRC",
+    "calibración certificada ISO 17025 alimentos",
     "metrología planta alimentos",
-    "calibración BRC SQF FSSC México",
+    "calibración inocuidad alimentaria México",
     "trazabilidad inocuidad alimentaria",
   ],
 };
@@ -21,7 +21,7 @@ const foodSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   name: "Calibración para Industria Alimentaria",
-  description: "Calibración certificada ISO 17025 para plantas de alimentos. Cumplimiento HACCP, BRC, FSSC 22000.",
+  description: "Calibración certificada ISO 17025 para plantas de alimentos, con trazabilidad CENAM.",
   provider: { "@type": "Organization", name: "INyMET" },
   areaServed: "México",
 };
@@ -29,12 +29,12 @@ const foodSchema = {
 const painPoints = [
   {
     title: "Puntos críticos de control sin trazabilidad",
-    desc: "Las temperaturas críticas (pasteurización, esterilización, almacenamiento) deben monitorearse con instrumentos calibrados. Sin trazabilidad, el HACCP no es válido.",
+    desc: "Las temperaturas críticas (pasteurización, esterilización, almacenamiento) deben monitorearse con instrumentos calibrados. Sin trazabilidad, tu plan de inocuidad no es válido.",
     severity: "Riesgo de inocuidad",
   },
   {
-    title: "Hallazgos en auditorías BRC o SQF",
-    desc: "La falta de calibración documentada es uno de los hallazgos más frecuentes en auditorías BRC Global Standards, representando un riesgo de pérdida de certificación.",
+    title: "Hallazgos en auditorías de inocuidad alimentaria",
+    desc: "La falta de calibración documentada es uno de los hallazgos más frecuentes en auditorías de inocuidad alimentaria, representando un riesgo de pérdida de certificación.",
     severity: "Pérdida de certificación",
   },
   {
@@ -54,7 +54,7 @@ const serviceGroups = [
       "Data loggers de cadena de frío",
       "Termocoplas de hornos de cocción",
       "Transmisores de temperatura de proceso",
-      "Termómetros de control crítico (HACCP)",
+      "Termómetros de control crítico de proceso",
     ],
   },
   {
@@ -96,7 +96,7 @@ const serviceGroups = [
 ];
 
 const guarantees = [
-  "Certificados válidos para auditorías BRC, SQF, FSSC 22000, FSMA y HACCP",
+  "Certificados válidos para tus auditorías de inocuidad alimentaria",
   "Trazabilidad al SI vía CENAM para todos los puntos calibrados",
   "Historial completo de calibración por instrumento (número de serie)",
   "Documentación de incertidumbre de medición expandida",
@@ -108,9 +108,9 @@ const guarantees = [
 
 const stats = [
   { value: "+120", label: "Plantas de alimentos atendidas", icon: "🏭" },
-  { value: "BRC", label: "Certificaciones aprobadas en 1er intento", icon: "🏆" },
+  { value: "100%", label: "Certificaciones aprobadas en 1er intento", icon: "🏆" },
   { value: "24h", label: "Entrega de certificados", icon: "⚡" },
-  { value: "HACCP", label: "Puntos críticos trazables", icon: "✅" },
+  { value: "0", label: "No conformidades por calibración", icon: "✅" },
 ];
 
 export default function AlimentosPage() {
@@ -132,7 +132,7 @@ export default function AlimentosPage() {
 
         <div className="relative container-custom max-w-5xl">
           <div className="flex flex-wrap gap-2 mb-6">
-            {["BRC Global Standards", "FSSC 22000", "HACCP", "SQF", "ISO 17025"].map((s) => (
+            {["ISO 17025"].map((s) => (
               <span key={s} className="bg-accent-500/15 border border-accent-400/30 text-accent-300 text-xs font-bold px-3 py-1 rounded-full">
                 {s}
               </span>
@@ -141,12 +141,12 @@ export default function AlimentosPage() {
           <h1 className="text-3xl lg:text-5xl font-black mb-5 leading-tight max-w-3xl">
             Calibración para inocuidad alimentaria y{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-400 to-accent-300">
-              cumplimiento BRC
+              control de proceso
             </span>
           </h1>
           <p className="text-slate-400 text-lg mb-8 max-w-2xl">
             Mantén la trazabilidad de tus puntos críticos de control. Certificados válidos para
-            auditorías HACCP, BRC, FSSC 22000 y exportación a mercados internacionales.
+            tus auditorías de inocuidad alimentaria y exportación a mercados internacionales.
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
             <Link href="/contacto" className="group inline-flex items-center gap-2 px-7 py-4 bg-accent-500 hover:bg-accent-400 text-white font-bold text-sm rounded-xl transition-all shadow-lg hover:-translate-y-px">
@@ -258,14 +258,14 @@ export default function AlimentosPage() {
                 </div>
                 <p className="text-sm text-brand-700 leading-relaxed">
                   Las temperaturas de pasteurización, cocción, enfriamiento y almacenamiento son puntos
-                  críticos en HACCP. Nuestros certificados documentan cada punto con incertidumbre expandida.
+                  críticos de control en tu plan de inocuidad. Nuestros certificados documentan cada punto con incertidumbre expandida.
                 </p>
               </div>
 
               <div className="bg-brand-900 border-2 border-brand-700 rounded-2xl p-6">
                 <div className="flex items-center gap-2 mb-3">
                   <Clock className="w-5 h-5 text-accent-400" />
-                  <h3 className="font-black text-white text-base">¿Auditoría BRC próxima?</h3>
+                  <h3 className="font-black text-white text-base">¿Auditoría de inocuidad próxima?</h3>
                 </div>
                 <p className="text-sm text-slate-300 mb-4 leading-relaxed">
                   Movilizamos técnicos a tu planta en menos de 24 horas para calibración de emergencia.

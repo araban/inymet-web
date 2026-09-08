@@ -58,8 +58,8 @@ export default function CalibracionV2Page() {
             </span>
           </h1>
           <p className="text-lg text-slate-400 mb-6 max-w-xl">
-            11 laboratorios acreditados. Certificados con trazabilidad CENAM aceptados en auditorías
-            ISO 9001, IATF 16949, GMP, BRC y FDA. Respuesta en menos de 24 horas.
+            11 laboratorios acreditados. Certificados con trazabilidad CENAM, válidos como
+            evidencia documental en tus auditorías de calidad. Respuesta en menos de 24 horas.
           </p>
 
           {/* Quick stats */}

@@ -41,7 +41,7 @@ const stats = [
 
 const trustItems = [
   "Trazabilidad CENAM — Sistema Internacional de Unidades",
-  "Válido para ISO 9001 · IATF 16949 · GMP · BRC · FDA",
+  "Certificados con acreditación ISO 17025 (IAS CL-101)",
   "Servicio a domicilio en ZMVM y principales ciudades",
   "Respuesta prioritaria para auditorías urgentes",
 ];

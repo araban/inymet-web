@@ -43,7 +43,7 @@ const services = [
   "Diseño de programas de calibración preventiva",
   "Evaluación de la conformidad de instrumentos",
   "Capacitación en metrología industrial",
-  "Análisis de sistemas de medición (MSA)",
+  "Análisis de sistemas de medición",
   "Revisión de certificados de calibración",
   "Consultoría para acreditación de laboratorios internos",
 ];
@@ -59,7 +59,7 @@ const whyMatters = [
   },
   {
     title: "Cumplimiento normativo garantizado",
-    desc: "ISO 9001, IATF 16949, ISO 13485, GMP y BRC exigen trazabilidad metrológica. Sin ella, la no conformidad es inevitable.",
+    desc: "Los sistemas de gestión de calidad exigen trazabilidad metrológica documentada. Sin ella, la no conformidad es inevitable.",
   },
 ];
 

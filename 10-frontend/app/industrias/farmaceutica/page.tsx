@@ -5,14 +5,14 @@ import QuoteForm from "@/components/forms/QuoteForm";
 import { CheckCircle, AlertTriangle, ArrowRight, Award, Clock, Shield, FileText } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Calibración para Industria Farmacéutica | GMP ISO 17025 | INyMET",
+  title: "Calibración para Industria Farmacéutica | ISO 17025 | INyMET",
   description:
-    "Calibración certificada para la industria farmacéutica. Cumplimiento GMP, NOM-059, FDA 21 CFR. Documentación lista para auditorías COFEPRIS. México.",
+    "Calibración certificada ISO 17025 para la industria farmacéutica. Documentación completa lista para tus inspecciones regulatorias. México.",
   keywords: [
     "calibración farmacéutica México",
-    "calibración GMP laboratorio",
-    "metrología farmacéutica NOM-059",
-    "calibración COFEPRIS FDA",
+    "calibración certificada ISO 17025 farmacéutica",
+    "metrología farmacéutica México",
+    "calibración laboratorios farmacéuticos",
     "trazabilidad metrología farmacéutica",
   ],
 };
@@ -21,14 +21,14 @@ const pharmaSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   name: "Calibración para Industria Farmacéutica",
-  description: "Calibración certificada ISO 17025 para plantas farmacéuticas. Cumplimiento GMP, FDA y COFEPRIS.",
+  description: "Calibración certificada ISO 17025 para plantas farmacéuticas, con trazabilidad CENAM.",
   provider: { "@type": "Organization", name: "INyMET" },
   areaServed: "México",
 };
 
 const painPoints = [
   {
-    title: "Hallazgos críticos en COFEPRIS o FDA",
+    title: "Hallazgos críticos en inspecciones regulatorias",
     desc: "La falta de calibración documentada es uno de los hallazgos más frecuentes en inspecciones. Puede resultar en cierre de operaciones o recall de lotes.",
     severity: "Riesgo regulatorio crítico",
   },
@@ -38,8 +38,8 @@ const painPoints = [
     severity: "Invalidación de lotes",
   },
   {
-    title: "Documentación GMP incompleta",
-    desc: "Los registros de calibración deben incluir incertidumbre de medición, puntos calibrados y firma de metrólogo responsable. Sin esto, no hay cumplimiento GMP.",
+    title: "Documentación de calibración incompleta",
+    desc: "Los registros de calibración deben incluir incertidumbre de medición, puntos calibrados y firma de metrólogo responsable. Sin esto, no hay cumplimiento normativo.",
     severity: "No conformidad regulatoria",
   },
 ];
@@ -92,21 +92,21 @@ const serviceGroups = [
 ];
 
 const guarantees = [
-  "Documentación completa para auditorías COFEPRIS y FDA",
+  "Documentación completa para tus inspecciones regulatorias",
   "Registros de calibración con incertidumbre expandida U=2u",
-  "Trazabilidad al SI vía CENAM conforme a NMX-EC-17025",
+  "Trazabilidad al SI vía CENAM conforme a ISO 17025",
   "Certificados con firma de metrólogo responsable y número de acreditación",
   "Disponibilidad de registros históricos por instrumento",
   "Programa de calibración preventivo con alertas de vencimiento",
-  "Servicio a domicilio sin interrumpir manufactura GMP",
+  "Servicio a domicilio sin interrumpir tu manufactura",
   "Confidencialidad y manejo seguro de equipos farmacéuticos",
 ];
 
 const stats = [
   { value: "+150", label: "Plantas farmacéuticas atendidas", icon: "💊" },
-  { value: "0", label: "Hallazgos por calibración en COFEPRIS", icon: "✅" },
+  { value: "0", label: "Hallazgos por calibración en inspecciones", icon: "✅" },
   { value: "24h", label: "Entrega de certificados", icon: "⚡" },
-  { value: "GMP", label: "Documentación completamente alineada", icon: "📋" },
+  { value: "100%", label: "Documentación normativa completa", icon: "📋" },
 ];
 
 export default function FarmaceuticaPage() {
@@ -128,7 +128,7 @@ export default function FarmaceuticaPage() {
 
         <div className="relative container-custom max-w-5xl">
           <div className="flex flex-wrap gap-2 mb-6">
-            {["GMP", "NOM-059", "FDA 21 CFR", "COFEPRIS", "ISO 17025"].map((s) => (
+            {["ISO 17025"].map((s) => (
               <span key={s} className="bg-accent-500/15 border border-accent-400/30 text-accent-300 text-xs font-bold px-3 py-1 rounded-full">
                 {s}
               </span>
@@ -141,8 +141,8 @@ export default function FarmaceuticaPage() {
             </span>
           </h1>
           <p className="text-slate-400 text-lg mb-8 max-w-2xl">
-            Certificados de calibración con documentación completa para cumplir GMP, NOM-059, FDA
-            y superar auditorías de COFEPRIS sin hallazgos relacionados con metrología.
+            Certificados de calibración con documentación completa para tus inspecciones regulatorias,
+            sin hallazgos relacionados con metrología.
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
             <Link href="/contacto" className="group inline-flex items-center gap-2 px-7 py-4 bg-accent-500 hover:bg-accent-400 text-white font-bold text-sm rounded-xl transition-all shadow-lg hover:-translate-y-px">
@@ -248,7 +248,7 @@ export default function FarmaceuticaPage() {
               <div className="bg-accent-50 border-2 border-accent-200 rounded-2xl p-6">
                 <div className="flex items-center gap-2 mb-3">
                   <FileText className="w-5 h-5 text-accent-600" />
-                  <h3 className="font-black text-accent-900 text-base">Documentación GMP completa</h3>
+                  <h3 className="font-black text-accent-900 text-base">Documentación normativa completa</h3>
                 </div>
                 <p className="text-sm text-accent-800 leading-relaxed">
                   Cada certificado incluye: número de acreditación IAS, trazabilidad CENAM, incertidumbre expandida,
@@ -259,7 +259,7 @@ export default function FarmaceuticaPage() {
               <div className="bg-brand-900 border-2 border-brand-700 rounded-2xl p-6">
                 <div className="flex items-center gap-2 mb-3">
                   <Clock className="w-5 h-5 text-accent-400" />
-                  <h3 className="font-black text-white text-base">¿Inspección de COFEPRIS próxima?</h3>
+                  <h3 className="font-black text-white text-base">¿Inspección regulatoria próxima?</h3>
                 </div>
                 <p className="text-sm text-slate-300 mb-4 leading-relaxed">
                   Llámanos directamente para atención prioritaria. Movilizamos técnicos a tus instalaciones en menos de 24 horas.

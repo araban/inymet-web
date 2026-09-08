@@ -49,11 +49,11 @@ const resources = [
   {
     icon: CheckSquare,
     type: "Checklist",
-    title: "Preparación para Auditoría IATF 16949 — Metrología",
+    title: "Preparación para Auditoría de Calidad — Metrología",
     description:
-      "Los requerimientos específicos de IATF 16949 en materia de calibración y MSA. Para plantas automotrices en México.",
+      "Los requerimientos de calibración y análisis de sistemas de medición que revisan las auditorías de calidad. Para plantas automotrices en México.",
     cta: "Descargar checklist",
-    slug: "checklist-iatf-16949-metrologia",
+    slug: "checklist-auditoria-calidad-metrologia",
   },
   {
     icon: Calculator,

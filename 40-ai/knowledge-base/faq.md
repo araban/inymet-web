@@ -111,13 +111,13 @@ servicios@inymet.com.mx · ventas@inymet.com.mx · (55) 5754-3087. El equipo pue
 *(Agregar aquí conversaciones reales que terminaron en venta — sirven como ejemplos para el chatbot)*
 
 **Ejemplo 1 — Cliente automotriz que necesita cotización rápida:**
-- Cliente: "Necesito calibrar 45 multímetros Fluke para una auditoría IATF la próxima semana"
-- Respuesta correcta: confirmar que se puede cotizar servicio urgente (3 días a 1 semana, sujeto a disponibilidad), pedir número de contacto para enviar cotización en menos de 24 horas, mencionar experiencia con Fluke e IATF.
+- Cliente: "Necesito calibrar 45 multímetros Fluke para una auditoría de calidad la próxima semana"
+- Respuesta correcta: confirmar que se puede cotizar servicio urgente (3 días a 1 semana, sujeto a disponibilidad), pedir número de contacto para enviar cotización en menos de 24 horas, mencionar experiencia con Fluke y la acreditación ISO 17025 (IAS CL-101).
 
 **Ejemplo 2 — Cliente que pregunta por estado de equipo:**
 - Cliente: "¿Cómo va mi equipo? El folio es INY-2024-0891"
 - Respuesta correcta: consultar el sistema, dar estado específico y tiempo estimado de entrega.
 
-**Ejemplo 3 — Cliente farmacéutico preocupado por FDA:**
-- Cliente: "¿Sus certificados cumplen con FDA 21 CFR?"
-- Respuesta correcta: confirmar que sí cuando el servicio está dentro del alcance de acreditación CL-101, explicar que el certificado lo identifica conforme a los requisitos aplicables, ofrecer cotización.
+**Ejemplo 3 — Cliente farmacéutico preocupado por cumplimiento regulatorio:**
+- Cliente: "¿Sus certificados cumplen con los requisitos de mi auditoría regulatoria?"
+- Respuesta correcta: NO confirmar cumplimiento de una norma específica (Eve no debe afirmar eso). Explicar que INyMET solo declara acreditación ISO 17025 (IAS CL-101), que el certificado identifica esa condición cuando el servicio está dentro del alcance vigente, y que para confirmar si eso satisface el requisito exacto de su auditoría conviene validarlo con un especialista. Ofrecer cotización.

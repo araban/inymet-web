@@ -22,7 +22,7 @@ El costo incluye:
 
 ## El costo de una no conformidad en auditoría
 
-Una no conformidad mayor por calibración en una auditoría IATF puede significar:
+Una no conformidad mayor por calibración en una auditoría de calidad puede significar:
 
 - Suspensión temporal de la certificación
 - Auditoría de seguimiento con costo adicional (~$3,000–$8,000 USD)

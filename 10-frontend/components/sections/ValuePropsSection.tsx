@@ -13,7 +13,7 @@ const props = [
     icon: FileCheck,
     num: "100%",
     title: "Aceptados en auditorías",
-    body: "Certificados reconocidos por auditores de ISO 9001, IATF 16949, GMP, BRC, FDA, FSSC y más sin excepción.",
+    body: "Certificados con acreditación ISO 17025 y trazabilidad CENAM, válidos como evidencia documental en tus auditorías de calidad.",
     highlight: "Trazabilidad CENAM",
   },
   {

@@ -155,7 +155,7 @@ export default function CalibracionPage() {
           {[
             { icon: Clock, text: "Certificados en < 24h" },
             { icon: CheckCircle, text: "11 laboratorios acreditados" },
-            { icon: Award, text: "Aceptados en auditorías ISO 9001, IATF 16949, GMP, BRC y FDA" },
+            { icon: Award, text: "Certificados válidos como evidencia documental en tus auditorías de calidad" },
           ].map(({ icon: Icon, text }) => (
             <div key={text} className="flex items-center gap-2 text-sm text-gray-600">
               <Icon className="w-4 h-4 text-accent-500" />

@@ -12,7 +12,7 @@ Una de las preguntas más frecuentes que recibimos de gerentes de calidad es: ¿
 
 ## ¿Qué dice la norma?
 
-ISO 9001 cláusula 7.1.5 e IATF 16949 establecen que los intervalos de calibración deben ser determinados por la organización y revisados periódicamente. No existe una frecuencia universal impuesta por la norma — la empresa define y justifica sus intervalos.
+Los sistemas de gestión de calidad establecen que los intervalos de calibración deben ser determinados por la organización y revisados periódicamente. No existe una frecuencia universal impuesta por la norma — la empresa define y justifica sus intervalos.
 
 ## Factores que determinan la frecuencia correcta
 
@@ -22,7 +22,7 @@ ISO 9001 cláusula 7.1.5 e IATF 16949 establecen que los intervalos de calibraci
 
 **3. Criticidad del equipo:** Equipos que miden características críticas de seguridad o calidad del producto necesitan intervalos más cortos.
 
-**4. Requisitos del cliente o norma:** IATF 16949 puede requerir intervalos específicos para MSA. GMP establece criterios adicionales para equipos críticos de proceso.
+**4. Requisitos del cliente o norma:** tu sistema de gestión de calidad puede exigir intervalos específicos para tus análisis de sistemas de medición, y establecer criterios adicionales para equipos críticos de proceso.
 
 ## Intervalos típicos por tipo de instrumento
 

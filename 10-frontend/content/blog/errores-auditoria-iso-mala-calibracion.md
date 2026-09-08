@@ -12,7 +12,7 @@ La calibración es uno de los puntos que los auditores ISO revisan con mayor det
 
 ## 1. Certificados de calibración vencidos
 
-El error más frecuente y el más evitable. Muchas empresas calibran sus equipos pero no gestionan activamente las fechas de vencimiento. Un certificado vencido al momento de la auditoría es una no conformidad inmediata en ISO 9001 cláusula 7.1.5 e IATF 16949.
+El error más frecuente y el más evitable. Muchas empresas calibran sus equipos pero no gestionan activamente las fechas de vencimiento. Un certificado vencido al momento de la auditoría es una no conformidad inmediata en la mayoría de los sistemas de gestión de calidad.
 
 **Cómo evitarlo:** Implementa un programa de calibración con alertas de vencimiento a 30, 60 y 90 días antes de la fecha límite. La plantilla de Plan Anual de Calibración que ofrecemos como recurso gratuito incluye este sistema.
 
@@ -24,7 +24,7 @@ Un certificado de calibración sin trazabilidad al Sistema Internacional de Unid
 
 ## 3. Certificados sin cálculo de incertidumbre de medición
 
-ISO 17025, GMP y IATF 16949 requieren que los certificados de calibración incluyan la incertidumbre de medición calculada conforme a la Guía GUM. Sin este dato, el certificado no cumple con los requisitos normativos modernos.
+ISO 17025 requiere que los certificados de calibración incluyan la incertidumbre de medición calculada conforme a la Guía GUM. Sin este dato, el certificado no cumple con los requisitos normativos modernos.
 
 **Cómo evitarlo:** Verifica que cada certificado incluya la sección de incertidumbre con el valor, factor de cobertura (k) y nivel de confianza. Si tu proveedor actual no lo incluye, es momento de cambiar.
 

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "calibración certificada CENAM México",
     "metrología industrial México",
     "calibración temperatura presión eléctrica",
-    "calibración IATF 16949 GMP BRC HACCP",
+    "calibración certificada auditorías de calidad ISO 17025",
     "laboratorio calibración Ciudad de México",
   ],
   alternates: {

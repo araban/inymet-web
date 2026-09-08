@@ -6,22 +6,22 @@ import { ArrowRight, CheckCircle, Shield, Clock, Award } from "lucide-react";
 export const metadata: Metadata = {
   title: "Calibración por Industria | Automotriz, Farmacéutica y Alimentos | INyMET",
   description:
-    "Servicios de calibración certificada ISO 17025 especializados por industria: automotriz (IATF 16949), farmacéutica (GMP/FDA) y alimentos (BRC/HACCP). México.",
+    "Servicios de calibración certificada ISO 17025 especializados por industria: automotriz, farmacéutica y alimentos. Trazabilidad CENAM en México.",
 };
 
 const industries = [
   {
     slug: "automotriz",
     label: "Industria Automotriz",
-    headline: "Cero no conformidades en auditorías IATF",
-    norms: ["IATF 16949", "ISO 9001", "MSA", "PPAP"],
+    headline: "Cero no conformidades por calibración en tus auditorías",
+    norms: ["ISO 17025"],
     description:
-      "Calibración dimensional, eléctrica y de temperatura para plantas Tier 1 y Tier 2. Certificados aceptados en auditorías OEM y documentación lista para auditoría IATF.",
+      "Calibración dimensional, eléctrica y de temperatura para plantas Tier 1 y Tier 2. Certificados con trazabilidad CENAM y documentación lista para tus auditorías de calidad.",
     highlights: [
       "Respuesta de emergencia en menos de 24 horas",
       "Calibración en planta sin detener la línea",
-      "Expediente completo listo para auditoría IATF",
-      "Reportes de incertidumbre para MSA y Gauge R&R",
+      "Expediente completo listo para auditoría",
+      "Reportes de incertidumbre de medición",
     ],
     stat: { value: "+200", label: "plantas atendidas" },
     cta: "Ver soluciones automotrices",
@@ -29,13 +29,13 @@ const industries = [
   {
     slug: "farmaceutica",
     label: "Industria Farmacéutica",
-    headline: "Documentación GMP que supera inspecciones FDA",
-    norms: ["GMP", "FDA 21 CFR", "COFEPRIS", "NOM-059"],
+    headline: "Documentación completa que supera inspecciones regulatorias",
+    norms: ["ISO 17025"],
     description:
-      "Calibración con documentación GMP completa: cálculo de incertidumbre según GUM, formato aceptado por FDA y COFEPRIS. Para laboratorios, autoclaves, balanzas e incubadoras.",
+      "Calibración con documentación completa: cálculo de incertidumbre según GUM y formato aceptado en inspecciones regulatorias. Para laboratorios, autoclaves, balanzas e incubadoras.",
     highlights: [
       "Certificados con incertidumbre de medición (GUM)",
-      "Formato aceptado por FDA y COFEPRIS",
+      "Formato aceptado en inspecciones regulatorias",
       "Firma de metrólogo responsable en cada certificado",
       "Disponibilidad de historial de calibración por instrumento",
     ],
@@ -45,13 +45,13 @@ const industries = [
   {
     slug: "alimentos",
     label: "Industria Alimentaria",
-    headline: "Trazabilidad en puntos críticos HACCP y BRC",
-    norms: ["BRC Global Standards", "FSSC 22000", "HACCP", "SQF"],
+    headline: "Trazabilidad en puntos críticos de control",
+    norms: ["ISO 17025"],
     description:
       "Calibración de instrumentos críticos para inocuidad alimentaria: sensores de temperatura, balanzas industriales, pHmetros y equipos de proceso. Certificados para exportación.",
     highlights: [
-      "Calibración de puntos críticos de control (HACCP)",
-      "Documentación para certificación BRC / SQF",
+      "Calibración de puntos críticos de control",
+      "Documentación lista para la certificación de tu planta",
       "Habilitación para exportación a Europa y EE.UU.",
       "Programa preventivo anual con alertas de vencimiento",
     ],
@@ -83,7 +83,7 @@ export default function IndustriasPage() {
             <span className="text-xs font-bold text-accent-300 uppercase tracking-wide">Calibración especializada</span>
           </span>
           <h1 className="text-3xl lg:text-5xl font-black mb-5 leading-tight">
-            Normas distintas.{" "}
+            Un estándar.{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-400 to-accent-300">
               Soluciones distintas.
             </span>
