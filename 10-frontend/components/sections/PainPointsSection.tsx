@@ -16,7 +16,7 @@ const painPoints = [
     description:
       "Cuando tus instrumentos críticos están fuera de especificación, la línea se detiene. Cada hora de paro tiene un costo enorme. Los laboratorios lentos no pueden responderte a tiempo.",
     impact: "Miles de pesos por hora de paro",
-    solution: "Certificados emitidos en menos de 24 horas. Servicio express y a domicilio en ZMVM.",
+    solution: "Servicio urgente desde 3 días (sujeto a disponibilidad) y calibración a domicilio en ZMVM.",
   },
   {
     icon: TrendingDown,

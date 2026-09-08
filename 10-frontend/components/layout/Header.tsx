@@ -391,6 +391,12 @@ export default function Header() {
             >
               Blog
             </Link>
+            <Link
+              href="/preguntas-frecuentes"
+              className="text-sm font-medium text-gray-700 hover:text-brand-700 hover:bg-gray-50 px-3 py-2 rounded-lg transition-colors"
+            >
+              FAQ
+            </Link>
           </nav>
 
           {/* Right-side actions */}
@@ -522,6 +528,13 @@ export default function Header() {
               className="block py-3 px-3 text-sm font-semibold text-gray-800 rounded-lg hover:bg-gray-50 transition-colors"
             >
               Blog
+            </Link>
+            <Link
+              href="/preguntas-frecuentes"
+              onClick={closeMobile}
+              className="block py-3 px-3 text-sm font-semibold text-gray-800 rounded-lg hover:bg-gray-50 transition-colors"
+            >
+              FAQ
             </Link>
 
             {/* Mobile CTA group */}

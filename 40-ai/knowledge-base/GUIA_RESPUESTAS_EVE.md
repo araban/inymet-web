@@ -27,7 +27,7 @@
 | Nombre completo | Grupo INyMET — Instrumentación y Metrología | ✅ |
 | Propuesta de valor | "Reducimos riesgos críticos en auditorías ISO mediante calibración certificada con tiempos de respuesta líderes en México" | ✅ (no modificar) |
 | Teléfono | (55) 5754-3087 | ✅ |
-| WhatsApp | +52 55 5754-3087 | ⚠️ [VALIDAR] ¿tiene WhatsApp Business activo? |
+| WhatsApp | +52 55 9197-3629 | ✅ Confirmado por el cliente en `00-docs/INFORMACIÓN PARA LA PÁGINA WEB.docx` (2026-09-07): "El WhatsApp sí está activo". Reemplaza el número anterior, que en realidad era el teléfono fijo. |
 | Email ventas | ventas@inymet.com.mx | ✅ |
 | Email servicio/estatus | servicios@inymet.com.mx | ✅ |
 | Dirección | Salvatierra 32, Col. San Bartolo Atepehuacan, C.P. 07730, CDMX | ✅ |
@@ -41,7 +41,7 @@ Hay **dos versiones** conviviendo en los materiales. Eve no puede citar cifras h
 | Métrica | Versión A (homepage) | Versión B (/calibracion y chatbot actual) | Oficial |
 |---|---|---|---|
 | Empresas atendidas/certificadas | +500 | +189 | ✏️ [COMPLETAR] |
-| Entrega de certificado | < 24 horas | < 9 horas | ✏️ [COMPLETAR] |
+| Entrega de certificado | < 24 horas | < 9 horas | ✅ Resuelto (docx cliente, 2026-09-07): depende del tipo de instrumento, magnitud, condiciones y carga del laboratorio. **Servicio normal: hasta 2 semanas. Servicio urgente: 3 días a 1 semana** (sujeto a disponibilidad). El plazo exacto se confirma al cotizar y al recibir el equipo. Ni "< 24 horas" ni "< 9 horas" son correctos como tiempo total — ver `faq.md`. |
 | Años de experiencia | +25 | +9 | ✏️ [COMPLETAR] |
 | Laboratorios acreditados | 11 | 4 acreditados (11 magnitudes) | ✏️ [COMPLETAR] ¿los 11 están en el alcance de acreditación o solo 4? Es crítico: decir "11 laboratorios acreditados" ante un auditor debe ser verificable en el alcance IAS |
 

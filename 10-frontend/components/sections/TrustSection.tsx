@@ -4,7 +4,7 @@ import { Award, Clock, Shield, TrendingUp } from "lucide-react";
 
 const stats = [
   { icon: Award,      value: "ISO 17025", label: "Acreditación IAS CL-101" },
-  { icon: Clock,      value: "< 24 h",    label: "Entrega de certificados" },
+  { icon: Clock,      value: "< 24 h",    label: "Respuesta de cotización" },
   { icon: Shield,     value: "+25 años",  label: "Experiencia en metrología" },
   { icon: TrendingUp, value: "+500",       label: "Empresas certificadas" },
 ];

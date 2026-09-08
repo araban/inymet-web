@@ -4,10 +4,10 @@ import { Clock, FileCheck, MapPin, Users, ArrowRight } from "lucide-react";
 const props = [
   {
     icon: Clock,
-    num: "< 24h",
-    title: "Certificados express",
-    body: "Emitimos certificados ISO 17025 en menos de 24 horas. No más semanas de espera mientras tu producción se detiene.",
-    highlight: "El más rápido de México",
+    num: "3 días",
+    title: "Servicio urgente",
+    body: "Para auditorías inminentes, atendemos servicio urgente desde 3 días, sujeto a disponibilidad del laboratorio. El plazo exacto se confirma siempre en tu cotización.",
+    highlight: "Cotización sin costo en 24h",
   },
   {
     icon: FileCheck,

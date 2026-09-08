@@ -11,7 +11,7 @@
 ### ¿Por qué nos eligen en automotriz?
 - Certificados con trazabilidad aceptada por auditores IATF
 - Experiencia con plantas Tier 1 y Tier 2
-- Rapidez: certific ados en menos de 9 horas para no parar producción
+- Servicio urgente disponible (3 días a 1 semana, sujeto a disponibilidad) para no parar producción — ver `faq.md` para el detalle de tiempos
 - Servicio a domicilio disponible para líneas de producción críticas
 
 ### Equipos más frecuentes en automotriz

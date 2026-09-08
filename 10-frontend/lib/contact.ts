@@ -17,8 +17,8 @@ export const CONTACT = {
   emailSales: process.env.NEXT_PUBLIC_EMAIL_SALES ?? "ventas@inymet.com.mx",
   /** Service/status inbox */
   emailService: process.env.NEXT_PUBLIC_EMAIL_SERVICE ?? "servicios@inymet.com.mx",
-  /** WhatsApp number without + (wa.me format): "525557543087" */
-  whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "525557543087",
+  /** WhatsApp number without + (wa.me format): "525591973629" */
+  whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "525591973629",
   /** LinkedIn company page URL */
   linkedin: process.env.NEXT_PUBLIC_LINKEDIN ?? "https://linkedin.com/company/inymet",
   /** YouTube channel URL */

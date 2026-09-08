@@ -40,6 +40,7 @@ const resources = [
   { name: "Blog", href: "/blog" },
   { name: "Casos de éxito", href: "/casos-de-exito" },
   { name: "Recursos y guías", href: "/recursos" },
+  { name: "Preguntas frecuentes", href: "/preguntas-frecuentes" },
   { name: "Solicitar cotización", href: "/contacto" },
   { name: "Quejas y Sugerencias", href: "/contacto?asunto=queja" },
 ];

@@ -9,14 +9,13 @@ const IndustriesSection = dynamic(() => import("@/components/sections/Industries
 const ServicesSection = dynamic(() => import("@/components/sections/ServicesSection"));
 const ValuePropsSection = dynamic(() => import("@/components/sections/ValuePropsSection"));
 const ProcessSection = dynamic(() => import("@/components/sections/ProcessSection"));
-const TestimonialsSection = dynamic(() => import("@/components/sections/TestimonialsSection"));
 const BrandsSection = dynamic(() => import("@/components/sections/BrandsSection"));
 const CTASection = dynamic(() => import("@/components/sections/CTASection"));
 
 export const metadata: Metadata = {
   title: "Calibración Certificada ISO 17025 en México | INyMET",
   description:
-    "Reducimos riesgos en auditorías ISO con calibración certificada CENAM. 11 laboratorios acreditados ISO 17025. Certificados en menos de 24h. Industrias: Automotriz, Farmacéutica, Alimentos.",
+    "Reducimos riesgos en auditorías ISO con calibración certificada CENAM. 11 laboratorios acreditados ISO 17025. Industrias: Automotriz, Farmacéutica, Alimentos.",
   keywords: [
     "calibración de instrumentos México",
     "laboratorio metrología ISO 17025",
@@ -83,11 +82,9 @@ export default function HomePage() {
       <ValuePropsSection />
       {/* 7. Proceso: 4 pasos simples */}
       <ProcessSection />
-      {/* 8. Testimonios y métricas */}
-      <TestimonialsSection />
-      {/* 9. Marcas de instrumentación */}
+      {/* 8. Marcas de instrumentación */}
       <BrandsSection />
-      {/* 10. CTA final: conversión */}
+      {/* 9. CTA final: conversión */}
       <CTASection />
     </>
   );

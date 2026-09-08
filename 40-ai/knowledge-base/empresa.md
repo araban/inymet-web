@@ -15,7 +15,7 @@ INyMET — Instrumentación y Metrología (Grupo INyMET)
 ## Datos operativos
 - **Años de experiencia**: +9 años
 - **Empresas certificadas**: +189 (actualizar cuando cambie)
-- **Tiempo de entrega de certificados**: menos de 9 horas hábiles
+- **Tiempo de entrega**: hasta 2 semanas en servicio normal; de 3 días a 1 semana en servicio urgente (sujeto a disponibilidad y condiciones del equipo). Plazo exacto se confirma en la cotización y al recibir el equipo — ver `faq.md`.
 - **Laboratorios acreditados**: 4
 - **Cobertura**: Ciudad de México y área metropolitana (servicio a domicilio disponible)
 
@@ -25,7 +25,7 @@ INyMET — Instrumentación y Metrología (Grupo INyMET)
 | Teléfono principal | (55) 5754-3087 |
 | Email ventas | ventas@inymet.com.mx |
 | Email servicio | servicios@inymet.com.mx |
-| WhatsApp | +52 55 5754-3087 |
+| WhatsApp | +52 55 9197-3629 |
 | Portal clientes | [URL del portal cuando esté disponible] |
 
 ## Dirección

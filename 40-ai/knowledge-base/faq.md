@@ -1,89 +1,109 @@
 # Preguntas Frecuentes — INyMET
 
-> Este archivo alimenta directamente al chatbot. 
-> Agrega preguntas reales de clientes con las respuestas correctas para mejorar la precisión.
+> Este archivo alimenta directamente al chatbot (Eve) y a la página `/preguntas-frecuentes` del sitio.
+> Fuente: `00-docs/INFORMACIÓN PARA LA PÁGINA WEB.docx`, compartido por el cliente el 2026-09-07.
+> Si el cliente actualiza esta información, hay que reflejar el cambio aquí, en el `SYSTEM_PROMPT`
+> de `10-frontend/app/api/chat/route.ts` y en la página `/preguntas-frecuentes` — las tres fuentes
+> deben decir siempre lo mismo.
 
 ---
 
-## Preguntas Generales
+## Acreditación IAS CL-101
 
-**¿Qué es la calibración y por qué es obligatoria?**
-La calibración es el proceso de verificar que un instrumento de medición coincide con patrones de referencia trazables. Es obligatoria en sistemas de gestión como ISO 9001, IATF 16949, GMP, BRC Food y otros. Sin calibración vigente, los resultados de medición no son confiables y el sistema de calidad no pasa auditoría.
+**¿Qué servicios de calibración ofrece INyMET?**
+INyMET ofrece servicios de calibración para diferentes tipos de instrumentos y magnitudes de medición. Los servicios y equipos incluidos dentro del alcance de acreditación pueden consultarse directamente en el registro oficial de IAS (certificado CL-101).
 
-**¿Cuál es la diferencia entre calibración y mantenimiento?**
-La calibración verifica y documenta la exactitud del instrumento contra patrones trazables. El mantenimiento es reparación o ajuste físico del equipo. INyMET realiza calibración certificada; si el equipo necesita ajuste o reparación, lo indicamos en el certificado.
+**¿Qué equipos puede calibrar INyMET?**
+La capacidad de calibración depende del tipo de instrumento, magnitud, intervalo de medición y demás características del servicio solicitado. Para consultar los equipos, magnitudes e intervalos incluidos en el alcance de acreditación, remitir siempre al registro oficial de IAS.
 
-**¿Qué es la trazabilidad a CENAM?**
-CENAM es el Centro Nacional de Metrología de México, el organismo que mantiene los patrones nacionales de medición. La trazabilidad a CENAM significa que nuestros patrones están vinculados a los patrones nacionales mediante una cadena ininterrumpida de comparaciones con incertidumbre documentada. Esto es lo que reconocen los auditores ISO.
+**¿Qué significa que INyMET esté acreditado?**
+La acreditación significa que el laboratorio ha sido evaluado por un organismo de acreditación y demuestra competencia para realizar determinados servicios de calibración conforme a los requisitos aplicables. La acreditación de INyMET corresponde al certificado CL-101 de IAS y aplica únicamente a los servicios incluidos específicamente dentro de su alcance vigente.
 
-**¿Con qué frecuencia debo calibrar mis instrumentos?**
-Depende de la norma que certifique, el tipo de instrumento y el uso. Como guía general:
-- Instrumentos de proceso crítico: cada 6 meses o anualmente
-- Instrumentos de referencia/laboratorio: anualmente
-- Instrumentos de campo: anualmente o según fabricante
-INyMET puede ayudarle a definir el plan de calibración adecuado para su sistema de gestión.
+**¿Todas las calibraciones realizadas por INyMET están acreditadas?**
+No necesariamente. La condición de acreditación aplica solo a los servicios dentro del alcance vigente del laboratorio. Para confirmar si un equipo o servicio específico está dentro del alcance, consultar el certificado CL-101 en IAS o solicitar asesoría al personal de INyMET.
 
----
+**¿Cómo puedo verificar si un servicio está dentro del alcance de acreditación / dónde consulto las magnitudes e intervalos acreditados?**
+Directamente en el registro oficial de IAS, mediante el número de acreditación CL-101. Esa es siempre la fuente vigente — no dar por hecho un alcance sin remitir a IAS.
 
-## Preguntas sobre el Proceso
+**¿Qué sucede si mi equipo no está dentro del alcance de acreditación?**
+Nuestro personal revisa las características del servicio y determina las opciones disponibles. La condición de acreditación debe verificarse siempre contra el alcance vigente de IAS.
 
-**¿Cómo funciona el proceso de calibración?**
-1. Solicita cotización (respuesta en menos de 24 horas)
-2. Aprueba cotización y programa entrega de equipos
-3. Recogemos sus instrumentos o los envía a nuestro laboratorio
-4. Calibramos con patrones trazables a CENAM
-5. Entregamos certificado digital en menos de 9 horas
-6. Enviamos alerta cuando venza la próxima calibración
+**¿Qué es IAS?**
+IAS (International Accreditation Service) es un organismo de acreditación que evalúa y acredita laboratorios, organismos de inspección y otras organizaciones de evaluación de la conformidad, conforme a normas y requisitos internacionales. Es signatario de acuerdos de reconocimiento multilateral de ILAC (International Laboratory Accreditation Cooperation). INyMET cuenta con la acreditación CL-101 otorgada por IAS.
 
-**¿Hacen calibración a domicilio?**
-Sí, para equipos que no se pueden transportar (hornos de gran tamaño, equipos de línea de producción, tanques, etc.) ofrecemos calibración in-situ. Requiere coordinación previa y tiene un costo adicional de visita técnica.
-
-**¿Cuánto tiempo tarda la calibración?**
-El tiempo depende del tipo de instrumento:
-- Instrumentos simples (multímetros, calibradores): 1-3 días hábiles
-- Temperatura y humedad: 2-4 días hábiles
-- Volumen y pipetas: 2-5 días hábiles
-- Con servicio express: mismo día o siguiente hábil (consultar disponibilidad)
-La entrega del certificado digital es en menos de 9 horas una vez completada la calibración.
-
-**¿Puedo rastrear el estado de mi equipo?**
-Sí. Si tiene su número de folio, puedo consultarlo ahora mismo. O puede escribir a servicios@inymet.com.mx o llamar al (55) 5754-3087 para seguimiento.
-
-**¿Qué pasa si el instrumento está fuera de especificación (fuera de tolerancia)?**
-Lo indicamos en el certificado como "No conforme" o "Fuera de tolerancia". Dependiendo del tipo de instrumento, podemos realizar ajuste (si es posible) y recalibrar. Si el equipo requiere reparación, lo notificamos al cliente antes de proceder.
+> Link oficial de consulta (alcance y CMC): https://www.iasonline.org/?post_type=ias_certificate&orderby=org&order=ASC&s=&global=1&service=0&number=CL-101&keyword=
 
 ---
 
-## Preguntas sobre Certificados
+## Calibración: conceptos y frecuencia
 
-**¿Qué incluye el certificado de calibración?**
-- Identificación completa del instrumento (marca, modelo, número de serie)
-- Trazabilidad: cadena hasta CENAM
-- Valores medidos antes y después del ajuste (si aplica)
-- Incertidumbre de medición
-- Criterio de aceptación y resultado (conforme/no conforme)
-- Fecha de calibración y próxima calibración recomendada
-- Firma y datos del técnico responsable
-- Número de folio único
+**¿Qué es una calibración?**
+El proceso mediante el cual se establecen, bajo condiciones especificadas, las relaciones entre los valores indicados por un instrumento de medición y los valores correspondientes proporcionados por patrones de referencia. Permite conocer el comportamiento de un instrumento y contar con evidencia documentada de sus resultados.
 
-**¿Los certificados son aceptados por auditores IATF/FDA/BRC?**
-Sí. Nuestra acreditación IAS CL-101 con trazabilidad a CENAM cumple con los requisitos de los principales esquemas de certificación: IATF 16949, FDA 21 CFR, BRC Food, FSSC 22000, ISO 17025, GMP/COFEPRIS.
+**¿Con qué frecuencia / cada cuánto tiempo debo calibrar mi equipo?**
+No existe un único intervalo de calibración aplicable a todos los equipos. Depende de varios factores: tipo de instrumento, frecuencia de uso, condiciones ambientales, estabilidad del equipo, historial de calibraciones y los requisitos establecidos por el usuario o su sistema de gestión.
+⚠️ No dar cifras genéricas tipo "cada 6 meses" o "anualmente" como regla — eso contradice la postura oficial del cliente. Si preguntan, explicar los factores y ofrecer ayuda para definir el plan de calibración adecuado.
 
-**¿Los certificados tienen fecha de vencimiento?**
-El certificado en sí no vence, documenta lo que ocurrió en la fecha de calibración. Lo que vence es la "vigencia" de la calibración (cuánto tiempo el instrumento se considera calibrado). INyMET envía alertas automáticas antes del vencimiento.
+**¿Cómo puedo saber si mi equipo necesita calibración?**
+Si el instrumento se usa para mediciones que afectan la calidad de un producto, proceso, servicio o resultado, debe tener un programa de calibración. También puede requerirse cuando ha transcurrido el intervalo establecido, después de una reparación o ajuste, cuando ha sufrido algún daño, o cuando hay dudas sobre la confiabilidad de sus mediciones.
 
-**¿Puedo obtener certificados en formato digital?**
-Sí, todos los certificados se entregan en PDF con firma electrónica. También disponemos de portal de clientes donde puede descargar todos sus certificados históricos.
+**¿Qué diferencia hay entre calibración y ajuste?**
+La calibración determina el comportamiento de un instrumento comparando sus indicaciones con valores de referencia. El ajuste consiste en modificar el instrumento para que sus indicaciones se aproximen a los valores establecidos o cumplan especificaciones. Son procesos diferentes: un instrumento puede requerir calibración sin necesidad de ajuste.
 
 ---
 
-## Preguntas sobre Normas y Auditorías
+## Cotización y proceso de servicio
 
-**¿Pueden apoyarnos a preparar la auditoría IATF?**
-Sí. Además de la calibración certificada, podemos revisar su plan de control de instrumentos (listado MSA), verificar que la frecuencia de calibración cumpla con los requisitos del sistema de calidad, y orientarle sobre qué preguntan los auditores IATF en el punto 7.1.5.
+**¿Cómo puedo solicitar una cotización?**
+Contactar a INyMET y proporcionar la información disponible del equipo. Para agilizar la cotización, se recomienda dar: tipo de instrumento, marca, modelo, número de serie, magnitud a calibrar, intervalo o puntos de medición (si aplica) y cualquier requisito específico del servicio. Una fotografía del instrumento o de su placa de identificación también ayuda.
 
-**¿Qué instrumentos son obligatorios calibrar en GMP/COFEPRIS?**
-Todos los instrumentos que afecten la calidad del producto: termómetros de proceso, autoclaves, estufas, manómetros de líneas estériles, balanzas analíticas, pH-metros, pipetas y material volumétrico. Le ayudamos a hacer el levantamiento de instrumentos sujetos a control metrológico.
+**¿Qué información necesito para cotizar?**
+Entre más información se dé, más precisa será la cotización. Como mínimo: tipo de equipo y magnitud a calibrar.
+
+**¿Puedo enviar mi equipo a INyMET para calibración?**
+Sí. Los equipos pueden entregarse en las instalaciones de INyMET o enviarse conforme a las condiciones establecidas para el servicio. Se recomienda solicitar cotización y confirmar condiciones de recepción/entrega antes de enviar.
+
+**¿INyMET realiza calibraciones en sitio?**
+Sí. La disponibilidad depende del tipo de instrumento, magnitud, condiciones técnicas y características del servicio requerido. Confirmar con el personal si el servicio solicitado puede hacerse en planta del cliente.
+
+**¿Cuánto tiempo tarda una calibración?**
+⚠️ DATO OFICIAL CONFIRMADO POR EL CLIENTE (reemplaza cualquier cifra anterior de "1-3 días" o "certificado en <9 horas" como tiempo total):
+- El tiempo depende del tipo de instrumento, magnitud, condiciones del equipo, servicio solicitado y carga de trabajo del laboratorio.
+- Referencia: **hasta 2 semanas para servicio normal**.
+- Servicio urgente: **de 3 días a 1 semana**, sujeto a disponibilidad del laboratorio y condiciones del equipo.
+- El tiempo aplicable siempre se confirma al cotizar y al recibir el equipo — nunca prometer un plazo fijo antes de eso.
+
+**¿Qué pasa si mi equipo necesita un ajuste, llega dañado o no funciona correctamente?**
+El equipo se revisa en recepción. Si se identifica un ajuste, daño o condición que afecte el servicio, se informa al cliente antes de proceder. Cualquier trabajo adicional con costo requiere autorización previa del cliente.
+
+**¿Cómo puedo conocer el estatus de mi equipo?**
+Contactar al ejecutivo de servicios con los datos de identificación del servicio o equipo (folio, si lo tiene).
+
+**¿Cómo se realiza la entrega de mi equipo?**
+Conforme a las condiciones establecidas para cada servicio y lo acordado con el cliente durante la contratación.
+
+**¿INyMET atiende empresas de toda la República Mexicana?**
+Sí. Los servicios se coordinan con clientes en toda la República; las condiciones de envío, recepción y entrega se determinan por servicio.
+
+---
+
+## Certificados y trazabilidad
+
+**¿Qué documento recibiré después de la calibración?**
+El certificado o documento correspondiente, con información relevante del instrumento, las condiciones del servicio y los resultados obtenidos, según corresponda.
+
+**¿El certificado de calibración tiene trazabilidad?**
+Sí, los certificados incluyen la información de trazabilidad metrológica correspondiente, según las características del servicio y los requisitos aplicables. La información específica está en el certificado emitido.
+
+**¿Puedo utilizar el certificado durante una auditoría?**
+Sí, puede formar parte de la evidencia documental en sistemas de gestión de calidad y auditorías, considerando los requisitos de cada organización. Cuando la calibración está dentro del alcance de acreditación de INyMET, el certificado lo identifica conforme a los requisitos aplicables.
+
+---
+
+## Contacto
+
+**¿Cómo puedo solicitar más información?**
+servicios@inymet.com.mx · ventas@inymet.com.mx · (55) 5754-3087. El equipo puede orientar sobre servicios, cotizaciones y requisitos de atención.
 
 ---
 
@@ -92,12 +112,12 @@ Todos los instrumentos que afecten la calidad del producto: termómetros de proc
 
 **Ejemplo 1 — Cliente automotriz que necesita cotización rápida:**
 - Cliente: "Necesito calibrar 45 multímetros Fluke para una auditoría IATF la próxima semana"
-- Respuesta correcta: Confirmar disponibilidad de servicio express, pedir número de contacto para enviar cotización en 2 horas, mencionar que tenemos experiencia con Fluke y IATF.
+- Respuesta correcta: confirmar que se puede cotizar servicio urgente (3 días a 1 semana, sujeto a disponibilidad), pedir número de contacto para enviar cotización en menos de 24 horas, mencionar experiencia con Fluke e IATF.
 
 **Ejemplo 2 — Cliente que pregunta por estado de equipo:**
 - Cliente: "¿Cómo va mi equipo? El folio es INY-2024-0891"
-- Respuesta correcta: Consultar el sistema, dar estado específico, tiempo estimado de entrega.
+- Respuesta correcta: consultar el sistema, dar estado específico y tiempo estimado de entrega.
 
 **Ejemplo 3 — Cliente farmacéutico preocupado por FDA:**
 - Cliente: "¿Sus certificados cumplen con FDA 21 CFR?"
-- Respuesta correcta: Confirmar que sí, explicar brevemente por qué (trazabilidad CENAM + documentación de incertidumbre), ofrecer cotización.
+- Respuesta correcta: confirmar que sí cuando el servicio está dentro del alcance de acreditación CL-101, explicar que el certificado lo identifica conforme a los requisitos aplicables, ofrecer cotización.

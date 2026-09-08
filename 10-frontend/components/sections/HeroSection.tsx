@@ -35,7 +35,7 @@ function CountUp({ end, prefix = "", suffix = "" }: { end: number; prefix?: stri
 const stats = [
   { prefix: "+", end: 25, suffix: "", label: "Años de experiencia" },
   { prefix: "+", end: 500, suffix: "", label: "Empresas certificadas" },
-  { prefix: "<", end: 24, suffix: " h", label: "Entrega de certificados" },
+  { prefix: "<", end: 24, suffix: " h", label: "Cotización sin costo" },
   { prefix: "", end: 11, suffix: "", label: "Laboratorios acreditados" },
 ];
 
@@ -85,7 +85,7 @@ export default function HeroSection() {
               {/* Subtext */}
               <p className="mt-5 text-base lg:text-lg text-slate-400 leading-relaxed max-w-xl">
                 Servicios de metrología industrial acreditados.{" "}
-                <span className="text-white font-semibold">Certificados en menos de 24 horas</span>{" "}
+                <span className="text-white font-semibold">Cotización sin costo en menos de 24 horas</span>{" "}
                 para automotriz, farmacéutica, alimentos y más. Trazabilidad nacional CENAM.
               </p>
 
@@ -142,7 +142,7 @@ export default function HeroSection() {
                   <div className="flex items-center gap-2">
                     <Clock className="w-5 h-5 text-white" />
                     <div>
-                      <p className="text-xs font-black text-white">Certificados</p>
+                      <p className="text-xs font-black text-white">Cotización</p>
                       <p className="text-[11px] text-accent-100 font-bold">en menos de 24h</p>
                     </div>
                   </div>
